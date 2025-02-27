@@ -1,4 +1,6 @@
 /* Global Styles */
+* {box-sizing:border-box}
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -9,98 +11,6 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
-/* Container */
-.container {
-  width: 80%;
-  max-width: 960px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header Section */
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-  color: #2f2f86;
-  display: inline-block;
-}
-
-.header .icon {
-  width: 40px;
-  vertical-align: middle;
-  margin-left: 10px;
-}
-
-/* Content Wrapper */
-.content-wrapper {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Image Container */
-.image-container {
-  position: relative;
-  flex: 1;
-}
-
-.main-image {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-}
-
-.overlay-text h2 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.overlay-text p {
-  margin: 5px 0;
-}
-
-.overlay-text .info p {
-  font-size: 0.9rem;
-  margin: 3px 0;
-}
-
-/* Text Section */
-.text-section {
-  flex: 1;
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.5;
-  padding: 10px;
-  max-width: 400px;
-}
-
-/* Buttons Section */
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-}
-
 button {
   background-color: #8aa35f;
   color: white;
@@ -112,30 +22,180 @@ button {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
-
 button:hover {
   background-color: #6b8d52;
   transform: scale(1.05);
 }
+h1 {
+  font-family: "Tilt Warp";
+  font-size: 5rem;
+  color: #2f2f86;
+  display: inline-block;
+  letter-spacing: 3px;
+  padding-left: 5%;
+}
 
-/* Dots Section */
-.dots {
+/* Classes */
+.container {
+  width: 80%;
+  width: 70%;
+  background: white;
+  padding: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+  text-align: left;
+  width: 100%;
+  max-height: 180px;
+}
+.header .icon {
+  width: 7%;
+  vertical-align: middle;
+  margin-left: 30px;
+  padding-bottom: 3%;
+}
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.image-container {
+  position: relative;
+  flex: 1;
+}
+.image {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.overlay-text h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+.overlay-text p {
+  margin: 5px 0;
+}
+.overlay-text .info p {
+  font-size: 0.9rem;
+  margin: 3px 0;
+}
+.text-section {
+  flex: 1;
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-left: 8px;
+  margin-right: 5%;
+  max-width: 400px;
+}
+.buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin: 20px 0;
+}
+.buttons button {
+  width: 50%;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
 }
 
-.dot {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
   cursor: pointer;
-  transition: background-color 0.3s;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.dot.active {
-  background-color: #8aa35f;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 /* Responsive */
@@ -144,13 +204,15 @@ button:hover {
     flex-direction: column;
     text-align: center;
   }
-
+  .content-wrapper-2 {
+    flex-direction: row;
+    text-align: center;
+  }
   .text-section {
     max-width: 100%;
   }
-
   .buttons {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: center;   
   }
 }
