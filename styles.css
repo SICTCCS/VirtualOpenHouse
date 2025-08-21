@@ -1,3 +1,7 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Tags */
 html{
   background-color: #FFFDE9;
@@ -13,6 +17,7 @@ button:hover{
 header{
     color:#132E5E;
     font-family: "Tilt Warp";
+    text-align: center;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -43,6 +48,9 @@ h1{
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
 }
 .ApplyButton{
+    color: white;
+    font-family: 'Tilt Warp';
+    font-size: 24px;
     width: 250px;
     height: 80px;
     justify-content: center;
@@ -65,17 +73,22 @@ h1{
   min-height: 250px;      
   flex: 1 1 calc(50% - 1rem); 
 }
-.header{
+.Name{
   display: flex;
   flex-direction: column;
+  font-family: 'Tilt Warp';
+  color: #132E5E;
+  font-size: 32px;
 }
 .Content{
+  font-size: 18px;
   display: flex;
   flex-direction: row;
+  font-family:'REM';
 }
 .CardImage {
-  width: 200px;                
-  height: auto;
+  width: 350px;                
+  height: 200px;
   object-fit: cover;
   flex-shrink: 0;             
   border-radius: 4px;
@@ -88,6 +101,7 @@ h1{
   justify-content: space-between;
   flex: 1;  
   min-height: 100%;  
+  width: 400px;
   margin-left: 10px;
   min-width: 100%;
 }
@@ -98,16 +112,17 @@ h1{
   max-width: 65%;
 }
 
-.ButtonDiv {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  flex-direction: row;
-  min-height: 20%;
-}
 .ButtonDiv button{
-    width: 196px;
-    height: 36.96px;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: normal;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #FFFDE9;
+    font-family: 'REM';
     
 }
 .ImageSection{
@@ -122,7 +137,7 @@ h1{
 .SlideButtons{
   min-height: 50%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 20%;
 }
 /* Global Vars */
 *{
