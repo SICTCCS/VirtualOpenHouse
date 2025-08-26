@@ -89,15 +89,14 @@ h1{
 .CardImage {
   width: 350px;                
   height: 200px;
-  object-fit: cover;
+  object-fit: cover;  
   flex-shrink: 0;             
   border-radius: 4px;
 }
 
 
 .CardContent {
-  display: flex;
-  flex-direction: column;      
+  display: block;     
   justify-content: space-between;
   flex: 1;  
   min-height: 100%;  
@@ -108,16 +107,16 @@ h1{
 
 .CardText {
   margin-bottom: 1rem;
-  flex-wrap: wrap;
   max-width: 65%;
 }
 
 .ButtonDiv button{
     display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 40px;
-    flex-direction: row;
-    flex-wrap: wrap;
     font-weight: normal;
     font-size: 18px;
     border-radius: 10px;
