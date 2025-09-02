@@ -29,7 +29,6 @@ h1{
   text-align: center;
   font-family: "Tilt Warp";
 }
-
 /* Classes */
 .slide{
   height: 20px;
@@ -45,6 +44,19 @@ h1{
     width: 100%;
     min-height: 20%;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+.topbackground{
+  z-index: 1;
+  position: absolute;
+  height: 90%;
+  width: 50%;
+}
+.bottombackground{
+  z-index: 1;
+  position: absolute;
+  height: 90%;
+  width: 50%;
+  margin-left: 50%;
 }
 .ApplyButton{
     width: 250px;
@@ -134,6 +146,8 @@ h1{
   max-width: 80%;
   margin-right: auto;
   margin-left: auto;
+  z-index: 2;
+  position: relative;
 }
 /* Global Vars */
 *{
