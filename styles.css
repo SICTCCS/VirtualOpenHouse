@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 /* Tags */
 html{
   background-color: #FFFDE9;
@@ -24,6 +26,8 @@ header{
 h1{
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  font-family: "Tilt Warp";
 }
 
 /* Classes */
@@ -46,11 +50,13 @@ h1{
     width: 250px;
     height: 80px;
     justify-content: center;
+    font-family: "REM";
 }
 .ClassCards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem; 
+  font-family: "REM";
 }
 /* GPT assisted with some of the innerflex and sizing, specifically making the boxes a little bigger to compensate for the radius */
 .ClassCard {
@@ -89,7 +95,7 @@ h1{
   flex: 1;  
   min-height: 100%;  
   margin-left: 10px;
-  min-width: 100%;
+  max-width: 90%;
 }
 
 .CardText {
@@ -103,12 +109,12 @@ h1{
   gap: 0.5rem;
   flex-wrap: wrap;
   flex-direction: row;
-  min-height: 20%;
 }
 .ButtonDiv button{
     width: 196px;
     height: 36.96px;
-    
+    margin-left: auto;
+    margin-right: auto
 }
 .ImageSection{
   display: flex;
@@ -123,6 +129,11 @@ h1{
   min-height: 50%;
   margin: auto;
   margin-top: 5%;
+}
+.wrapper{
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* Global Vars */
 *{
