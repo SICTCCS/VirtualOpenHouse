@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* Tags */
 html{
   background-color: #FFFDE9;
@@ -29,6 +30,74 @@ h1{
   text-align: center;
   font-family: "Tilt Warp";
 }
+body{
+  z-index: 20;
+  position: relative;
+}
+footer{
+    background-color: #FFFDE9;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-shadow: 0 0 30px #000000;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-family: inter;
+}
+logo2{
+    position: relative;
+    background-image: url("assets/SICTCLogo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height:100px;
+    width: 803px;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+li {
+    margin-right: 30px;
+    width: 100%;
+    font-size:32px;
+    color:#132E5E;
+    list-style-type: none;
+}
+a{
+    color:#132E5E;
+    text-align: top;
+    text-underline-offset: 900000000px;
+
+}
+map{
+    background-image: url("assets/mapIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    height:32px;
+    width: 32px;
+    flex-wrap: nowrap;
+}
+phone{
+    background-image: url("assets/phoneIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    height:32px;
+    width: 32px;
+    flex-wrap: nowrap;
+}
+phone2{
+    background-image: url("assets/phoneIcon2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    height:32px;
+    width: 32px;
+    flex-wrap: nowrap;
+}
 /* Classes */
 .slide{
   height: 20px;
@@ -45,18 +114,28 @@ h1{
     min-height: 20%;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
 }
-.topbackground{
-  z-index: 1;
+.topbackground { /*GPT assisted with just the positioning of the bottom image because i was literally one more fail away from smashing the computer.*/
   position: absolute;
-  height: 90%;
+  top: 0;
+  left: 0;
   width: 50%;
+  height: 25%;
+  z-index: -1; 
 }
-.bottombackground{
-  z-index: 1;
+
+.bottombackground {
   position: absolute;
-  height: 90%;
+  bottom: 0;
+  left: 50%;  
   width: 50%;
-  margin-left: 50%;
+  z-index: -1; 
+}
+
+.wrapper {
+  position: relative;
+  z-index: 0; /* ensures wrapper content is above backgrounds */
+  max-width: 95%;
+  margin: 0 auto;
 }
 .ApplyButton{
     width: 250px;
@@ -90,6 +169,7 @@ h1{
 .Content{
   display: flex;
   flex-direction: row;
+  max-width: 100%;
 }
 .CardImage {
   width: 200px;                
@@ -97,6 +177,8 @@ h1{
   object-fit: cover;
   flex-shrink: 0;             
   border-radius: 4px;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 
@@ -107,13 +189,12 @@ h1{
   flex: 1;  
   min-height: 100%;  
   margin-left: 10px;
-  max-width: 90%;
+  max-width: 50%;
 }
 
 .CardText {
   margin-bottom: 1rem;
   flex-wrap: wrap;
-  max-width: 65%;
 }
 
 .ButtonDiv {
@@ -121,16 +202,19 @@ h1{
   gap: 0.5rem;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 .ButtonDiv button{
-    width: 196px;
+    width: 155px;
     height: 36.96px;
-    margin-left: auto;
-    margin-right: auto
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .ImageSection{
   display: flex;
   flex-direction: column;
+  max-width: 50%;
+  min-width: 50%;
 }
 .Image{
   display: flex;
@@ -138,16 +222,14 @@ h1{
   min-height: 50%;
 }
 .SlideButtons{
-  min-height: 50%;
+  min-height: 20%;
   margin: auto;
   margin-top: 5%;
 }
-.wrapper{
-  max-width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: 2;
-  position: relative;
+.footercontent{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
 }
 /* Global Vars */
 *{
