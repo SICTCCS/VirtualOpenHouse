@@ -159,8 +159,9 @@ phone2{
   border-radius: 10%;
   box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
   padding: 1.5rem;        
-  min-height: 250px;      
+  min-height: 250px;     
   flex: 1 1 calc(50% - 1rem); 
+  max-height: 1%;
 }
 .header{
   display: flex;
@@ -178,23 +179,27 @@ phone2{
   flex-shrink: 0;             
   border-radius: 4px;
   min-width: 100%;
-  min-height: 100%;
 }
 
 
 .CardContent {
   display: flex;
   flex-direction: column;      
-  justify-content: space-between;
+  justify-content: space-between 2px;
+  gap: 10px;
   flex: 1;  
   min-height: 100%;  
   margin-left: 10px;
   max-width: 50%;
+  max-height:100%;
+
 }
 
 .CardText {
   margin-bottom: 1rem;
   flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 40%;
 }
 
 .ButtonDiv {
@@ -215,6 +220,7 @@ phone2{
   flex-direction: column;
   max-width: 50%;
   min-width: 50%;
+  max-height: 100%;
 }
 .Image{
   display: flex;
