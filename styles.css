@@ -161,7 +161,6 @@ phone2{
   padding: 1.5rem;        
   min-height: 250px;     
   flex: 1 1 calc(50% - 1rem); 
-  max-height: 1%;
 }
 .header{
   display: flex;
