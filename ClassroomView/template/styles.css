@@ -207,3 +207,11 @@ phone2{
     width: 32px;
     flex-wrap: nowrap;
 }
+iframe{
+    border-radius: 25px;
+    box-shadow: 0 0 30px #000000;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
