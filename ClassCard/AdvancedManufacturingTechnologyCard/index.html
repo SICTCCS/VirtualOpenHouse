@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>   
+  <script src="script.js"></script>   
 </head>
 <div class="top">
   <img class="Logo" src="assets/SictcLogo.png" height="100px">
@@ -75,8 +75,8 @@
         </div>
         <div class="upperButtons">
           <div class="ButtonGroup">
-          <button>Door Plaque</button> <!--This will be the eventual google drive IFrame.-->
-          <button>FAQ</button>
+          <button id="DoorButton" onclick="showDoor()">Door Plaque</button> <!--This will be the eventual google drive IFrame.-->
+          <button id="FAQButton" onclick="showFAQ()">FAQ</button>
           </div>
         </div>
         <img class="bottombackground" src="assets/Untitled-1 2.png">
@@ -92,6 +92,30 @@
       </div>
         <div>
         </div>
+    </div>
+  </div>
+</div>
+<div id="DoorModal" class="DoorModal" aria-modal="true" style="padding: 30px 11px;" >
+  <div class="DoorPopupOverflow">
+    <button id="closeDoor" class="icon-close active" type="button" aria-label="Close window" onclick="closeDoor">
+      <svg fill="currentColor" perserveAspectRatio="xMidYMid meet" height="1rem" width="1rem" viewBox="0 0 16 16" style="vertical-align: middle;"></svg>
+    </button>
+    <div role="document" id="html-modal-Door" class="door-content">
+      <p>
+        <iframe src="https://drive.google.com/file/d/1v2CWl9tWtd3dgxdn7i9z0Y-Z1xlH5dMV/view?usp=sharing" width="840" height="480"></iframe>
+      </p>
+    </div>
+  </div>
+</div>
+<div id="FAQModal" class="FAQModal" aria-modal="true" style="padding: 30px 11px;" >
+  <div class="FAQPopupOverflow">
+    <button id="closeFAQ" class="icon-close active" type="button" aria-label="Close window" onclick="closeFAQ">
+      <svg fill="currentColor" perserveAspectRatio="xMidYMid meet" height="1rem" width="1rem" viewBox="0 0 16 16" style="vertical-align: middle;"></svg>
+    </button>
+    <div role="document" id="html-modal-FAQ" class="FAQ-content">
+      <p>
+        <iframe src="https://drive.google.com/file/d/1v2CWl9tWtd3dgxdn7i9z0Y-Z1xlH5dMV/view?usp=sharing" width="840" height="480"></iframe>
+      </p>
     </div>
   </div>
 </div>

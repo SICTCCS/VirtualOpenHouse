@@ -64,12 +64,16 @@ a button{
   width: 50%;
   height: 40%;
   z-index: -1;
+  bottom: 0%;
+  top: auto;
 }
 .container{
   display: flex;
   flex-direction: column;
   column-gap: 20px;
   z-index: 0; /* ensures wrapper content is above backgrounds */
+  position: relative;
+  z-index: 5;
 }
 .header {
   text-align: left;
@@ -310,7 +314,22 @@ phone2{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+#DoorModal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+} 
+#FAQModal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+} 
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

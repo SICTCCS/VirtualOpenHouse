@@ -1,4 +1,10 @@
 let slideIndex = 1;
+const door = document.getElementById("DoorModal");
+const doorButton = document.getElementById("DoorButton");
+const closeDoor = document.getElementById("closeDoor");
+const faq = document.getElementById("FAQModal");
+const faqButton = document.getElementById("FAQButton");
+const closeFAQ = document.getElementById("closeFAQ");
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -26,3 +32,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+function showDoor() {
+  door.style.display = 'block';
+  console.log("Showing Door...");
+}
+// function closeDoor() {
+//   door.style.display = 'none';
+//   console.log("Closing Door...");
+// }
+
+
+function showFAQ() {
+  faq.style.display = 'block';
+  console.log("Showing FAQ...");
+}
+// function closeFAQ() {
+//   faq.style.display = 'none';
+//   console.log("Closing FAQ...");
+// }
