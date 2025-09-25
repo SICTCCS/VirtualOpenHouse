@@ -32,21 +32,22 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
 function showDoor() {
   door.style.display = 'block';
   console.log("Showing Door...");
 }
-// function closeDoor() {
-//   door.style.display = 'none';
-//   console.log("Closing Door...");
-// }
+ function closeOutDoor() {
+   door.style.display = 'none';
+   console.log("Closing Door...");
+}
 
 
 function showFAQ() {
   faq.style.display = 'block';
   console.log("Showing FAQ...");
 }
-// function closeFAQ() {
-//   faq.style.display = 'none';
-//   console.log("Closing FAQ...");
-// }
+ function closeOutFAQ() {
+   faq.style.display = 'none';
+   console.log("Closing FAQ...");
+}

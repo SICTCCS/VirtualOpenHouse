@@ -320,7 +320,7 @@ phone2{
     z-index: 1000;
     left: 25%;
     right: 25%;
-    top: 25%;
+    top: 1%;
 } 
 #FAQModal{
     display: none;
@@ -328,7 +328,7 @@ phone2{
     z-index: 1000;
     left: 25%;
     right: 25%;
-    top: 25%;
+    top: 1%;
 } 
 @keyframes fade {
   from {opacity: .4}
