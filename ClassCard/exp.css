@@ -1,0 +1,274 @@
+/* Global Styles for coursepage.html */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5; /* A light background for the page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2f2f86;
+}
+
+.main-page-header h1 {
+  font-family: "Tilt Warp", sans-serif;
+  font-size: 3rem;
+  margin: 0; /* Remove default margin from h1 */
+}
+
+/* Grid Container for the Cards */
+.course-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  gap: 30px; /* Space between cards */
+  width: 90%; /* Adjust overall width of the grid */
+  max-width: 1200px; /* Maximum width to prevent it from getting too wide */
+  margin-bottom: 50px;
+}
+
+/* Styling for each individual course card (the content extracted from index.html) */
+.course-card-direct {
+  background: white;
+  padding: 20px; /* Padding for the entire card content */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Important for containing floats or absolute positioning */
+  display: flex; /* Use flexbox for internal card layout */
+  flex-direction: column; /* Stack header, content, buttons vertically */
+}
+
+/* --- Styles inherited from your original styles.css, adapted for direct embedding --- */
+/* You might want to make these classes more specific if they conflict with other parts of your site */
+
+/* Header within each card */
+.course-card-direct .header {
+  text-align: left;
+  width: 100%;
+  /* max-height: 180px;  - Removed this from the card header, as it was constricting. Adjust as needed. */
+  margin-bottom: 20px; /* Space below the card header */
+}
+
+.course-card-direct .header h1 {
+  font-family: "Tilt Warp";
+  font-size: 2.5rem; /* Adjusted for smaller card size */
+  color: #2f2f86;
+  display: inline-block;
+  letter-spacing: 2px; /* Slightly reduced letter spacing */
+  padding-left: 0; /* Remove original padding left */
+  margin: 0; /* Remove default h1 margin */
+}
+
+.course-card-direct .header .icon {
+  width: 10%; /* Adjusted icon size for smaller cards */
+  vertical-align: middle;
+  margin-left: 15px; /* Adjusted margin */
+  padding-bottom: 0; /* Remove original padding bottom */
+}
+
+.course-card-direct .content-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack image/slideshow and text/buttons vertically within card */
+  gap: 20px;
+  align-items: center; /* Center items horizontally within the card's content-wrapper */
+  justify-content: space-between;
+  width: 100%; /* Ensure content wrapper takes full width of card */
+}
+.course-card-direct .content-wrapper-2 {
+  display: flex; /* Keep internal layout of content-wrapper-2 */
+  gap: 20px;
+  width: 100%; /* Ensure content-wrapper-2 takes full width */
+  /* align-items: center; /* Adjust as needed */
+}
+
+/* Slideshow container */
+.course-card-direct .slideshow-container {
+  max-width: 100%; /* Max width of slideshow within the card */
+  position: relative;
+  margin: auto;
+  flex: 1; /* Allow slideshow to take available space */
+}
+
+.course-card-direct .slideshow-container .image {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide the images by default */
+.course-card-direct .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.course-card-direct .prev, .course-card-direct .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+}
+
+/* Position the "next button" to the right */
+.course-card-direct .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.course-card-direct .prev:hover, .course-card-direct .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.course-card-direct .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.course-card-direct .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.course-card-direct .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.course-card-direct .active, .course-card-direct .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.course-card-direct .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Text Section */
+.course-card-direct .text-section {
+  flex: 1; /* Allow text section to take available space */
+  font-size: 1rem; /* Slightly reduced font size for card */
+  color: #444;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-left: 0; /* Remove original padding left */
+  margin-right: 0; /* Remove original margin right */
+  max-width: none; /* Allow it to take full width within its flex container */
+}
+
+/* Buttons */
+.course-card-direct .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%; /* Ensure buttons container takes full width */
+}
+.course-card-direct button {
+  background-color: #8aa35f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem; /* Slightly reduced font size for card buttons */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  flex: 1; /* Allow buttons to grow and shrink */
+  max-width: 150px; /* Limit button width */
+}
+.course-card-direct button:hover {
+  background-color: #6b8d52;
+  transform: scale(1.05);
+}
+.course-card-direct div:last-of-type button { /* For the "View the Classroom" button */
+  margin-left: 0 !important; /* Remove original inline margin */
+  width: auto; /* Allow content to dictate width */
+  max-width: 200px;
+}
+
+
+/* Responsive Adjustments for coursepage.html */
+@media (max-width: 992px) {
+  .course-grid-container {
+    grid-template-columns: 1fr; /* Single column on medium screens */
+  }
+
+  .course-card-direct .header h1 {
+    font-size: 2rem; /* Adjust header size within cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .course-grid-container {
+    width: 95%;
+    gap: 20px;
+  }
+  .main-page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .course-card-direct .header h1 {
+    font-size: 1.8rem;
+  }
+  .course-card-direct .header .icon {
+    width: 12%;
+  }
+
+  .course-card-direct .content-wrapper-2 {
+    flex-direction: column; /* Stack slideshow/image above text on smaller screens */
+    align-items: center;
+  }
+  .course-card-direct .text-section {
+    font-size: 1rem;
+    padding: 0; /* Remove padding for tighter fit */
+    text-align: center;
+  }
+  .course-card-direct .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+  }
+  .course-card-direct button {
+    width: 80%; /* Make buttons wider on small screens */
+    max-width: 250px; /* Constrain button width */
+  }
+  .course-card-direct div:last-of-type button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Animations from original styles.css */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
