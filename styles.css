@@ -151,7 +151,6 @@ phone2{
 }
 /* GPT assisted with some of the innerflex and sizing, specifically making the boxes a little bigger to compensate for the radius */
 .ClassCard {
-  flex: 1 1 calc(50% - 1rem);
   display: flex;
   gap: 1rem;
   align-items: flex-start;
@@ -159,8 +158,7 @@ phone2{
   border-radius: 10%;
   box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
   padding: 1.5rem;        
-  min-height: 250px;     
-  flex: 1 1 calc(50% - 1rem); 
+  min-height: 50px;     
 }
 .header{
   display: flex;
@@ -187,18 +185,16 @@ phone2{
   justify-content: space-between 2px;
   gap: 10px;
   flex: 1;  
-  min-height: 100%;  
   margin-left: 10px;
-  max-width: 50%;
-  max-height:100%;
-
+  height: fit-content;
 }
 
 .CardText {
   margin-bottom: 1rem;
   flex-wrap: wrap;
   overflow-y: scroll;
-  max-height: 40%;
+  height: 40%;
+  max-height: 200px;
 }
 
 .ButtonDiv {
