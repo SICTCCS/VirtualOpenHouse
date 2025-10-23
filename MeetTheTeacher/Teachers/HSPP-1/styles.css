@@ -99,16 +99,15 @@ h4{
 teachInfo{
     display:flex;
     justify-content: center;
+    margin-bottom: 50px;
     
 }
 teachPic{
     width: 760px;
-    height: 444px;
+    height: 1140px;
     border-radius: 47px;
     
     background-size: cover;
-    background: #132E5E;
-    background-image: url("images/mapIcon.png");
     background-repeat: no-repeat;
     text-align:center;
     color:azure;
