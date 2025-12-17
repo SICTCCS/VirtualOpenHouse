@@ -103,12 +103,9 @@ teachInfo{
 }
 teachPic{
     width: 760px;
-    height: 888px;
+    height: 444px;
     border-radius: 47px;
-    
     background-size: cover;
-    background: #132E5E;
-    background-image: url("images/mapIcon.png");
     background-repeat: no-repeat;
     text-align:center;
     color:azure;
@@ -207,3 +204,11 @@ phone2{
     width: 32px;
     flex-wrap: nowrap;
 }
+
+.teacher-photo {
+    width: 100%;         /* or set to something like 80% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }

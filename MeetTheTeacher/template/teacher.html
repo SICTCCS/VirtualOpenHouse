@@ -15,37 +15,30 @@
     
     <div>
         <h1>Meet the Teacher</h1>
-        <teachInfo>
-            <teachPic>put picture here</teachPic>
+        <!-- This is the Teacher info section, this info should be accurate for each teacher, but i filled in with a bunch of exapmple data -->
+        <teachInfo> 
+            <teachPic><img src="" alt="Logo" class="teacher-photo"></teachPic>
             <lo>
                 <h2>About Me</h2></br>
-                <h3>Name: <h4>Andy Beadles</h4></h3></br>
-                <h3>Program: <h4>Engineering/Architecture Design </br>
-                    Technology, Digital Electronics, and Aerial</br>
-                    Systems Technology</h4></h3>
-                <h3>College Degree: <h4>A.S. from Ivy Tech State College</br> 
-                    and a B.S. from Indiana State University in</br>
-                    Architectural Design Technology and Career &</br>
-                    Technical Education</h4></h3>
-                <h3>Career Start Year: <h4>1994</h4></h3>
-                <h3>Certifications: <h4>FAA Part 107 Remote Operator license</h4></h3>
-                <h3>Why I Love Teaching CTE: <h4>The gadgets, the technology,</br>
-                    the software, the fact that students actually use</br>
-                    their CTE education, and the ability to see students</br>
-                    learn difficult subject matter that is not in a typical<br>
-                    high school classroom.</h4></h3>
-                <h3>Fun Fact: <h4>insert fact</h4></h3>
+                <h3>Name: <h4>Example/h4></h3></br>
+                <h3>Program: <h4>Example</h4></h3>  
+                <h3>College Degree: <h4> College College</h3></h4>
+                <h3>Career Start Year: <h4>Year</h4></h3>
+                <h3>Certifications: <h4>Certification</h4></h3>
+                <h3>Why I Love Teaching CTE: <h4>: I love teaching because teaching lets me teach</h4></h3>
+                <h3>Fun Fact: <h4>I like Cheese</h4></h3>
                 <h2>Contact Information</h2>
-                <h3>andy.beadles@evsck12.com</h3>
-                <h3>(123)456-7890</h3>
-                <h3>SICTC room number/title</h3>
+                <h3>Example.Exapmle@evsck12.com</h3>
+                <h3>Phone</h3>
+                <h3>Abb</h3>
             </lo>
         </teachInfo>
+        <!-- These here are our navigation buttons, they just navigate around, these might be a headache if you change the file names but I got them all working. These template buttons dont work though. -->
         <buttonGroup>
-            <input type="button" id="link" onclick="alert('Hello World!')"value="Meet the Teacher">
-            <input type="button" id="link" onclick="alert('Hello World!')" value="Learn More"></br>
-            <input type="button" id="link" onclick="alert('Hello World!')"value="View The Classroom">
-            <input type="button" id="link" onclick="alert('Hello World!')"value="Back to Courses">
+            <input type="button" id="link" onclick="window.location.href='../ClassAbbrv/index.html'"value="Meet the Teacher">
+            <input type="button" id="link" onclick="window.location.href='../../../ClassCard/Class'" value="Learn More"></br>
+            <input type="button" id="link" onclick="window.location.href='../../../ClassroomView/Class'"value="View The Classroom">
+            <input type="button" id="link" onclick="window.location.href='../../../index.html'"value="Back to Courses">
             
         </buttonGroup>
         <borderRight></borderRight>
@@ -59,5 +52,7 @@
             <li><phone2></phone2>812-435-8853</li>
         </ul>
     </footer>
+    <script src="script.js"></script>  
+    <!-- Zoomie Scripts go at the bottom, this is because if we put them at the top, then it would run before we load everything which would make it not work. -->
 </body>
 </html>

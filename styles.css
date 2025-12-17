@@ -114,8 +114,9 @@ phone2{
     min-height: 20%;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
 }
+/*This is the CSS for the images of Doom and Despair, and the best i could do after a day of headaches and improper alignment, once again change it if you want to but imo this is pretty low priority.*/
 .topbackground { /*GPT assisted with just the positioning of the bottom image because i was literally one more fail away from smashing the computer.*/
-  position: absolute;
+  position: absolute; 
   top: 0;
   left: 0;
   width: 50%;

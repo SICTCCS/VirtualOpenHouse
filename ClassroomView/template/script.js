@@ -26,3 +26,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+//These are the scripts for the image carousel, I didnt code this, the people before I did and I have no idea how it works. 
