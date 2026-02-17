@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body class="two-column">
         <div class="top"> <!--This is the stuff for the banner at the top of the screen, the only TODO here is probably making the logo link back, but that doesnt really matter here.-->
             <img class="Logo" src="assets/SictcLogo.png" height="100px">
             <button class="ApplyButton">Apply Today!</button> <!--Sometime in the future this button SHOULD do something, but this is a question for Bander, as we have no FIGMA layout for where this buttin should lead-->
+            <button id="layoutToggle" class="ToggleButton" aria-pressed="false">Presentation View</button>
         </div>
         <!-- This is the double image of Doom and Despair. These are the triangles in the background of every page, you can try and fix these, but they give me a headache. This is low priority, id focus on other things.  -->
         <img class="topbackground" src="assets/Untitled-1 1.png">
@@ -444,6 +445,36 @@
         </div>
         </div>
     </div>
+    <script>
+        (function(){
+            const btn = document.getElementById('layoutToggle');
+            const root = document.body;
+            function updateButton(){
+                if(root.classList.contains('one-column')){
+                    btn.textContent = 'Two Column View';
+                    btn.setAttribute('aria-pressed','true');
+                } else {
+                    btn.textContent = 'Presentation View';
+                    btn.setAttribute('aria-pressed','false');
+                }
+            }
+            btn.addEventListener('click', function(){
+                if(root.classList.contains('one-column')){
+                    root.classList.remove('one-column');
+                    root.classList.add('two-column');
+                } else {
+                    root.classList.remove('two-column');
+                    root.classList.add('one-column');
+                }
+                updateButton();
+            });
+            // ensure initial state
+            if(!root.classList.contains('one-column') && !root.classList.contains('two-column')){
+                root.classList.add('two-column');
+            }
+            updateButton();
+        })();
+    </script>
     </body>
     <footer>
         <logo2></logo2>
