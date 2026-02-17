@@ -253,6 +253,7 @@ phone2{
 .Image{
   display: flex;
   flex-direction: row;
+  max-height: 60%;
   min-height: 50%;
 }
 .SlideButtons{
