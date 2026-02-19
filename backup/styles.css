@@ -223,6 +223,7 @@ phone2{
   margin-bottom: 1rem;
 <<<<<<< HEAD
   flex-wrap: wrap;
+  overflow-y: scroll;
   height: 40%;
   max-height: 200px;
 =======
