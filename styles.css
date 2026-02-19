@@ -221,12 +221,9 @@ phone2{
 
 .CardText {
   margin-bottom: 1rem;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-word;
-  word-break: break-word;
-  white-space: normal;
-  max-width: 100%;
+  flex-wrap: wrap;
+  height: 40%;
+  max-height: 200px;
 }
 
 .ButtonDiv {
@@ -253,6 +250,7 @@ phone2{
 .Image{
   display: flex;
   flex-direction: row;
+  max-height: 60%;
   min-height: 50%;
 }
 .SlideButtons{
