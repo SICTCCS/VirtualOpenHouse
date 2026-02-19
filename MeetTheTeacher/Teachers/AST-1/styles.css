@@ -67,7 +67,7 @@ lo {
 h1{
     margin-top: 0px;
     margin-bottom:60px;
-    padding-top: 2%;
+    padding-top: 10%;
     font-family: 'Tilt Warp';
     font-weight: 400;
     font-size: 128px;
@@ -105,10 +105,7 @@ teachPic{
     width: 760px;
     height: 444px;
     border-radius: 47px;
-    
     background-size: cover;
-    background: #132E5E;
-    background-image: url("images/mapIcon.png");
     background-repeat: no-repeat;
     text-align:center;
     color:azure;
