@@ -21,6 +21,7 @@ def fix_html_titles(root_dir='.', dry_run=True):
                         soup = BeautifulSoup(f, 'html.parser')
                     
                     title_tag = soup.title
+                    print(title_tag)
                     
                     # Case 1: Title exists but is wrong
                     if title_tag:
