@@ -67,7 +67,7 @@ lo {
 h1{
     margin-top: 0px;
     margin-bottom:60px;
-    padding-top: 2%;
+    padding-top: 10%;
     font-family: 'Tilt Warp';
     font-weight: 400;
     font-size: 128px;
@@ -79,7 +79,7 @@ h1{
 }
 h2{
     color:#707F43;
-    font-size: 40px;
+    font-size: 80px;
     margin-bottom: 0px;
 }
 h3{
@@ -91,28 +91,31 @@ h3{
 h4{
     flex-wrap: nowrap;
     color:#132E5E;
-    font-size: 40px;
+    font-size: 25px;
     margin:0px;
     font-weight:normal;
-
 }
+
+
+
+
 teachInfo{
     display:flex;
     justify-content: center;
     
 }
 teachPic{
-    width: 760px;
-    height: 666px;
+    width: 500px;
+    height: 88px;
     border-radius: 47px;
-    
     background-size: cover;
-    background: #132E5E;
-    background-image: url("images/mapIcon.png");
+    float: right;
     background-repeat: no-repeat;
     text-align:center;
     color:azure;
+    margin-left: auto;
 }
+
 buttonGroup{
     width: 100%;
     height: fit-content;
@@ -209,9 +212,34 @@ phone2{
 }
 
 .teacher-photo {
-    width: 100%;         /* or set to something like 80% */
+    width: 78%;         /* or set to something like 80% */
     height: auto;
     display: block;
     margin: 0 auto;
+    float: right;
+    margin-bottom: 30px;
+    margin-right: 5%;
     border-radius: 10px;
   }
+
+.underImage {
+    width: 75%;         /* or set to something like 80% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    margin-right: 5%;
+    /* border-radius: 10px; */
+}
+
+figcaption{
+    display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #707F43;
+  /* border-radius: -10%; */
+  padding: 1.0rem;        
+  min-height: 50px;
+  border-style: solid;
+  border-color: #132E5E;
+}
