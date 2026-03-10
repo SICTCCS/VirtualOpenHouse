@@ -129,6 +129,14 @@ input[id="link" i] {
     background-color: #707F43;
     color: #FFFFFF;
 }
+button{
+    font-size: 2em;
+    width:731.2133178710938px;
+    border-radius: 1000px 1000px 1000px 1000px;
+    font-weight: bold;
+    background-color: #707F43;
+    color: #FFFFFF;
+}
 borderRight{
     background-image: url("images/borderLeft.png");
     background-repeat: no-repeat;
