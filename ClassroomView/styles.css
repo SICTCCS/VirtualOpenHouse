@@ -135,6 +135,38 @@ input[id="link" i] {
     color: #FFFFFF;
     font-family:"REM";
 }
+button{
+    background-color: #8aa35f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.buttons {
+  background-color: #132E5E;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  margin-bottom: 200px;
+}
+.ButtonGroup{
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: row;
+  gap: 20px;
+}
+.buttons button {
+  width:200px ;
+  margin: 5px;
+}
+button:hover {
+  background-color: #6b8d52;
+  transform: scale(1.05);
+}
 borderRight{
     background-image: url("images/borderLeft.png");
     background-repeat: no-repeat;
