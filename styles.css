@@ -114,6 +114,35 @@ phone2{
     min-height: 20%;
     box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
 }
+
+/* Center the Apply button in the top banner while keeping layoutToggle at the right */
+.top{
+  position: relative;
+  align-items: center;
+}
+.ApplyButton{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+/* Layout toggle button positioned to the right */
+.ToggleButton{
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+/* Make toggle slightly smaller than Apply button (Apply: 250x80) */
+.ToggleButton{
+  width: 200px;
+  height: 64px;
+  font-size: 14px;
+  padding: 8px 16px;
+  font-family: "REM";
+}
 /*This is the CSS for the images of Doom and Despair, and the best i could do after a day of headaches and improper alignment, once again change it if you want to but imo this is pretty low priority.*/
 .topbackground { /*GPT assisted with just the positioning of the bottom image because i was literally one more fail away from smashing the computer.*/
   position: absolute; 
@@ -158,8 +187,9 @@ phone2{
   background: #FFFDE9;
   border-radius: 10%;
   box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
-  padding: 1.5rem;        
-  min-height: 50px;     
+  padding: 1.5rem;
+  max-height: 450px;        
+  min-height: 30px;     
 }
 .header{
   display: flex;
@@ -171,12 +201,12 @@ phone2{
   max-width: 100%;
 }
 .CardImage {
-  width: 200px;                
+  width: 200px;
   height: auto;
   object-fit: cover;
-  flex-shrink: 0;             
+  flex-shrink: 0;
   border-radius: 4px;
-  min-width: 100%;
+  min-width: 0; /* allow flex container to control sizing */
 }
 
 
@@ -193,7 +223,6 @@ phone2{
 .CardText {
   margin-bottom: 1rem;
   flex-wrap: wrap;
-  overflow-y: scroll;
   height: 40%;
   max-height: 200px;
 }
@@ -214,13 +243,15 @@ phone2{
 .ImageSection{
   display: flex;
   flex-direction: column;
-  max-width: 50%;
-  min-width: 50%;
+  flex: 0 0 200px; /* fix image column width to match image */
+  max-width: 45%;
+  min-width: 160px;
   max-height: 100%;
 }
 .Image{
   display: flex;
   flex-direction: row;
+  max-height: 60%;
   min-height: 50%;
 }
 .SlideButtons{
@@ -236,4 +267,20 @@ phone2{
 /* Global Vars */
 *{
     box-sizing: border-box;
+}
+
+/* Layout toggle: two-column (default) and one-column (presentation) */
+.two-column .ClassCards {
+  justify-content: flex-start;
+}
+.two-column .ClassCard {
+  flex: 1 1 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+}
+.one-column .ClassCards {
+  flex-direction: column;
+}
+.one-column .ClassCard {
+  flex: 1 1 100%;
+  max-width: 100%;
 }
