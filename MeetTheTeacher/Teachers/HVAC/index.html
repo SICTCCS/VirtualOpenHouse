@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>teacher</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-=======
     <title>HVAC Technology</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico"> </head>
->>>>>>> main
 <body>
     <header>
         <logo><img src="images/SICTCLogo.png" alt="Logo" class="icon"></logo>
@@ -50,13 +44,17 @@
                 </figcaption>
             </figure>
         </teachInfo>
-        <buttonGroup>
-            <input type="button" id="link" onclick="window.location.href='../HVAC/index.html'"value="Meet the Teacher">
-            <input type="button" id="link" onclick="window.location.href='../../../ClassCard/HVAC-R&EnergySystemsCard'" value="Learn More"></br>
-            <input type="button" id="link" onclick="window.location.href='../../../ClassroomView/HVAC-R&EnergySystemsCard'"value="View The Classroom">
-            <input type="button" id="link" onclick="window.location.href='../../../index.html'"value="Back to Courses">
+        <div class="buttons">
+        <div class="ButtonGroup">
+            <a href="../HVAC/index.html"><button>Meet the Teacher</button></a>
+            <a href="../../../ClassCard//index.html" id="lm"><button>Learn More</button></a>
+            </div>
+            <div class="ButtonGroup">
+            <a href="../../../ClassroomView/ACT/index.html" id="vc"><button>View The Classroom</button></a>
+            <a href="../../../index.html"><button>Back to Courses</button></a>
+            </div>
             
-        </buttonGroup>
+        </div>
         <borderRight></borderRight>
     </div>
     
@@ -69,5 +67,6 @@
         </ul>
     </footer>
     <script src="script.js"></script>
+    <script src="../navScript.js"></script>
 </body>
 </html>

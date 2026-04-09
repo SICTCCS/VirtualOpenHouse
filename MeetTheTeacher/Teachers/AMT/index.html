@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>teacher</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-=======
     <title>Advanced Manufacturing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico"> </head>
->>>>>>> main
 <body>
     <header>
         <logo><img src="images/SICTCLogo.png" alt="Logo" class="icon"></logo>
@@ -42,13 +36,16 @@
                 <figcaption  class="underImage" style="border-width: 0px 3px 3px 3px;"><h3 style="color: #FFFFFF;">Fun Fact: <h4 style="text-indent: 2em; color: #FFFFFF;">I have been juried onto the Early American LifeMagazine's list of America's Best Traditional Craftsmen for the past
 four years.</h4></h3></br></figcaption></figure>
         </teachInfo>
-        <buttonGroup>
-            <input type="button" id="link" onclick="window.location.href='../WT/index.html'"value="Meet the Teacher">
-            <input type="button" id="link" onclick="window.location.href='../../../ClassCard/WT/index.html'" value="Learn More"></br>
-            <input type="button" id="link" onclick="window.location.href='../../../ClassroomView/WT/index.html'"value="View The Classroom">
-            <input type="button" id="link" onclick="window.location.href='../../../index.html'"value="Back to Courses">
-            
-        </buttonGroup>
+        <div class="buttons">
+        <div class="ButtonGroup">
+        <a href="../AMT/index.html"><button>Meet The Teacher</button></a>
+        <a href="../../../ClassCard/AMT/index.html" id="lm"><button>Learn More</button></a>
+        </div>
+        <div class="ButtonGroup">
+        <a href="../../../ClassroomView/AMT/index.html" id="vc"><button>View the Classroom</button></a>
+        <a href="../../../index.html"><button>Back to Courses</button></a>
+        </div>
+      </div>
         <borderRight></borderRight>
     </div>
     
@@ -60,5 +57,6 @@ four years.</h4></h3></br></figcaption></figure>
             <li><phone2></phone2>812-435-8853</li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

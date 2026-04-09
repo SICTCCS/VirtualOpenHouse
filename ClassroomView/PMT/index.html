@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -20,16 +20,20 @@
             height="720"
             style="border:none;">
         </iframe>
-        <buttonGroup>
-            <input type="button" id="link" onclick="window.location.href='../../MeetTheTeacher/Teachers/PMMT'"value="Meet the Teacher">
-            <input type="button" id="link" onclick="window.location.href='../../ClassCard/PrecisionMachineMetalworkingTechnologyCard'" value="Learn More"></br>
-            <input type="button" id="link" onclick="window.location.href='index.html'"value="View The Classroom">
-            <input type="button" id="link" onclick="window.location.href='../../index.html'"value="Back to Courses">
+        <div class="buttons">
+        <div class="ButtonGroup">
+            <a href="../../MeetTheTeacher/Teachers/WT/index.html" id="mtt"><button>Meet the Teacher</button></a>
+            <a href="../../ClassCard/WT/index.html" id="lm"><button>Learn More</button></a>
+            </div>
+            <div class="ButtonGroup">
+            <a href="index.html"><button>View The Classroom</button></a>
+            <a href="../../index.html"><button>Back to Courses</button></a>
+            </div>
             
-        </buttonGroup>
+        </div>
         <borderRight></borderRight>
     </div>
-    
+
     <footer>
         <logo2></logo2>
         <ul>
@@ -38,5 +42,6 @@
             <li><phone2></phone2>812-435-8853</li>
         </ul>
     </footer>
+    <script src="../navScript.js"></script>
 </body>
 </html>

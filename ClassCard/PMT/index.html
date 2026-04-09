@@ -20,9 +20,9 @@
 </div>
 <body>
 <div class="container">
-  
+
   <img class="topbackground" src="assets/Untitled-1 1.png">
-  
+
     <header class="header">
       <h1>
         Precision Machine Metalworking Technology
@@ -31,7 +31,6 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper-2">
-
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
@@ -64,7 +63,7 @@
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-      </div>  
+      </div> 
     
       <div class="content-wrapper-2">
         <div class="text-section">
@@ -81,11 +80,11 @@
         <img class="bottombackground" src="assets/Untitled-1 2.png">
       <div class="buttons">
         <div class="ButtonGroup">
-        <a href="../../MeetTheTeacher/Teachers/PMT/index.html"><button>Meet The Teacher</button></a>
-        <a href="../../"><button>Learn More</button></a>
+        <a href="../../MeetTheTeacher/Teachers/PMT/index.html" id="mtt"><button>Meet The Teacher</button></a>
+        <a href="../../" onclick="location.reload();return false;"><button>Learn More</button></a>
         </div>
         <div class="ButtonGroup">
-        <a href="../../ClassroomView/PrecisionMachineMetalworkingTechnologyCard/index.html"><button>View the Classroom</button></a>
+        <a href="../../ClassroomView/PMT/index.html" id="vc"><button>View the Classroom</button></a>
         <a href="../../index.html"><button>Back to Courses</button></a>
         </div>
       </div>
@@ -94,9 +93,10 @@
     </div>
   </div>
 </div>
-<div id="DoorModal" class="DoorModal" aria-modal="true" style="padding: 30px 11px;" >
+<!-- Here we are later in the code, this is where the door and faq are defined and made, these are typically invisible, however hitting show door or show faq make them visible. -->
+<div id="DoorModal" class="DoorModal" aria-modal="true" style="padding: 30px 11px;" > <!--This defines the sizing and the class for the door-->
   <div class="DoorPopupOverflow">
-    <button id="closeDoor" class="icon-close active" type="button" aria-label="Close window" onclick="closeOutDoor()">
+    <button id="closeDoor" class="icon-close active" type="button" aria-label="Close window" onclick="closeOutDoor()"> <!--This makes the close button to let people close out the popup-->
       <svg fill="currentColor" perserveAspectRatio="xMidYMid meet" height="1rem" width="1rem" viewBox="0 0 16 16" style="vertical-align: middle;"></svg>
     </button>
     <div role="document" id="html-modal-Door" class="door-content">
@@ -106,9 +106,9 @@
     </div>
   </div>
 </div>
-<div id="FAQModal" class="FAQModal" aria-modal="true" style="padding: 30px 11px;" >
+<div id="FAQModal" class="FAQModal" aria-modal="true" style="padding: 30px 11px;" > <!--This defines the sizing and the class for the door-->
   <div class="FAQPopupOverflow">
-    <button id="closeFAQ" class="icon-close active" type="button" aria-label="Close window" onclick="closeOutFAQ()">
+    <button id="closeFAQ" class="icon-close active" type="button" aria-label="Close window" onclick="closeOutFAQ()"> <!--This makes the close button to let people close out the popup-->
       <svg fill="currentColor" perserveAspectRatio="xMidYMid meet" height="1rem" width="1rem" viewBox="0 0 16 16" style="vertical-align: middle;"></svg>
     </button>
     <div role="document" id="html-modal-FAQ" class="FAQ-content">
@@ -118,7 +118,8 @@
     </div>
   </div>
 </div>
-<script src="script.js"></script>   
+<script src="script.js"></script>
+<script src="../navScript.js"></script>
 </body>
 <footer>
   <logo2></logo2>

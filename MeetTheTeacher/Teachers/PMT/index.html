@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD:MeetTheTeacher/Teachers/PMMT/index.html
-    <title>teacher</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-=======
     <title>Precision Machine Technology</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico"> </head>
->>>>>>> main:MeetTheTeacher/Teachers/PMT/index.html
 <body>
     <header>
         <logo><img src="images/SICTCLogo.png" alt="Logo" class="icon"></logo>
         <input type="button" id="Apply" value="Apply Today!">
     </header>
     <borderLeft></borderLeft>
-    
+
     <div>
         <h1>Meet the Teacher</h1>
         <teachInfo>
@@ -53,16 +47,20 @@
                 </figcaption>
             </figure>
         </teachInfo>
-        <buttonGroup>
-            <input type="button" id="link" onclick="window.location.href='../PMMT/index.html'"value="Meet the Teacher">
-            <input type="button" id="link" onclick="window.location.href='../../../ClassCard/PMMT/index.html'" value="Learn More"></br>
-            <input type="button" id="link" onclick="window.location.href='../../../ClassroomView/PMMT/index.html'"value="View The Classroom">
-            <input type="button" id="link" onclick="window.location.href='../../../index.html'"value="Back to Courses">
+        <div class="buttons">
+        <div class="ButtonGroup">
+            <a href="../PMT/index.html"><button>Meet the Teacher</button></a>
+            <a href="../../../ClassCard//index.html" id="lm"><button>Learn More</button></a>
+            </div>
+            <div class="ButtonGroup">
+            <a href="../../../ClassroomView/ACT/index.html" id="vc"><button>View The Classroom</button></a>
+            <a href="../../../index.html"><button>Back to Courses</button></a>
+            </div>
             
-        </buttonGroup>
+        </div>
         <borderRight></borderRight>
     </div>
-    
+
     <footer>
         <logo2></logo2>
         <ul>
@@ -72,5 +70,6 @@
         </ul>
     </footer>
     <script src="script.js"></script>
+    <script src="../navScript.js"></script>
 </body>
 </html>
