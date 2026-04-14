@@ -212,7 +212,7 @@ phone2{
 }
 
 .teacher-photo {
-    width: 78%;         /* or set to something like 80% */
+    width: 78%;         
     height: auto;
     display: block;
     margin: 0 auto;
@@ -223,7 +223,7 @@ phone2{
   }
 
 .underImage {
-    width: 75%;         /* or set to something like 80% */
+    width: 75%;        
     height: auto;
     display: block;
     margin: 0 auto;
