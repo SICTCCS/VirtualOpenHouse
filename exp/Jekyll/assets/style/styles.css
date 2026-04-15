@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Tags */
+html{
+  background-color: #FFFDE9;
+}
+button{
+    background-color:#99AA65 ;
+    border:0px;
+    border-radius: 72px;
+}
+button:hover{
+    background-color: #707F43;
+}
+header{
+    color:#132E5E;
+    font-family: "Tilt Warp";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Tilt Warp";
+}
+body{
+  z-index: 20;
+  position: relative;
+}
+footer{
+    background-color: #FFFDE9;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-shadow: 0 0 30px #000000;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-family: inter;
+}
+logo2{
+    position: relative;
+    background-image: url("/assets/image/SICTCLogo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height:100px;
+    width: 803px;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+li {
+    margin-right: 30px;
+    width: 100%;
+    font-size:32px;
+    color:#132E5E;
+    list-style-type: none;
+}
+a{
+    color:#132E5E;
+    text-align: top;
+    text-underline-offset: 900000000px;
+
+}
+map{
+    background-image: url("/assets/image/mapIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    height:32px;
+    width: 32px;
+    flex-wrap: nowrap;
+}
+phone{
+    background-image: url("/assets/image/phoneIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    height:32px;
+    width: 32px;
+    flex-wrap: nowrap;
+}
+phone2{
+    background-image: url("/assets/image/phoneIcon2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    height:32px;
+    width: 32px;
+    flex-wrap: nowrap;
+}
+/* Classes */
+.slide{
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+.top{
+    background-color: #FFFDE9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+    width: 100%;
+    min-height: 20%;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+
+/* Center the Apply button in the top banner while keeping layoutToggle at the right */
+.top{
+  position: relative;
+  align-items: center;
+}
+.ApplyButton{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+/* Layout toggle button positioned to the right */
+.ToggleButton{
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+/* Make toggle slightly smaller than Apply button (Apply: 250x80) */
+.ToggleButton{
+  width: 200px;
+  height: 64px;
+  font-size: 14px;
+  padding: 8px 16px;
+  font-family: "REM";
+}
+/*This is the CSS for the images of Doom and Despair, and the best i could do after a day of headaches and improper alignment, once again change it if you want to but imo this is pretty low priority.*/
+.topbackground { /*GPT assisted with just the positioning of the bottom image because i was literally one more fail away from smashing the computer.*/
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 25%;
+  z-index: -1; 
+}
+
+.bottombackground {
+  position: absolute;
+  bottom: 0;
+  left: 50%;  
+  width: 50%;
+  z-index: -1; 
+}
+
+.wrapper {
+  position: relative;
+  z-index: 0; /* ensures wrapper content is above backgrounds */
+  max-width: 95%;
+  margin: 0 auto;
+}
+.ApplyButton{
+    width: 250px;
+    height: 80px;
+    justify-content: center;
+    font-family: "REM";
+}
+.ClassCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+  font-family: "REM";
+}
+/* GPT assisted with some of the innerflex and sizing, specifically making the boxes a little bigger to compensate for the radius */
+.ClassCard {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #FFFDE9;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  padding: 1.5rem;
+  max-height: 450px;        
+  min-height: 30px;     
+}
+.header{
+  display: flex;
+  flex-direction: column;
+}
+.Content{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.CardImage {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 4px;
+  min-width: 0; /* allow flex container to control sizing */
+}
+
+
+.CardContent {
+  display: flex;
+  flex-direction: column;      
+  justify-content: space-between 2px;
+  gap: 10px;
+  flex: 1;  
+  margin-left: 10px;
+  height: fit-content;
+}
+
+.CardText {
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  height: 40%;
+  max-height: 200px;
+}
+
+.ButtonDiv {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.ButtonDiv button{
+    width: 155px;
+    height: 36.96px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ImageSection{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 200px; /* fix image column width to match image */
+  max-width: 45%;
+  min-width: 160px;
+  max-height: 100%;
+}
+.Image{
+  display: flex;
+  flex-direction: row;
+  max-height: 60%;
+  min-height: 50%;
+}
+.SlideButtons{
+  min-height: 20%;
+  margin: auto;
+  margin-top: 5%;
+}
+.footercontent{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+/* Global Vars */
+*{
+    box-sizing: border-box;
+}
+
+/* Layout toggle: two-column (default) and one-column (presentation) */
+.two-column .ClassCards {
+  justify-content: flex-start;
+}
+.two-column .ClassCard {
+  flex: 1 1 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+}
+.one-column .ClassCards {
+  flex-direction: column;
+}
+.one-column .ClassCard {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
