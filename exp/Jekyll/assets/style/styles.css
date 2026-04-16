@@ -1,286 +1,429 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-/* Tags */
-html{
-  background-color: #FFFDE9;
-}
-button{
-    background-color:#99AA65 ;
-    border:0px;
-    border-radius: 72px;
-}
-button:hover{
-    background-color: #707F43;
-}
-header{
-    color:#132E5E;
-    font-family: "Tilt Warp";
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: "Tilt Warp";
-}
 body{
-  z-index: 20;
-  position: relative;
+	margin:0;
+	background-color: #FFFDE9;
+	box-sizing: border-box;
 }
-footer{
-    background-color: #FFFDE9;
-    color: #fff;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    box-shadow: 0 0 30px #000000;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 50px;
-    font-family: inter;
+header {
+	background-color: #FFFDE9;
+	color: #fff;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	box-shadow: 0 0 30px #000000;
+	width: 100%;
+	justify-content: space-between;
+	margin-right:0px;
+	font-family: "Tilt Warp";
 }
-logo2{
-    position: relative;
-    background-image: url("/assets/image/SICTCLogo2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    height:100px;
-    width: 803px;
-    margin-top: 20px;
-    margin-left: 30px;
-    
+input{
+	margin: .5em;
+	margin-right: 1%;
+	padding: 5px;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	border-style:solid;
+	border-color:#535353;
 }
-li {
-    margin-right: 30px;
-    width: 100%;
-    font-size:32px;
-    color:#132E5E;
-    list-style-type: none;
+
+input[type="button"], button {
+  border-radius: 10000px;
+	background-color: #707F43;
+	color: #FFFFFF;
+	transition: background-color 0.2s, transform 0.1s;
 }
-a{
-    color:#132E5E;
-    text-align: top;
-    text-underline-offset: 900000000px;
+
+logo{
+	position: relative;
+	justify-content:left;
+	left: 30px;
+  padding-bottom: 5px;
+  img {
+    height: 7em;
+  }
+}
+@font-face {
+	font-family: 'Tilt Warp';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/tiltwarp/v12/AlZc_zVDs5XpmO7yn3w7flUoytXJp3z29uEwmEMLEJljLXvT8UJSZQB5C1b8GA.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 
 }
+div{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+lo {
+	display:grid;
+	margin-left: 20px;
+	flex-wrap: nowrap;
+}
+h1{
+	margin-top: 0px;
+	margin-bottom:60px;
+	padding-top: 2%;
+	font-family: 'Tilt Warp';
+	font-weight: 400;
+	font-size: 128px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+	vertical-align: middle;
+	color: #132E5E;
+
+}
+h2{
+	color:#707F43;
+	font-size: 40px;
+	margin-bottom: 0px;
+}
+h3{
+	flex-wrap: nowrap;
+	color:#132E5E;
+	font-size: 40px;
+	margin:0px;
+}
+h4{
+	flex-wrap: nowrap;
+	color:#132E5E;
+	font-size: 40px;
+	margin:0px;
+	font-weight:normal;
+
+}
+/* teachInfo{
+	display:flex;
+	justify-content: center;
+	
+}
+teachPic{
+	width: 760px;
+	height: 888px;
+	border-radius: 47px;
+	
+	background-size: cover;
+	background: #132E5E;
+	background-image: url("/assets/image/icon/map.png");
+	background-repeat: no-repeat;
+	text-align:center;
+	color:azure;
+}
+buttonGroup{
+	width: 100%;
+	height: fit-content;
+	background: #132E5E;
+	margin-top:200px;
+	margin-bottom:-10%;
+	text-align:center;
+} */
+input[id="link" i] {
+	font-size: 2em;
+	width: 731.2133178710938px;
+	border-radius: 1000px;
+	font-weight: bold;
+	background-color: #707F43;
+	color: #FFFFFF;
+	font-family:"REM";
+}
+button{
+	padding: 5px 5px;
+	border: none;
+	font-size: 1em;
+	/* font-weight: bold; */
+	cursor: pointer;
+}
+.ButtonGroup{
+	margin-right: auto;
+	margin-left: auto;
+	flex-direction: row;
+	gap: 2px;
+}
+button:hover, #Apply:hover {
+	background-color: #6b8d52;
+	transform: scale(1.05);
+}
+
+/* Class page */
+.buttons {
+	background-color: #132E5E;
+	gap: 10px;
+	margin: 20px 0;
+	padding: 30px;
+	margin-bottom: 200px;
+}
+.buttons button {
+	width:200px ;
+	margin: 5px;
+}
+/* Footer */
+footer{
+	background-color: #FFFDE9;
+	color: #fff;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	box-shadow: 0 0 30px #000000;
+	width: 100%;
+	justify-content: space-between;
+	font-family: "Inter";
+}
+logo2{
+	position: relative;
+	background-image: url("/assets/image/SICTCLogo2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height:100px;
+	width: 803px;
+	margin-top: 20px;
+	margin-left: 30px;
+	
+}
+/*  */
+li {
+	margin-right: 30px;
+	width: 100%;
+	font-size:32px;
+	color:#132E5E;
+	list-style-type: none;
+}
+a{
+	color:inherit;
+	text-align: top;
+	text-underline-offset: 900000000px;
+
+}
+/* Icons */
 map{
-    background-image: url("/assets/image/mapIcon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:inline-block;
-    height:32px;
-    width: 32px;
-    flex-wrap: nowrap;
+	background-image: url("/assets/image/icon/map.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:inline-block;
+	height:32px;
+	width: 32px;
+	flex-wrap: nowrap;
 }
 phone{
-    background-image: url("/assets/image/phoneIcon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:inline-block;
-    height:32px;
-    width: 32px;
-    flex-wrap: nowrap;
+	background-image: url("/assets/image/icon/phone.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:inline-block;
+	height:32px;
+	width: 32px;
+	flex-wrap: nowrap;
 }
-phone2{
-    background-image: url("/assets/image/phoneIcon2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:inline-block;
-    height:32px;
-    width: 32px;
-    flex-wrap: nowrap;
+fax{
+	background-image: url("/assets/image/icon/fax.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:inline-block;
+	height:32px;
+	width: 32px;
+	flex-wrap: nowrap;
+}
+
+iframe{
+	border-radius: 25px;
+	box-shadow: 0 0 30px #000000;
+	margin-bottom: 0px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 /* Classes */
 .slide{
-  height: 20px;
-  width: 20px;
-  border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
 }
 .top{
-    background-color: #FFFDE9;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 20%;
-    width: 100%;
-    min-height: 20%;
-    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+	background-color: #FFFDE9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 20%;
+	width: 100%;
+	min-height: 20%;
+	box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
 }
 
 /* Center the Apply button in the top banner while keeping layoutToggle at the right */
 .top{
-  position: relative;
-  align-items: center;
+	position: relative;
+	align-items: center;
 }
-.ApplyButton{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
+#Apply{
+	z-index: 100;
 }
 /* Layout toggle button positioned to the right */
 .ToggleButton{
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 100;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 100;
 }
 /* Make toggle slightly smaller than Apply button (Apply: 250x80) */
 .ToggleButton{
-  width: 200px;
-  height: 64px;
-  font-size: 14px;
-  padding: 8px 16px;
-  font-family: "REM";
-}
-/*This is the CSS for the images of Doom and Despair, and the best i could do after a day of headaches and improper alignment, once again change it if you want to but imo this is pretty low priority.*/
-.topbackground { /*GPT assisted with just the positioning of the bottom image because i was literally one more fail away from smashing the computer.*/
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 25%;
-  z-index: -1; 
+	width: 200px;
+	height: 64px;
+	font-size: 14px;
+	padding: 8px 16px;
+	font-family: "REM";
 }
 
-.bottombackground {
-  position: absolute;
-  bottom: 0;
-  left: 50%;  
-  width: 50%;
-  z-index: -1; 
+/* Background corners */
+borderLeft{
+	background-image: url("/assets/image/backCorner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	display: block;
+	height:500px;
+	width: 803px;
+	margin-right: 50%;
+	margin-top:0;
+	z-index: -90000;
+}
+borderRight{
+	background-image: url("/assets/image/backCorner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:relative;
+	display: block;
+	height:500px;
+	width: 803px;
+	rotate:180deg;
+	right:0px;
+	bottom:0px;
+	margin-left:calc(100% - 803px);
+	z-index: -90000;
 }
 
 .wrapper {
-  position: relative;
-  z-index: 0; /* ensures wrapper content is above backgrounds */
-  max-width: 95%;
-  margin: 0 auto;
+	position: relative;
+	z-index: 0; /* ensures wrapper content is above backgrounds */
+	max-width: 95%;
+	margin: 0 auto;
 }
 .ApplyButton{
-    width: 250px;
-    height: 80px;
-    justify-content: center;
-    font-family: "REM";
+	width: 250px;
+	height: 80px;
+	justify-content: center;
+	font-family: "REM";
 }
+
+/* Course Cards */
 .ClassCards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; 
-  font-family: "REM";
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem; 
+	font-family: "REM";
 }
 /* GPT assisted with some of the innerflex and sizing, specifically making the boxes a little bigger to compensate for the radius */
 .ClassCard {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  background: #FFFDE9;
-  border-radius: 10%;
-  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
-  padding: 1.5rem;
-  max-height: 450px;        
-  min-height: 30px;     
-}
-.header{
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+	background: #FFFDE9;
+	border-radius: 10%;
+	box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+	padding: 1.5rem;
+	max-height: 450px;		
+	min-height: 30px;	 
 }
 .Content{
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
 }
 .CardImage {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
-  flex-shrink: 0;
-  border-radius: 4px;
-  min-width: 0; /* allow flex container to control sizing */
+	width: 200px;
+	height: auto;
+	object-fit: cover;
+	flex-shrink: 0;
+	border-radius: 4px;
+	min-width: 0; /* allow flex container to control sizing */
 }
 
 
 .CardContent {
-  display: flex;
-  flex-direction: column;      
-  justify-content: space-between 2px;
-  gap: 10px;
-  flex: 1;  
-  margin-left: 10px;
-  height: fit-content;
+	display: flex;
+	flex-direction: column;		
+	justify-content: space-between 2px;
+	gap: 10px;
+	flex: 1;	
+	margin-left: 10px;
+	height: fit-content;
 }
 
 .CardText {
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-  height: 40%;
-  max-height: 200px;
+	margin-bottom: 1rem;
+	flex-wrap: wrap;
+	height: 40%;
+	max-height: 200px;
 }
 
 .ButtonDiv {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+	display: flex;
+	gap: 0.2rem;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
 .ButtonDiv button{
-    width: 155px;
-    height: 36.96px;
-    margin-left: 20px;
-    margin-right: 20px;
+	width: 155px;
+	height: 36.96px;
 }
 .ImageSection{
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 200px; /* fix image column width to match image */
-  max-width: 45%;
-  min-width: 160px;
-  max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 200px; /* fix image column width to match image */
+	max-width: 45%;
+	min-width: 160px;
+	max-height: 100%;
 }
 .Image{
-  display: flex;
-  flex-direction: row;
-  max-height: 60%;
-  min-height: 50%;
+	display: flex;
+	flex-direction: row;
+	max-height: 60%;
+	min-height: 50%;
 }
 .SlideButtons{
-  min-height: 20%;
-  margin: auto;
-  margin-top: 5%;
+	min-height: 20%;
+	margin: auto;
+	margin-top: 5%;
 }
 .footercontent{
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
 }
 /* Global Vars */
 *{
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Layout toggle: two-column (default) and one-column (presentation) */
 .two-column .ClassCards {
-  justify-content: flex-start;
+  flex-direction: row;
+	justify-content: flex-start;
 }
 .two-column .ClassCard {
-  flex: 1 1 calc(50% - 1rem);
-  max-width: calc(50% - 1rem);
+	flex: 1 1 calc(50% - 1rem);
+	max-width: calc(50% - 1rem);
 }
 .one-column .ClassCards {
-  flex-direction: column;
+	flex-direction: column;
 }
 .one-column .ClassCard {
-  flex: 1 1 100%;
-  max-width: 100%;
+	flex: 1 1 100%;
+	max-width: 100%;
 }

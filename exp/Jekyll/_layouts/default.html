@@ -12,13 +12,14 @@
 </head>
 <body>
     {% include header.html %}
-    {% include nav.html %}
+    <borderLeft></borderLeft>
 
     <main>
         <h1>{{ page.title }}</h1>
         {{ content }}
     </main>
 
+    <borderRight></borderRight>
     {% include footer.html %}
 
     <script src="/assets/scripts/navScript.js"></script>
