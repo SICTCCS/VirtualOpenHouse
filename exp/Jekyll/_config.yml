@@ -14,17 +14,14 @@ collections:
     output: true
 defaults:
   - scope:
-    path: course
-    type: posts
+      type: course
     values:
       layout: course
   - scope:
-    path: teacher
-    type: posts
+      type: teacher
     values:
       layout: teacher
   - scope:
-    path: classroom
-    type: posts
+      type: classroom
     values:
       layout: classroom

@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{
-	margin:0;
+	margin: 0;
 	background-color: #FFFDE9;
 	box-sizing: border-box;
+	position: relative;
 }
 header {
 	background-color: #FFFDE9;
@@ -15,7 +16,7 @@ header {
 	box-shadow: 0 0 30px #000000;
 	width: 100%;
 	justify-content: space-between;
-	margin-right:0px;
+	margin-right: 0px;
 	font-family: "Tilt Warp";
 }
 input{
@@ -26,12 +27,12 @@ input{
 	padding-right: 1em;
 	font-size: 2em;
 	font-weight: bold;
-	border-style:solid;
-	border-color:#535353;
+	border-style: solid;
+	border-color: #535353;
 }
 
 input[type="button"], button {
-  border-radius: 10000px;
+	border-radius: 10000px;
 	background-color: #707F43;
 	color: #FFFFFF;
 	transition: background-color 0.2s, transform 0.1s;
@@ -39,12 +40,12 @@ input[type="button"], button {
 
 logo{
 	position: relative;
-	justify-content:left;
+	justify-content: left;
 	left: 30px;
-  padding-bottom: 5px;
-  img {
-    height: 7em;
-  }
+	padding-bottom: 5px;
+	img {
+		height: 7em;
+	}
 }
 @font-face {
 	font-family: 'Tilt Warp';
@@ -55,18 +56,18 @@ logo{
 
 }
 div{
-	display:flex;
+	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
 lo {
-	display:grid;
+	display: grid;
 	margin-left: 20px;
 	flex-wrap: nowrap;
 }
 h1{
 	margin-top: 0px;
-	margin-bottom:60px;
+	margin-bottom: 60px;
 	padding-top: 2%;
 	font-family: 'Tilt Warp';
 	font-weight: 400;
@@ -79,26 +80,26 @@ h1{
 
 }
 h2{
-	color:#707F43;
+	color: #707F43;
 	font-size: 40px;
 	margin-bottom: 0px;
 }
 h3{
 	flex-wrap: nowrap;
-	color:#132E5E;
+	color: #132E5E;
 	font-size: 40px;
-	margin:0px;
+	margin: 0px;
 }
 h4{
 	flex-wrap: nowrap;
-	color:#132E5E;
+	color: #132E5E;
 	font-size: 40px;
-	margin:0px;
-	font-weight:normal;
+	margin: 0px;
+	font-weight: normal;
 
 }
 /* teachInfo{
-	display:flex;
+	display: flex;
 	justify-content: center;
 	
 }
@@ -111,16 +112,16 @@ teachPic{
 	background: #132E5E;
 	background-image: url("/assets/image/icon/map.png");
 	background-repeat: no-repeat;
-	text-align:center;
-	color:azure;
+	text-align: center;
+	color: azure;
 }
 buttonGroup{
 	width: 100%;
 	height: fit-content;
 	background: #132E5E;
-	margin-top:200px;
-	margin-bottom:-10%;
-	text-align:center;
+	margin-top: 200px;
+	margin-bottom: -10%;
+	text-align: center;
 } */
 input[id="link" i] {
 	font-size: 2em;
@@ -129,7 +130,7 @@ input[id="link" i] {
 	font-weight: bold;
 	background-color: #707F43;
 	color: #FFFFFF;
-	font-family:"REM";
+	font-family: "REM";
 }
 button{
 	padding: 5px 5px;
@@ -149,7 +150,51 @@ button:hover, #Apply:hover {
 	transform: scale(1.05);
 }
 
-/* Class page */
+/****** Class page ******/
+.page-course h1 {
+  font-size: 5rem;
+}
+.image-container {
+	position: relative;
+	flex: 1;
+}
+.image {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.overlay-text h2 {
+	font-size: 2rem;
+	margin: 0;
+}
+.overlay-text p {
+	margin: 5px 0;
+}
+.overlay-text .info p {
+	font-size: 0.9rem;
+	margin: 3px 0;
+}
+.text-section {
+	flex: 1;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #444;
+	line-height: 1.5;
+	padding-top: 10px;
+	padding-left: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 80%;
+}
 .buttons {
 	background-color: #132E5E;
 	gap: 10px;
@@ -158,10 +203,120 @@ button:hover, #Apply:hover {
 	margin-bottom: 200px;
 }
 .buttons button {
-	width:200px ;
+	width: 200px ;
 	margin: 5px;
 }
-/* Footer */
+
+.upperButtons button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+}
+.upperButtons{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 30px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-wrapper-2 {
+    flex-direction: row;
+    text-align: center;
+  }
+  .text-section {
+    max-width: 100%;
+  }
+  .buttons {
+    flex-direction: row;
+    align-items: center;   
+  }
+}
+
+/****** Footer ******/
 footer{
 	background-color: #FFFDE9;
 	color: #fff;
@@ -179,33 +334,33 @@ logo2{
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: block;
-	height:100px;
+	height: 100px;
 	width: 803px;
 	margin-top: 20px;
 	margin-left: 30px;
 	
 }
-/*  */
+/*	*/
 li {
 	margin-right: 30px;
 	width: 100%;
-	font-size:32px;
-	color:#132E5E;
+	font-size: 32px;
+	color: #132E5E;
 	list-style-type: none;
 }
 a{
-	color:inherit;
+	color: inherit;
 	text-align: top;
 	text-underline-offset: 900000000px;
 
 }
-/* Icons */
+/****** Icons ******/
 map{
 	background-image: url("/assets/image/icon/map.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	display:inline-block;
-	height:32px;
+	display: inline-block;
+	height: 32px;
 	width: 32px;
 	flex-wrap: nowrap;
 }
@@ -213,8 +368,8 @@ phone{
 	background-image: url("/assets/image/icon/phone.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	display:inline-block;
-	height:32px;
+	display: inline-block;
+	height: 32px;
 	width: 32px;
 	flex-wrap: nowrap;
 }
@@ -222,8 +377,8 @@ fax{
 	background-image: url("/assets/image/icon/fax.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	display:inline-block;
-	height:32px;
+	display: inline-block;
+	height: 32px;
 	width: 32px;
 	flex-wrap: nowrap;
 }
@@ -237,7 +392,7 @@ iframe{
 	margin-right: auto;
 	
 }
-/* Classes */
+/****** Classes ******/
 .slide{
 	height: 20px;
 	width: 20px;
@@ -286,33 +441,53 @@ borderLeft{
 	background-size: cover;
 	position: absolute;
 	display: block;
-	height:500px;
+	height: 500px;
 	width: 803px;
 	margin-right: 50%;
-	margin-top:0;
+	margin-top: 0;
 	z-index: -90000;
 }
 borderRight{
 	background-image: url("/assets/image/backCorner.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	position:relative;
+	position: absolute;
 	display: block;
-	height:500px;
+	height: 500px;
 	width: 803px;
-	rotate:180deg;
-	right:0px;
-	bottom:0px;
-	margin-left:calc(100% - 803px);
+	rotate: 180deg;
+	right: 0px;
+	bottom: 100px;
+	margin-left: calc(100% - 803px);
 	z-index: -90000;
 }
 
+.container{
+	display: flex;
+	flex-direction: column;
+	column-gap: 20px;
+	z-index: 0; /* ensures wrapper content is above backgrounds */
+	position: relative;
+	z-index: 5;
+}
+.header {
+	text-align: center;
+	width: 100%;
+	max-height: 180px;
+}
+.header .icon {
+	width: 7%;
+	vertical-align: middle;
+	margin-left: 30px;
+	padding-bottom: 3%;
+}
 .wrapper {
 	position: relative;
 	z-index: 0; /* ensures wrapper content is above backgrounds */
 	max-width: 95%;
 	margin: 0 auto;
 }
+
 .ApplyButton{
 	width: 250px;
 	height: 80px;
@@ -413,7 +588,7 @@ borderRight{
 
 /* Layout toggle: two-column (default) and one-column (presentation) */
 .two-column .ClassCards {
-  flex-direction: row;
+	flex-direction: row;
 	justify-content: flex-start;
 }
 .two-column .ClassCard {
