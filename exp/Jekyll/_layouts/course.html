@@ -25,9 +25,9 @@ layout: course-specific
 
     <!-- The dots/circles -->
     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        {% for i in (1..page.image_num) %}
+            <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+        {% endfor %}
     </div>
     </div>  
 
