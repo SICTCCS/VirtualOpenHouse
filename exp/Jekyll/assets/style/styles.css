@@ -198,9 +198,8 @@ button:hover, #Apply:hover {
 .buttons {
 	background-color: #132E5E;
 	gap: 10px;
-	margin: 20px 0;
 	padding: 30px;
-	margin-bottom: 200px;
+	margin-top: 20px;
 }
 .buttons button {
 	width: 200px ;
