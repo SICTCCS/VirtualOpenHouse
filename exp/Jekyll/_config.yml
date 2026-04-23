@@ -3,14 +3,7 @@ school_name: SICTC
 description: A showcase of our amazing academic programs.
 baseurl: "" # Leave empty if your site is at username.github.io
 collections:
-  course:
-    permalink: "/:collection/:course_id/"
-    output: true
-  teacher:
-    permalink: "/:collection/:course_id/"
-    output: true
-  classroom:
-    permalink: "/:collection/:course_id/"
+  courses:
     output: true
 defaults:
   - scope:

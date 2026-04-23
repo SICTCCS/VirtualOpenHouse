@@ -1,4 +1,32 @@
 ---
 layout: course-specific
 ---
-{{ content }}
+
+<h1>Meet the Teacher</h1>
+<teachInfo>
+    <lo style="margin-left: 5%;">
+        <h2>About Me</h2><br>
+
+        <h3>Name: <h4>{{ page.teacher.name }}</h4></h3><br>
+        <h3>Program: <h4>{{ page.teacher.program }}</h4></h3><br>
+        <h3>College Degree: <h4>{{ page.teacher.degree }}</h4></h3><br>
+        <h3>Career Start Year: <h4>{{ page.teacher.career_start }}</h4></h3><br>
+        <h3>Certifications: <h4>{{ page.teacher.certifications }}</h4></h3><br>
+
+        <!-- find a way to cap how long it can go -->
+        <h2>Contact Information</h2>
+
+        <h3>{{ page.contact.email }}</h3>
+        <h3>{{ page.contact.phone }}</h3>
+        <h3>Room {{ page.contact.room }}</h3>
+    </lo>
+    <figure>
+        <teachPic"><img src="/assets/image/courses/{{ page.slug }}/teacher.jpg" alt="Logo" class="teacher-photo"></teachPic>
+        <figcaption class="underImage" style="border-width: 3px 3px 3px 3px;"><h3 style="color: #FFFFFF;">Why I Love Teaching CTE: <h4 style="text-indent: 2em; color: #FFFFFF;">{{ page.love_teaching}}</h4></h3></br></figcaption>
+        <figcaption  class="underImage" style="border-width: 0px 3px 3px 3px;"><h3 style="color: #FFFFFF;">Fun Fact: <h4 style="text-indent: 2em; color: #FFFFFF;">{{ page.fun_fact }}</h4></h3></br></figcaption>
+    </figure>
+</teachInfo>
+
+{%- comment -%} {{ content }} {%- endcomment -%}
+
+{%- comment -%} <script src="script.js"></script> {%- endcomment -%}
