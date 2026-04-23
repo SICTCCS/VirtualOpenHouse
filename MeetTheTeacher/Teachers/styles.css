@@ -223,8 +223,8 @@ map{
     background-repeat: no-repeat;
     background-size: cover;
     display:inline-block;
-    height:32px;
-    width: 32px;
+    height:50px;
+    width: 50px;
     flex-wrap: nowrap;
 }
 phone{
@@ -232,8 +232,8 @@ phone{
     background-repeat: no-repeat;
     background-size: cover;
     display:inline-block;
-    height:32px;
-    width: 32px;
+    height:50px;
+    width: 50px;
     flex-wrap: nowrap;
 }
 phone2{
@@ -241,8 +241,8 @@ phone2{
     background-repeat: no-repeat;
     background-size: cover;
     display:inline-block;
-    height:32px;
-    width: 32px;
+    height:50px;
+    width: 50px;
     flex-wrap: nowrap;
 }
 

@@ -5,6 +5,7 @@
 html{
   background-color: #FFFDE9;
 }
+
 button{
     background-color:#99AA65 ;
     border:0px;
@@ -283,4 +284,69 @@ phone2{
 .one-column .ClassCard {
   flex: 1 1 100%;
   max-width: 100%;
+}
+.ClassCard {
+  min-width: 0;
+}
+
+/* for images to scale properly */
+.CardImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.ButtonDiv {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ButtonDiv button {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+@media (max-width: 1440px) {
+  .two-column .ClassCard {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .Content {
+    flex-direction: column;
+  }
+
+  .ImageSection {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .ClassCards {
+    flex-direction: column;
+  }
+
+  .ClassCard {
+    flex-direction: column;
+  }
+
+  .Content {
+    flex-direction: column;
+  }
+
+  .ImageSection {
+    max-width: 100%;
+  }
+
+  .ApplyButton,
+  .ToggleButton {
+    position: static;
+    transform: none;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .top {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
 }
