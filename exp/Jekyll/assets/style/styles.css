@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* TODO - clean up duplicate/unused styling - this was copied from multiple files, some is still missing for teacher page */
+
 body{
 	margin: 0;
 	background-color: #FFFDE9;
@@ -93,6 +96,7 @@ h4{
 	font-weight: normal;
 
 }
+/* FIXME - wtf is going on here? */
 /* teachInfo{
 	display: flex;
 	justify-content: center;
@@ -143,6 +147,7 @@ button{
 button:hover, #Apply:hover {
 	background-color: #6b8d52;
 	transform: scale(1.05);
+	cursor: pointer;
 }
 
 /****** Class page ******/
@@ -217,6 +222,7 @@ button:hover, #Apply:hover {
   margin: 20px 0;
   padding: 30px;
 }
+/* FIXME weird size */
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
@@ -337,7 +343,7 @@ logo2{
 	margin-left: 30px;
 	
 }
-/*	*/
+/* Global or something */
 li {
 	margin-right: 30px;
 	width: 100%;
@@ -379,7 +385,7 @@ fax{
 	width: 32px;
 	flex-wrap: nowrap;
 }
-
+/* ? */
 iframe{
 	border-radius: 25px;
 	box-shadow: 0 0 30px #000000;
@@ -405,7 +411,6 @@ iframe{
 	min-height: 20%;
 	box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
 }
-
 /* Center the Apply button in the top banner while keeping layoutToggle at the right */
 .top{
 	position: relative;
@@ -414,6 +419,7 @@ iframe{
 #Apply{
 	z-index: 100;
 }
+/* TODO - IMPLEMENT TOGGLE */
 /* Layout toggle button positioned to the right */
 .ToggleButton{
 	position: absolute;
@@ -499,6 +505,7 @@ borderRight{
 	gap: 1rem; 
 	font-family: "REM";
 }
+/* FIXME - GPT flex code is goofy */
 /* GPT assisted with some of the innerflex and sizing, specifically making the boxes a little bigger to compensate for the radius */
 .ClassCard {
 	display: flex;

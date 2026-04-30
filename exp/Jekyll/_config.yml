@@ -1,20 +1,8 @@
+# these values are available in layouts with {{ site.whatever }}
 title: School Course Catalog
 school_name: SICTC
-description: A showcase of our amazing academic programs.
+description: SICTC Virtual Open House Website
 baseurl: "" # Leave empty if your site is at username.github.io
 collections:
   courses:
     output: true
-defaults:
-  - scope:
-      type: course
-    values:
-      layout: course
-  - scope:
-      type: teacher
-    values:
-      layout: teacher
-  - scope:
-      type: classroom
-    values:
-      layout: classroom

@@ -1,15 +1,24 @@
 ---
+# MAIN course example - this is the ONLY file you have to add to create a course and all it's pages
+
+# Friendly course name
 title: Architecture & Engineering Design Technology
+# course ID
 slug: AEDT
+# Description shown on the main page and on the specific course page
 description: The Architecture & Engineering Design Technology program at the Southern Indiana Career & Technical Center is designed to prepare students to enter a two or four-year university degree in the fields of either architecture, multiple fields of engineering, technology, interior design, and construction management. Topics covered in the program include, but not limited to, architectural design concepts for residential and commercial structures, mechanical engineering design concepts, computer-aided design/drafting software (AutoCAD, Revit, and SolidWorks), building construction knowledge related to residential and commercial structures, geometric dimensioning and tolerances, basic surveying, CNC programming and basic operation. During the first year of the program, students will experience both the architecture and engineering topics. The second year of the program students can specialize in either architectural design, mechanical design or digital electronics.
 
-
+# classroom page
 kuula_id: 7kBbd
 
+# course page specific
 course:
   image_num: 3
+  # door_plaque #TODO for Door Plaque button
+  # faq #TODO for FAQ button
 
-teachers:
+# teachers page LIST use a '-' for every additional teacher
+teachers: # TODO - update info
 - name: Andy Beadles
   program: Engineering/Architecture Design Technology, Digital Electronics, and Aerial Systems Technology
   degree: A.S. from Ivy Tech State College and a B.S. from Indiana State University in Architectural Design Technology and Career & Technical Education
@@ -20,6 +29,7 @@ teachers:
   room: AD1
   love_teaching: ..
   fun_fact: ..
+
 - name: Emily Reidford
   program: Engineering Design Technology
   degree: Engineering Graphics, Now Design Engineering Technology, and Design Murray State University

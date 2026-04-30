@@ -1,23 +1,24 @@
 ---
-layout: course-specific
+layout: default
 ---
 
 <div class="content-wrapper">
     <div class="content-wrapper-2">
 
-    <!-- Slideshow container -->
+    {%- comment -%} Slideshow container {%- endcomment -%}
     <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
+        {%- comment -%} Full-width images with number and caption text {%- endcomment -%}
+        {%- comment -%} gets images 0.jpg, 1.jpg, etc - the amount is determined by the 'course -> image_num' value in config. this could be changed to a list to configure captions {%- endcomment -%}
         {% for i in (1..page.course.image_num) %}
             <div class="mySlides fade">
                 <div class="numbertext">{{ forloop.index }} / {{ page.course.image_num }}</div>
                 <img src="/assets/image/courses/{{ page.slug }}/{{ forloop.index0 }}.jpg" style="width:100%" class="image">
-                <div class="text">Caption Text</div>
+                <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%}
             </div>
         {% endfor %}
 
-        <!-- Next and previous buttons -->
+        {%- comment -%} Next and previous buttons {%- endcomment -%}
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
@@ -25,6 +26,7 @@ layout: course-specific
 
     <!-- The dots/circles -->
     <div style="text-align:center">
+        {%- comment -%} again, based on value defined {%- endcomment -%}
         {% for i in (1..page.course.image_num) %}
             <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
         {% endfor %}
@@ -34,7 +36,6 @@ layout: course-specific
     <div class="content-wrapper-2">
         <div class="text-section">
             <p>{{ page.description }}</p>
-            {%- comment -%} {{ content }} {%- endcomment -%}
         </div>
         <div class="upperButtons">
             <div class="ButtonGroup">
@@ -45,3 +46,5 @@ layout: course-specific
     </div>
 </div>
 <script src="/assets/scripts/course.js"></script>
+
+{% include course_nav.html %}
