@@ -8,17 +8,14 @@ kuula_id: 7kBbd
 course:
   image_num: 3
 
-teacher:
-  name: Eric Havener
+teachers:
+- name: Eric Havener
   degree: Bachelors of Science In Industrial
   career_start: 1998
   certifications: Fanuc Robotics Certified, SACA Certified in Robotics and Electricity
-
-contact:
   email: eric.havener@evsck12.com
   phone: 812-435-8816
   room: M2
-
-love_teaching: I like the hands-on aspect of CTE. I also love to see students graduating and becoming successful in industry.
-fun_fact: I have been juried onto the Early American LifeMagazine's list of America's Best Traditional Craftsmen for the past four years.
+  love_teaching: I like the hands-on aspect of CTE. I also love to see students graduating and becoming successful in industry.
+  fun_fact: I have been juried onto the Early American LifeMagazine's list of America's Best Traditional Craftsmen for the past four years.
 ---

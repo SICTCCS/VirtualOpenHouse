@@ -9,18 +9,25 @@ kuula_id: 7kBbd
 course:
   image_num: 3
 
-teacher:
-  name: Andy Beadles
+teachers:
+- name: Andy Beadles
   program: Engineering/Architecture Design Technology, Digital Electronics, and Aerial Systems Technology
   degree: A.S. from Ivy Tech State College and a B.S. from Indiana State University in Architectural Design Technology and Career & Technical Education
   career_start: 1994
   certifications: Certified SOLIDWORKS Associate, Certified SOLIDWORKS Professional
-
-contact:
   email: andy.beadles@evsck12.com
-  phone: ?
+  phone: ..
+  room: AD1
+  love_teaching: ..
+  fun_fact: ..
+- name: Emily Reidford
+  program: Engineering Design Technology
+  degree: Engineering Graphics, Now Design Engineering Technology, and Design Murray State University
+  career_start: 2014
+  certifications: Certified SOLIDWORKS Associate, Certified SOLIDWORKS Professional
+  email: emily.reidford@evsck12.com
+  phone: 812-435-8812
   room: TD1
-
-love_teaching: I love teaching Engineering and seeing students grasp ideas that they have struggled with in the past. It's always exciting to see students go on to be professionals in a field that they love. We have great staff here that is wonderful to work with at SICTC
-fun_fact: I grew up shooting archery with the National Archery in the Schools Program and have competed and placed at world championship archery competitions. I also have a patent that I received while working at Bear Archery.
+  love_teaching: I love teaching Engineering and seeing students grasp ideas that they have struggled with in the past. It's always exciting to see students go on to be professionals in a field that they love. We have great staff here that is wonderful to work with at SICTC
+  fun_fact: I grew up shooting archery with the National Archery in the Schools Program and have competed and placed at world championship archery competitions. I also have a patent that I received while working at Bear Archery.
 ---
