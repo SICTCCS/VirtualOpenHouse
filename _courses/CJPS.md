@@ -7,7 +7,7 @@ description: "Criminal Justice I introduces students to law enforcement and crim
 kuula_id: 7kBbd
 
 course:
-  image_num: 3
+  image_num: 5
 
 teachers:
 - name: Jeff Hands

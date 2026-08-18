@@ -13,7 +13,7 @@ kuula_id: 7kBbd
 
 # course page specific
 course:
-  image_num: 3
+  image_num: 6
   # door_plaque #TODO for Door Plaque button
   # faq #TODO for FAQ button
 

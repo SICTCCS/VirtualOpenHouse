@@ -7,7 +7,7 @@ description: "Culinary Arts I and II prepare students for occupations and higher
 kuula_id: 7kBbd
 
 course:
-  image_num: 3
+  image_num: 6
 
 teachers:
 - name: Sam Wagoner

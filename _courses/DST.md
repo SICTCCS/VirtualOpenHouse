@@ -7,7 +7,7 @@ description: "Diesel Service Technology is a two year course designed for high s
 kuula_id: 7kBbd
 
 course:
-  image_num: 3
+  image_num: 7
 
 teachers:
 - name: Josh Schulz
