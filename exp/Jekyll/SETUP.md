@@ -1,6 +1,6 @@
 ## Setup Required Software to run Jekyll
 
-1. Download and run [RubyInstalled](https://rubyinstaller.org/downloads/) (bold, red link on the left)
+1. Download and run [RubyInstaller](https://rubyinstaller.org/downloads/) (bold, red link on the left)
 2. Click through all defaults; after 'finish', a command prompt will open asking to install additional things. Press enter for the defaults (we want "MSYS2 and MINGW development toolchain")
 3. Open a *new command prompt* in *this directory*, run `gem install -g`
 4. Check it is installed with `jekyll -v`
