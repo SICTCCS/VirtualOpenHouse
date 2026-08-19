@@ -16,7 +16,7 @@ teachers:
   certifications: ...
   email: joshua.schulz@evsck12.com
   phone: 8812-435-8824
-  room: joshua.schulz@evsck12.com
+  room: DS2
   love_teaching: The number one reason I love teaching at SICTC is because of the students. If I can help a student realize that they can be hired in to a quality career, be accepted to a post secondary school, or just have some skills and confidence to succeed in life, I see the students come in the first week or two, wanting to try something different they haven't tried before, or following up on a claim that they could learn with their hands here at SICTC. or even just wanting to get out of their home school and I try to turn them into excited, confident, skillful employees that employers around our area are starving for. That is why I love teaching at SICTC. I have the opportunity to change lives.
   fun_fact: I play the guitar and enjoy working with draft horses and mules. My dream is to one day train a team of my own.
 ---
