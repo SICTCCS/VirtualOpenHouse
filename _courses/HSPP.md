@@ -1,6 +1,6 @@
 ---
 # SECOND course example
-title: Health Sciences: Pre-Professional
+title: "Health Sciences: Pre-Professional"
 slug: HSPP
 description: ""
 
