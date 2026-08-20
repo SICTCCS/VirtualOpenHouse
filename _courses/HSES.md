@@ -1,6 +1,6 @@
 ---
 # SECOND course example
-title: Health Sciences: Exercise Science
+title: "Health Sciences: Exercise Science"
 slug: HSES
 description: ""
 
