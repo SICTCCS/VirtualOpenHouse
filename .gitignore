@@ -6,3 +6,10 @@ _site/
 .bundle/
 vendor/
 Gemfile.lock
+# py
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+.env
+credentials.json
