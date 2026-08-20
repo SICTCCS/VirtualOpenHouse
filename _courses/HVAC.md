@@ -7,7 +7,7 @@ short_description: ..
 kuula_id: 7kBbd
 
 course:
-  image_num: 3
+  image_num: 6
 
 teachers:
 - name: Seth Aull

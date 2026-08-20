@@ -7,7 +7,7 @@ short_description: ..
 kuula_id: 7kBbd
 
 course:
-  image_num: 7
+  image_num: 5
 
 teachers:
 - name: Nic Bander

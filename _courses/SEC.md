@@ -6,7 +6,7 @@ description: Students will acquire the fundamentals of information and data secu
 kuula_id: 7kBbd
 
 course:
-  image_num: 3
+  image_num: 2
 
 teachers:
 - name: Hans Lagenour
