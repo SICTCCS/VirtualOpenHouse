@@ -16,7 +16,7 @@ teachers:
   certifications: ...
   email: nic.bander@evsck12.com
   phone: 812-435-8827
-  room: 
+  room: ..
   love_teaching: Along with having an awesome work environment, I have the opportunity to teach my students in ways that they'll see after high school. We don't sit behind a desk and read a textbook, we learn by building programs and solving problems. In fact, our textbook is what developers use in the industry, Google...
   fun_fact: I have self taught myself all of the instruments I play except for the saxophone. I took 8 years of band from 5th grade to senior year to learn the saxophone. I can play the acoustic guitar, ukulele, bass guitar, drum set, djembe, cajon, spoons, and am currently attempting to learn the banjo. Emphasis on attempting.
 ---
