@@ -1,8 +1,8 @@
 ---
-# SECOND course example
 title: Computer Science/Software Development
 slug: CS
 description: "The Computer Science course covers a wide variety of topics ranging from computer logic, data structure, software development, and so much more.  There are many different programming languages these students will be exposed to like Blockly, Python, Java, SQL, HTML5 with JS, and many others.  Along with programming Python scripts, websites, Android applications, and many other types of programs; we will explore industry demanding topics like data analytics, game design, cyber security, cloud infrastructures, etc.  Throughout the course students will have the opportunity to utilize industry tools like Android Studio, GitHub, Visual Studio Code, Raspberry Piâ€™s, Linux, and many more.  This course is designed to assist any student in their pursuit of a computer technology related industry."
+short_description: ..
 
 kuula_id: 7kBbd
 

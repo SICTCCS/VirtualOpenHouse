@@ -1,8 +1,8 @@
 ---
-# SECOND course example
 title: Building Construction Technologies
 slug: BCT
 description: "Building Trades is a three credit hour class that includes classroom, lab, and jobsite experience concerned with installation, maintenance, and repair of residential homes and other structures using an assortment of materials. Instruction will cover a variety of activities such as estimating, measuring, cutting, fitting, and finishing materials. Math, reading, writing, and speaking shills will be emphasized so students can learn to communicate effectively."
+short_description: ..
 
 kuula_id: 7kBbd
 

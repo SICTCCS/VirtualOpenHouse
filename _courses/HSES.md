@@ -1,8 +1,8 @@
 ---
-# SECOND course example
 title: "Health Sciences: Exercise Science"
 slug: HSES
 description: ""
+short_description: ..
 
 kuula_id: 7kBbd
 

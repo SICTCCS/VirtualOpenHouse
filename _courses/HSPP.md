@@ -1,8 +1,8 @@
 ---
-# SECOND course example
 title: "Health Sciences: Pre-Professional"
 slug: HSPP
 description: ""
+short_description: ..
 
 kuula_id: 7kBbd
 
@@ -14,14 +14,14 @@ teachers:
   degree: 
   career_start: 
   certifications: 
-  email: 
-  phone: 
-  room: 
+  email: ..
+  phone: ..
+  room: ..
   love_teaching: 
   fun_fact: 
 
 - name: Tonya Fleenor
-  degree: 
+  degree: ..
   career_start: 1994
   certifications: 
   email: Tonya.Fleenor@evsck12.com

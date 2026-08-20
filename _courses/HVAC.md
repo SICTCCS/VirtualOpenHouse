@@ -2,6 +2,7 @@
 title: HVAC-R & Energy Systems
 slug: HVAC
 description: "Heating, Ventilation, Air Conditioning and Refrigeration Technology I and II provide students with classroom and laboratory experiences concerned with heat generation, ventilation, air conditioning and cooling/refrigeration systems. Instruction emphasizes proficiency in the design, development, testing, and installation of the various system with learning experiences focused on the operation and trouble-shooting of equipment, including the controls needed for residential and commercial use. Course content also includes instruction in blueprint reading, the use of technical reference manuals, the diagnosis and repair of malfunctions, and the use of hand tools and machines to fabricate sheet metal items made of steel, copper, stainless steel, and aluminum."
+short_description: ..
 
 kuula_id: 7kBbd
 
