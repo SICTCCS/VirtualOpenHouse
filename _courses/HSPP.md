@@ -1,8 +1,8 @@
 ---
-# SECOND course example
 title: "Health Sciences: Pre-Professional"
 slug: HSPP
 description: ""
+short_description: ..
 
 kuula_id: 7kBbd
 

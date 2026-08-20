@@ -1,8 +1,8 @@
 ---
-# SECOND course example
 title: Culinary Arts
 slug: CA
 description: "Culinary Arts I and II prepare students for occupations and higher education programs of study related to the entire spectrum of careers in the food industry: including (but not limited to) food production and services; food science, dietetics, and nutrition; and hospitality and tourism. Instruction and intensive laboratory experiences may include commercial applications of principles of nutritious, aesthetic, and sanitary selection, purchasing, storage, preparation, and service of food and food products; using and maintaining related tools and equipment; managing operations in food service, food science, or hospitality establishments; providing for the dietary needs of persons with special requirements; related research, development, and testing."
+short_description: ..
 
 kuula_id: 7kBbd
 

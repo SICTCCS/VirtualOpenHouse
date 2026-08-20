@@ -1,12 +1,11 @@
 ---
-# MAIN course example - this is the ONLY file you have to add to create a course and all it's pages
-
 # Friendly course name
 title: Architecture & Engineering Design Technology
 # course ID
 slug: AEDT
 # Description shown on the main page and on the specific course page
 description: The Architecture & Engineering Design Technology program at the Southern Indiana Career & Technical Center is designed to prepare students to enter a two or four-year university degree in the fields of either architecture, multiple fields of engineering, technology, interior design, and construction management. Topics covered in the program include, but not limited to, architectural design concepts for residential and commercial structures, mechanical engineering design concepts, computer-aided design/drafting software (AutoCAD, Revit, and SolidWorks), building construction knowledge related to residential and commercial structures, geometric dimensioning and tolerances, basic surveying, CNC programming and basic operation. During the first year of the program, students will experience both the architecture and engineering topics. The second year of the program students can specialize in either architectural design, mechanical design or digital electronics.
+short_description: ..
 
 # classroom page
 kuula_id: 7kBbd
