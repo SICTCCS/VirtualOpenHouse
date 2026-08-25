@@ -62,14 +62,16 @@ lo {
 	display: grid;
 	margin-left: 20px;
 	flex-wrap: nowrap;
+	width: 100%;
+	flex:1;
 }
 h1{
 	margin-top: 0px;
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 	padding-top: 2%;
 	font-family: 'Tilt Warp';
 	font-weight: 400;
-	font-size: 128px;
+	font-size: 50px;
 	line-height: 100%;
 	letter-spacing: 0%;
 	text-align: center;
@@ -78,43 +80,84 @@ h1{
 
 }
 h2{
-	color: #707F43;
-	font-size: 40px;
+	color: #15180d;
+	font-size: 30px;
 	margin-bottom: 0px;
 }
 h3{
 	flex-wrap: nowrap;
+	
 	color: #132E5E;
-	font-size: 40px;
+	font-size: 25px;
 	margin: 0px;
+	padding-top: 10px;
 }
 h4{
 	flex-wrap: nowrap;
 	color: #132E5E;
-	font-size: 40px;
+	font-size: 16px;
 	margin: 0px;
 	font-weight: normal;
 
 }
+p{
+	flex-wrap: nowrap;
+	color: #132E5E;
+	font-size: 20px;
+	margin: 0px;
+	font-weight: normal;
+}
 /* FIXME - wtf is going on here? */
-/* teachInfo{
+ 
+figure {
+	margin: 0px 0px 0px 0px;
+}
+.teacherInfo{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 7%;
+
+}
+.teacherflexbox {
+	min-width: 20%;
+	max-width: 46%;
 	justify-content: center;
-	
+	align-items: center;
+	display: flex;
 }
-teachPic{
-	width: 760px;
-	height: 888px;
-	border-radius: 47px;
-	
-	background-size: cover;
-	background: #132E5E;
-	background-image: url("/assets/image/icon/map.png");
-	background-repeat: no-repeat;
-	text-align: center;
-	color: azure;
+.teachPic{
+    width: 100%;
+    height: fit-content;
+    border-radius: 47px;
+    background-size: cover;
+    /* float: right; */
+    background-repeat: no-repeat;
+    text-align:center;
+    color:azure;
+    margin-left: auto;
 }
-buttonGroup{
+.teacher-photo{
+	width: 100%;
+	height: fit-content;
+    border-radius: 47px;
+    background-size: cover;
+    /* float: right; */
+    background-repeat: no-repeat;
+    text-align:center;
+    color:azure;
+    margin-left: auto;
+}
+.LoveAndFact {
+    width: 75%;         /* or set to something like 80% */
+    height: auto;
+    display: block;
+    margin: 0 0 0 20px;
+    margin-right: 5%;
+    /* border-radius: 10px; */
+}
+/*
+.ButtonGroup{
 	width: 100%;
 	height: fit-content;
 	background: #132E5E;
