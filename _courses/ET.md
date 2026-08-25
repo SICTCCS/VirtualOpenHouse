@@ -14,9 +14,10 @@ teachers:
   degree: "Apprenticeship Technology: Electrical Specialty Ivy Tech"
   career_start: 2008
   certifications: Awarded Journeyman Wireman classification in 2010 from the National Joint Apprenticeship and Training Committee, Journeyman Electrical - License Vanderburgh County, OSHA 511 Certification, NFPA 70E Electrical Safety Certification
-  email: ..
-  phone: ..
+  email: Seth.Aull@evsck12.com
+  phone: 812-435-8853
   room: E2
-  love_teaching: ..
-  fun_fact: ..
+  love_teaching: I love teaching CTE because it gives me a chance to help the next generation of workers in our community. I get to teach them things I wish I had known coming up. It's so satisfying seeing a student have that "Ah-ha" moment. Not to mention, I truly believe this to be my calling. There's' nothing more satisfying than answering a calling!
+
+  fun_fact: I love playing musical instruments. Drums first, but acoustic guitar is a close second. I also love baking. Yes, baking. Mostly different kinds of breads.
 ---
