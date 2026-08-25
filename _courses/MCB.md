@@ -3,7 +3,7 @@ title: Media Communications and Broadcasting
 slug: MCB
 description: This program is for a student interested in a career and further schooling in business, broadcasting (radio, TV, cable), journalism (news and sports), public relations, advertising/marketing, communications/media, video production, management, audio production and engineering, or just wanting to better their speaking and writing skills and learn how to function in a “Real Life” business environment. M-COM will provide instruction to develop and enhance competencies in various communication, marketing, media, production and technical functions and tasks performed by employees and involves on-air broadcast training on the EVSC radio station, 90.7 WPSR.
 
-kuula_id: 7kBbd
+kuula_id: 7DT9h
 
 course:
   image_num: 3

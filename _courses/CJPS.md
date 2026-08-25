@@ -4,7 +4,7 @@ slug: CJPS
 description: "Criminal Justice I introduces students to law enforcement and criminal justice. Classroom instruction explores the history of the U.S. criminal justice system and courtroom structure. CJ1 also provides the students with hands-on experience in police operations such as vehicle stops. The students are shown the importance of cultural awareness in the criminal justice field. Criminal Justice II introduces the students to the theories of criminology. The students then enter the criminal investigation portion of the course. The students will have hands-on experience in mock crime scene scenarios. The students will process a crime scene starting with photography, and ending with the collection of DNA, narcotics collection, and trace evidence such as glass, hairs, and fibers."
 short_description: ..
 
-kuula_id: 7kBbd
+kuula_id: 7DT9D
 
 course:
   image_num: 5

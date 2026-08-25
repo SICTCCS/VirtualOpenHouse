@@ -4,7 +4,7 @@ slug: ACT
 description: Collision Repair is offered to juniors and seniors. Students develop skills in all aspects of automotive collision repair, beginning with minor repairs and refinishing before advancing to sheet-metal replacement and major collision damage repair. The program emphasizes academics, leadership, work ethic, and hands-on preparation for collision-repair careers or further education.
 short_description: Automotive Collision Repair Technology prepares students for careers or further education in vehicle body repair, refinishing, and collision repair.
 
-kuula_id: 7kBbd
+kuula_id: 7DTtF
 
 course:
   image_num: 6
