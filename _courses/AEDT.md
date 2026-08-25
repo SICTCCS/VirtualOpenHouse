@@ -8,7 +8,7 @@ description: The Architecture & Engineering Design Technology program at the Sou
 short_description: ..
 
 # classroom page
-kuula_id: 7kBbd
+kuula_id: 7Dg2M
 
 # course page specific
 course:
