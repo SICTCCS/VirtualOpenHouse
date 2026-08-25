@@ -3,4 +3,4 @@ apscheduler
 gspread
 oauth2client
 python-dotenv
-pyyaml
+ruamel.yaml
