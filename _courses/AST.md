@@ -4,7 +4,7 @@ slug: AST
 description: "The Automotive Service program is a two year program designed to prepare students either to enter the automotive repair industry workforce in an entry level position or to prepare them for post-secondary training in the automotive industry. The program is ASE/NATEF certified in 7 areas, including: brakes, steering and suspension, engine repair, engine performance, heating and air conditioning, electrical/electronic systems and manual drivetrains and axles. Training is divided between classroom and laboratory experiences that incorporate theory of operation, service and repair of the various automotive systems. Also students will learn and utilize service and repair software and become familiar with automotive suppliers and acquiring repair parts, as well as repair order preparation and billing"
 short_description: ..
 
-kuula_id: 7kBbd
+kuula_id: 7DTrR
 
 course:
   image_num: 6

@@ -4,7 +4,7 @@ slug: AMT
 description: Advanced Manufacturing Technology is designed to provide students with a basic understanding of manufacturing processes and the principles and practices associated with the design, operation, and maintenance of those processes. Areas of study include; safety, measurement, layout, machining, manufacturing processes, electrical circuits, programmable logic controllers, mechanical systems, pneumatic systems, hydraulic systems, automation and robotics. This course will utilize a combination of classroom, lab, and self-directed learning activities to provide students with a basic understanding and application of the subject matter.
 short_description: ..
 
-kuula_id: 7kBbd
+kuula_id: 7Dg37
 
 course:
   image_num: 6

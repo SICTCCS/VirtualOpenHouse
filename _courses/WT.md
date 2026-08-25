@@ -3,7 +3,7 @@ title: Welding Technology
 slug: WT
 description: 
 
-kuula_id: 7kBbd
+kuula_id: 7DTBz
 
 course:
   image_num: 5

@@ -1,10 +1,10 @@
 ---
 title: "Health Sciences: Pre-Professional"
 slug: HSPP
-description: ""
-short_description: ..
+description: "Health Science: Pre-Professional is a two-year program providing a foundation in anatomy, physiology, medical terminology, and healthcare careers. Students learn patient care, professionalism, and communication skills while exploring labs in forensics, imaging, dental, cardiac, and more. Certifications include CPR/AED, CCMA, HIPAA, and OSHA 10, with clinical observations in two healthcare areas to prepare students for college and careers."
+short_description: 
 
-kuula_id: 7kBbd
+kuula_id: 7DT9g
 
 course:
   image_num: 8
