@@ -113,18 +113,22 @@ figure {
 	margin: 0px 0px 0px 0px;
 }
 .teacherInfo{
+	margin:0% 5% 0% 5%;
+	margin-left: 5%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	gap: 7%;
+	gap: 6%;
 
 }
 .teacherflexbox {
+	
 	min-width: 20%;
 	max-width: 46%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	
 }
 .teachPic{
     width: 100%;
