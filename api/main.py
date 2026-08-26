@@ -88,8 +88,11 @@ def load_yaml_frontmatter_raw(slug: str) -> Dict[str, int | float | str]:
     
     # maxsplit=2 splits it into: ['', 'frontmatter content', 'markdown content']
     parts = content.split('---', 2)
-    if len(parts) >= 3:
-        return yaml.load(parts[1])
+    if len(parts) >= 3 and parts[1].strip():
+        try:
+            return yaml.load(parts[1])
+        except Exception as err:
+            l.error("Error loading yaml:", err)
     return {}
 
 def save_yaml_frontmatter(slug: str, yml):
@@ -97,14 +100,18 @@ def save_yaml_frontmatter(slug: str, yml):
         l.error("Save data empty")
         return
     filepath = get_file_path_from_slug(slug)
-    with open(filepath, "w", encoding="utf8") as f, io.StringIO() as stream:
-        # stream = io.StringIO()
-        stream.write("---\n")
-        yaml.dump(yml, stream)
-        stream.write("---")
-        txt = stream.getvalue()
-        # stream.close()
-        if txt.strip(): f.write(txt)
+    txt = ""
+    try:
+        with io.StringIO() as stream:
+            stream.write("---\n")
+            yaml.dump(yml, stream)
+            stream.write("---")
+            txt = stream.getvalue()
+    except Exception as err:
+        l.error("Error creating file txt", err)
+    finally:
+        with open(filepath, "w", encoding="utf-8") as f:
+            if txt.strip(): f.write(txt)
 
 def update_all(to_update, data: dict):
     for key in data.keys():
@@ -204,8 +211,8 @@ def import_all_to_spread():
 
 ############# Run stuff
 
-# import_all_to_spread() # Initial import
-# import_to_spread("PMT")
+# import_all_to_spread() # Import all to Google Sheet (takes forever)
+# import_to_spread("HSPP") # Import single
 
-# get_sheet_data() # Initial fetch
+get_sheet_data() # Initial fetch from Google Sheets API
 app.run(host="0.0.0.0", port=5000, debug=True)
