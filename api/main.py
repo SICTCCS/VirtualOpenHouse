@@ -16,10 +16,12 @@ app: Flask = Flask(__name__)
 app.logger.setLevel("DEBUG")
 l = app.logger
 
-yaml = YAML()
-yaml.preserve_quotes = True
-yaml.indent(mapping=2, sequence=4, offset=2)
-yaml.width = 75
+def create_yaml():
+    yaml = YAML()
+    yaml.preserve_quotes = True
+    yaml.indent(mapping=2, sequence=4, offset=2)
+    yaml.width = 75
+    return yaml
 
 SCOPES = [
     "https://spreadsheets.google.com/feeds",
@@ -90,9 +92,9 @@ def load_yaml_frontmatter_raw(slug: str) -> Dict[str, int | float | str]:
     parts = content.split('---', 2)
     if len(parts) >= 3 and parts[1].strip():
         try:
-            return yaml.load(parts[1])
+            return create_yaml().load(parts[1])
         except Exception as err:
-            l.error("Error loading yaml:", err)
+            l.error(f"Error loading yaml: {err}", exc_info=True)
     return {}
 
 def save_yaml_frontmatter(slug: str, yml):
@@ -103,15 +105,15 @@ def save_yaml_frontmatter(slug: str, yml):
     txt = ""
     try:
         with io.StringIO() as stream:
-            stream.write("---\n")
-            yaml.dump(yml, stream)
-            stream.write("---")
-            txt = stream.getvalue()
+            create_yaml().dump(yml, stream)
+            yaml_content = stream.getvalue()
+        txt = f"---\n{yaml_content}---"
     except Exception as err:
-        l.error("Error creating file txt", err)
-    finally:
-        with open(filepath, "w", encoding="utf-8") as f:
-            if txt.strip(): f.write(txt)
+        l.error(f"Error creating file txt: {err}", exc_info=True)
+
+    if not txt: return
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(txt)
 
 def update_all(to_update, data: dict):
     for key in data.keys():
@@ -125,6 +127,7 @@ def handle_course_data(data: List[Dict[str, int | float | str]]):
     # l.info(f"Handling course data: {data}")
     for course in data:
         slug = course.get("slug")
+        if not slug: continue
         l.info("Saving course info for: " + slug)
         yml = load_yaml_frontmatter(slug)
         yml = update_all(yml, course)
@@ -143,6 +146,7 @@ def handle_class_data(data: List[Dict[str, int | float | str]]):
     # l.info(f"Handling class data: {data}")
     for class_record in data:
         slug = class_record.get("slug")
+        if not slug: continue
         l.info("Saving class info for: " + slug)
         yml = load_yaml_frontmatter(slug)
         yml = update_all(yml, class_record)
@@ -155,6 +159,7 @@ def handle_teacher_data(data: List[Dict[str, int | float | str]]):
     
     for teacher in data:
         slug = teacher.get("slug")
+        if not slug: continue
         teachers: list[dict] = course_teachers.get(slug, [])
         teachers.append(update_all({}, teacher))
         course_teachers[slug] = teachers
