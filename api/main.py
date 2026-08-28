@@ -174,7 +174,7 @@ def handle_teacher_data(data: List[Dict[str, int | float | str]]):
 
 URL = os.environ.get("GOOGLE_APPS_SCRIPT_URL")
 def send_to_sheet(data, sheet):
-    response = requests.post(f"{URL}?sheet={sheet}", json=json.dumps(data), headers={"Authorization": os.environ.get("SECRET")})
+    response = requests.post(f"{URL}?sheet={sheet}&authorization={os.environ.get("SECRET")}", json=json.dumps(data))
     l.info(f"Response from Google Apps Script: {response.status_code} - {response.text}")
 
 def import_to_spread(slug):
