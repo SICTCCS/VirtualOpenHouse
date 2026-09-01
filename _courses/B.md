@@ -1,23 +1,23 @@
 ---
-title: Welding Technology
-slug: WT
+slug: B
+title: Business
 description: ..
+short_description: ..
 
-kuula_id: 7DTBz
+kuula_id: ''
 
 course:
-  image_num: 5
+  image_num: 0
 
 teachers:
-  - name: Brian Dempsey
+  - name: Annett Combs
     program: ''
     degree: ..
     career_start: ..
     certifications: ..
-    email: brian.dempsey@evsck12.com
+    email: annette.combs@evsck12.com
     phone: ..
-    room: WT2
+    room: ..
     love_teaching: ..
     fun_fact: ..
-short_description: ..
 ---
