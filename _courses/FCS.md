@@ -1,23 +1,23 @@
 ---
-title: Welding Technology
-slug: WT
+slug: FCS
+title: Family & Consumer Science
 description: ..
+short_description: ..
 
-kuula_id: 7DTBz
+kuula_id: ''
 
 course:
-  image_num: 5
+  image_num: 0
 
 teachers:
-  - name: Brian Dempsey
+  - name: Dalton Bennett
     program: ''
     degree: ..
     career_start: ..
     certifications: ..
-    email: brian.dempsey@evsck12.com
+    email: dalton.bennett@evsck12.com
     phone: ..
-    room: WT2
+    room: ..
     love_teaching: ..
     fun_fact: ..
-short_description: ..
 ---

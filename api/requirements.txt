@@ -1,0 +1,6 @@
+flask
+apscheduler
+gspread
+oauth2client
+python-dotenv
+ruamel.yaml
