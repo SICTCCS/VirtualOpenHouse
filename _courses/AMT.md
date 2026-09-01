@@ -32,4 +32,5 @@ teachers:
       students graduating and becoming successful in industry.
     fun_fact: I have been juried onto the Early American LifeMagazine's 
       list of America's Best Traditional Craftsmen for the past four years.
+yt_id: ''
 ---

@@ -21,4 +21,5 @@ teachers:
     love_teaching: My goal is for each young adult who comes to SICTC to 
       realize they were born to change this world!
     fun_fact: Super competitive!
+yt_id: ''
 ---
