@@ -13,7 +13,7 @@
 <body class="page-{{ page.layout }}">
     {% include header.html %}
     {%- comment -%} top-left corner thing {%- endcomment -%}
-    <borderLeft></borderLeft>
+    <div class="border-left"></div>
 
     <main>
         <h1>{{ page.title }}</h1>
@@ -21,7 +21,7 @@
     </main>
 
     {%- comment -%} bottom-right corner thing {%- endcomment -%}
-    <borderRight></borderRight>
+    <div class="border-right"></div>
     {% include footer.html %}
 
 </body>

@@ -23,6 +23,7 @@ header {
 	font-family: "Tilt Warp", sans-serif;
 }
 
+
 input{
 	margin: .5em;
 	margin-right: 1%;
@@ -40,6 +41,19 @@ input[type="button"], button {
 	background-color: #707F43;
 	color: #FFF;
 	transition: background-color 0.2s, transform 0.1s;
+}
+
+.top {
+	background-color: #FFFDE9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 20%;
+	width: 100%;
+	min-height: 20%;
+	box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+	position: relative;
+	align-items: center;
 }
 
 .logo {
@@ -114,9 +128,7 @@ p{
 	font-weight: normal;
 }
 
-/* FIXME - wtf is going on here? */
- 
-
+/* #region MeetTheTeacher */
 .thin-underline {
     text-decoration: underline 2px; /* Sets the line thickness to 1 pixel */
 }
@@ -174,17 +186,9 @@ figure {
 	margin: 0 auto;
 	flex:1;
 }
+/* #endregion */
 
-input[id="link" i] {
-	font-size: 2em;
-	width: 731.2133px;
-	border-radius: 1000px;
-	font-weight: bold;
-	background-color: #707F43;
-	color: #FFF;
-	font-family: REM, sans-serif;
-}
-
+/* #region Buttons */
 button{
 	padding: 5px;
 	border: none;
@@ -211,7 +215,9 @@ button:hover, #apply:hover {
 	cursor: pointer;
 }
 
-/****** Class page ******/
+/* #endregion */
+
+/* #region Class Page */
 .page-course h1 {
   font-size: 5rem;
 }
@@ -224,31 +230,6 @@ button:hover, #apply:hover {
 .image {
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
-}
-
-.overlay-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	text-shadow: 1px 1px 5px rgb(0 0 0 / 80%);
-}
-
-.overlay-text h2 {
-	font-size: 2rem;
-	margin: 0;
-}
-
-.overlay-text p {
-	margin: 5px 0;
-}
-
-.overlay-text .info p {
-	font-size: 0.9rem;
-	margin: 3px 0;
 }
 
 .text-section {
@@ -294,8 +275,10 @@ button:hover, #apply:hover {
   padding: 30px;
 }
 
+/* #endregion */
 /* FIXME weird size */
 
+/* #region LearnMore */
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
@@ -373,6 +356,8 @@ button:hover, #apply:hover {
   background-color: #717171;
 }
 
+/* #endregion */
+
 /* Responsive */
 @media (width <= 768px) {
   .content-wrapper {
@@ -395,7 +380,7 @@ button:hover, #apply:hover {
   }
 }
 
-/****** Footer ******/
+/* #region Footer */
 footer{
 	background-color: #FFFDE9;
 	color: #fff;
@@ -423,7 +408,6 @@ footer{
 	margin-right: clamp(10px, 15px ,30px);
 }
 
-/* Global or something */
 ul{
 	width: 40%;
 	margin: 0;               /* Prevents browser-default list margins from shifting elements */
@@ -447,7 +431,7 @@ li {
 
 a {
 	color: inherit;
-	text-underline-offset: 900000000px;
+	text-decoration: none;
 }
 
 /****** Icons ******/
@@ -472,33 +456,16 @@ a {
 	flex-wrap: nowrap;
 }
 
-/* ? */
+/* #endregion */
+
+/* #region Kuula & YT */
 iframe{
 	border-radius: 25px;
 	box-shadow: 0 0 30px #000;
 	margin: 50px auto 0;
 	
 }
-
-/****** Classes ******/
-.slide {
-	height: 20px;
-	width: 20px;
-	border-radius: 100%;
-}
-
-.top {
-	background-color: #FFFDE9;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 20%;
-	width: 100%;
-	min-height: 20%;
-	box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
-	position: relative;
-	align-items: center;
-}
+/* #endregion */
 
 /* TODO - IMPLEMENT TOGGLE */
 
@@ -545,27 +512,6 @@ iframe{
 	z-index: -90000;
 }
 
-.container{
-	display: flex;
-	flex-direction: column;
-	column-gap: 20px; /* ensures wrapper content is above backgrounds */
-	position: relative;
-	z-index: 5;
-}
-
-.header {
-	text-align: center;
-	width: 100%;
-	max-height: 180px;
-}
-
-.header .icon {
-	width: 7%;
-	vertical-align: middle;
-	margin-left: 30px;
-	padding-bottom: 3%;
-}
-
 .wrapper {
 	position: relative;
 	z-index: 0; /* ensures wrapper content is above backgrounds */
@@ -580,7 +526,7 @@ iframe{
 	font-family: REM, sans-serif;
 }
 
-/* Course Cards */
+/* #region Course Cards */
 .class-cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -663,16 +609,12 @@ iframe{
 	min-height: 50%;
 }
 
+/* #endregion */
+
 .slide-buttons {
 	min-height: 20%;
 	margin: auto;
 	margin-top: 5%;
-}
-
-.footer-content {
-	display: flex;
-	flex-direction: row;
-	align-content: space-between;
 }
 
 /* Global Vars */
