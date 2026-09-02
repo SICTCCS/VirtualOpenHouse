@@ -47,6 +47,7 @@ input[type="button"], button {
 	justify-content: left;
 	left: 30px;
 	padding-bottom: 5px;
+	display: flex;
 }
 
 .logo img {
@@ -131,7 +132,7 @@ p{
 	align-items: flex-start;
 }
 
-.teacherflexbox {
+.teacher-flexbox {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -587,9 +588,6 @@ iframe{
 	font-family: REM, sans-serif;
 }
 
-/* FIXME - GPT flex code is goofy */
-
-/* GPT assisted with some of the innerflex and sizing, specifically making the boxes a little bigger to compensate for the radius */
 .class-card {
 	display: flex;
 	flex-direction: column;

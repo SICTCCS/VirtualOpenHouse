@@ -99,7 +99,7 @@ body {
 }
 
 /* Hide the images by default */
-.course-card-direct .mySlides {
+.course-card-direct .my-slides {
   display: none;
 }
 
