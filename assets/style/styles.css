@@ -28,6 +28,7 @@ body{
 	background-color: #FFFDE9;
 	box-sizing: border-box;
 	position: relative;
+	font-family: REM, sans-serif;
 }
 
 h1{
@@ -144,24 +145,17 @@ header {
 /* ============================================================================= */
 /* #region BUTTONS */
 /* ============================================================================= */
-input[type="button"], button {
+button, a.button {
 	border-radius: 10000px;
 	background-color: #707F43;
 	color: #FFF;
-	transition: background-color 0.2s, transform 0.1s;
-}
-
-button{
-	padding: 5px;
+	padding: 8px;
 	border: none;
 	font-size: 1em;
+	text-align: center;
 	cursor: pointer;
-}
-
-button:hover, #apply:hover {
-	background-color: #6b8d52;
-	transform: scale(1.05);
-	cursor: pointer;
+	transition: background-color 0.2s, transform 0.1s;
+	font-family: REM, sans-serif; /* for some reason, this has to be here just for button tags */
 }
 
 .button-group {
@@ -172,9 +166,21 @@ button:hover, #apply:hover {
 }
 
 #apply {
-	z-index: 100;
+	margin: .5em;
+	margin-right: 1%;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding: 20px;
+	font-size: 2em;
+	border-radius: 1000px;
+	font-family: "Tilt Warp", sans-serif;
 }
 
+button:hover, a.button:hover {
+	background-color: #6b8d52;
+	transform: scale(1.05);
+	cursor: pointer;
+}
 .button-div {
 	display: flex;
 	gap: 0.2rem;
@@ -185,13 +191,6 @@ button:hover, #apply:hover {
 .button-div a.button {
 	width: 160px;
 	height: 36.96px;
-}
-
-.apply-button {
-	width: 250px;
-	height: 80px;
-	justify-content: center;
-	font-family: REM, sans-serif;
 }
 /* #endregion */
 /* ============================================================================= */
@@ -255,49 +254,6 @@ figure {
 	flex:1;
 }
 /* #endregion */
-
-/* #region Buttons */
-
-button, a.button {
-	border-radius: 10000px;
-	background-color: #707F43;
-	color: #FFF;
-	padding: 8px;
-	border: none;
-	font-size: 1em;
-	text-align: center;
-	cursor: pointer;
-	transition: background-color 0.2s, transform 0.1s;
-	font-family: REM, sans-serif; /* for some reason, this has to be here just for button tags */
-}
-
-.button-group {
-	margin-right: auto;
-	margin-left: auto;
-	flex-direction: row;
-	gap: 2px;
-}
-
-#apply {
-	margin: .5em;
-	margin-right: 1%;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding: 20px;
-	font-size: 2em;
-	border-radius: 1000px;
-	font-family: "Tilt Warp", sans-serif;
-}
-
-button:hover, a.button:hover {
-	background-color: #6b8d52;
-	transform: scale(1.05);
-	cursor: pointer;
-}
-
-/* #endregion */
-
-/* #region Class Page */
 /* ============================================================================= */
 /* #region COURSE PAGE */
 /* ============================================================================= */
@@ -339,14 +295,8 @@ button:hover, a.button:hover {
 }
 
 .buttons a.button {
-	width: 200px ;
+	width: 200px;
 	margin: 5px;
-}
-
-.upper-buttons a.button {
-  width: 300px;
-  height: 50px;
-  margin: 5px;
 }
 
 .upper-buttons {
@@ -358,7 +308,7 @@ button:hover, a.button:hover {
 	padding: 30px;
 }
 
-.upper-buttons button {
+.upper-buttons a.button {
 	width: 300px;
 	height: 50px;
 	margin: 5px;
@@ -371,7 +321,6 @@ button:hover, a.button:hover {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem; 
-	font-family: REM, sans-serif;
 }
 
 .class-card {
@@ -379,8 +328,8 @@ button:hover, a.button:hover {
 	flex-direction: column;
 	gap: 1rem;
 	align-items: flex-start;
-	background: #FFFDE9;
-	border-radius: 10%;
+	background: #ede8d7;
+	border-radius: 35px;
 	box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
 	padding: 1.5rem;
 	max-height: 450px;		
@@ -655,7 +604,6 @@ iframe{
 	margin: 0 auto;
 }
 
-/* Layout toggle button positioned to the right */
 /* TODO - IMPLEMENT TOGGLE */
 .toggle-button {
 	position: absolute;
@@ -667,13 +615,6 @@ iframe{
 	height: 64px;
 	font-size: 14px;
 	padding: 8px 16px;
-	font-family: REM, sans-serif;
-}
-/* #region Course Cards */
-.class-cards {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem; 
 }
 /* #endregion */
 /* ============================================================================= */
@@ -693,60 +634,6 @@ iframe{
 	.text-section {
 		max-width: 100%;
 	}
-
-.card-image {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-	flex-shrink: 0;
-	border-radius: 4px;
-	min-width: 0; /* allow flex container to control sizing */
-}
-
-.card-content {
-	display: flex;
-	flex-direction: column;		
-	justify-content: space-between;
-	gap: 10px;
-	flex: 1;	
-	margin-left: 10px;
-	height: fit-content;
-}
-
-.card-text {
-	margin-bottom: 1rem;
-	flex-wrap: wrap;
-	height: 40%;
-	max-height: 200px;
-}
-
-.button-div {
-	display: flex;
-	gap: 0.2rem;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.button-div a.button {
-	width: 160px;
-	height: 36.96px;
-}
-
-.image-section {
-	display: flex;
-	flex-direction: column;
-	flex: 0 0 200px; /* fix image column width to match image */
-	max-width: 45%;
-	min-width: 160px;
-	max-height: 100%;
-}
-
-.image-gallery {
-	display: flex;
-	flex-direction: row;
-	max-height: 60%;
-	min-height: 50%;
-}
 
 	.buttons {
 		flex-direction: row;
