@@ -3,8 +3,9 @@ layout: default
 title: Courses
 ---
 <div class="two-column">
+    <a class="button" href="presentation.html">Presentation View</a>
     <div class="wrapper">
-        <div class="class-cards">
+        <div class="class-cards two-column">
             {%- comment -%} loop through the collection called 'courses' (configured in _config.yml) which looks at the '_courses' dir {%- endcomment -%}
             {% for course in site.courses %}
                 {%- comment -%} This here is the structure per class card. Image slideshow, paragraph tag, and three buttons {%- endcomment -%}
