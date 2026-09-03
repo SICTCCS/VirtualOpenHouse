@@ -4,27 +4,27 @@ title: Courses
 ---
 <div class="two-column">
     <div class="wrapper">
-        <div class="ClassCards">
+        <div class="class-cards">
             {%- comment -%} loop through the collection called 'courses' (configured in _config.yml) which looks at the '_courses' dir {%- endcomment -%}
             {% for course in site.courses %}
                 {%- comment -%} This here is the structure per class card. Image slideshow, paragraph tag, and three buttons {%- endcomment -%}
-                <div class="ClassCard">
+                <div class="class-card">
                     <h2>{{ course.title }}</h2>
-                    <div class="Content"> {%- comment -%} The multitude of Divs is because I only know how to use flexboxes and they are here to properly align stuff. All class cards follow this same structure. {%- endcomment -%}
-                        <div class="ImageSection">
-                            <div class="Image"> {%- comment -%} gets the first image \/ (0) {%- endcomment -%}
-                                <img src="/assets/image/courses/{{ course.slug }}/0.jpg" class="CardImage" alt="Image Slide Show Here">
+                    <div class="content"> {%- comment -%} The multitude of Divs is because I only know how to use flexboxes and they are here to properly align stuff. All class cards follow this same structure. {%- endcomment -%}
+                        <div class="image-section">
+                            <div class="image-gallery"> {%- comment -%} gets the first image \/ (0) {%- endcomment -%}
+                                <img src="/assets/image/courses/{{ course.slug }}/0.jpg" class="card-image" alt="Image Slide Show Here">
                             </div>
-                            <div class="SlideButtons"></div>
+                            <div class="slide-buttons"></div>
                         </div>
-                        <div class="CardContent">
-                            <p class="CardText">{{ course.short_description }}</p>
-                            <div class="ButtonDiv">
-                                <button><a href="teacher/{{ course.slug }}">Meet the Teacher</a></button>
-                                <button><a href="course/{{ course.slug }}">Learn More</a></button>
-                                <button><a href="classroom/{{ course.slug }}">View the Classroom</a></button>
-                            </div>
+                        <div class="card-content">
+                            <p class="card-text">{{ course.short_description }}</p>
                         </div>
+                    </div>
+                    <div class="button-div">
+                        <a class="button" href="teacher/{{ course.slug }}">Meet the Teacher</a>
+                        <a class="button" href="course/{{ course.slug }}">Learn More</a>
+                        <a class="button" href="classroom/{{ course.slug }}">View Classroom</a>
                     </div>
                 </div>
             {% endfor %}

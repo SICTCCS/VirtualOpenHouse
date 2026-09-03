@@ -5,8 +5,8 @@ layout: default
 <h1>Meet the Teacher</h1>
 {%- comment -%} loop through the yaml list of teachers (yes this is like Python syntax, the 'teacher' var is now usable) {%- endcomment -%}
 {% for teacher in page.teachers %}
-<div class="teacherInfo">
-    <div class="teacherflexbox">
+<div class="teacher-info">
+    <div class="teacher-flexbox">
         <lo style="margin-left: 5%;">
         <h2>About Me</h2><br>
 
@@ -32,12 +32,12 @@ layout: default
         <h3>{{ teacher.phone }}</h3>
         <h3>Room: {{ teacher.room }}</h3>
         <figure>
-            <figcaption class="LoveAndFact" style="border-width: 3px 3px 3px 3px;">
+            <figcaption class="love-and-fact" style="border-width: 3px 3px 3px 3px;">
                 <h3>Why I Love Teaching CTE: </h3>
                 <p style="text-indent: 2em;">{{ teacher.love_teaching }}</p>
                 </br>
             </figcaption>
-            <figcaption  class="LoveAndFact" style="border-width: 0px 3px 3px 3px;">
+            <figcaption  class="love-and-fact" style="border-width: 0px 3px 3px 3px;">
                 <h3 >Fun Fact: </h3>
                 <p style="text-indent: 2em;">{{ teacher.fun_fact }}</p>
 
@@ -46,9 +46,9 @@ layout: default
         </figure>
         </lo>
     </div>
-    <div class="teacherflexbox">
+    <div class="teacher-flexbox">
     {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
-    <div class="teachPic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="Logo" class="teacher-photo"></div>
+    <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="logo" class="teacher-photo"></div>
     </div>
 </div>
  {% unless forloop.last %}

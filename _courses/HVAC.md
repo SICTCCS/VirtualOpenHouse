@@ -30,4 +30,5 @@ teachers:
     love_teaching: Helping kids find a path into careers that normally are 
       hard to get into without the proper training and pathway
     fun_fact: I love boats and being on the water. Love the outdoors!
+yt_id: ebB24xF3lDs
 ---

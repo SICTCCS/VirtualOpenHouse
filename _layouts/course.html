@@ -11,7 +11,7 @@ layout: default
         {%- comment -%} Full-width images with number and caption text {%- endcomment -%}
         {%- comment -%} gets images 0.jpg, 1.jpg, etc - the amount is determined by the 'course -> image_num' value in config. this could be changed to a list to configure captions {%- endcomment -%}
         {% for i in (1..page.course.image_num) %}
-            <div class="mySlides fade">
+            <div class="my-slides fade">
                 <div class="numbertext">{{ forloop.index }} / {{ page.course.image_num }}</div>
                 <img src="/assets/image/courses/{{ page.slug }}/{{ forloop.index0 }}.jpg" style="width:100%" class="image">
                 <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%}
@@ -37,8 +37,8 @@ layout: default
         <div class="text-section">
             <p>{{ page.description }}</p>
         </div>
-        <div class="upperButtons">
-            <div class="ButtonGroup">
+        <div class="upper-buttons">
+            <div class="button-group">
             <button id="DoorButton" onclick="showDoor()">Door Plaque</button> <!--This will be the eventual google drive IFrame.-->
             <button id="FAQButton" onclick="showFAQ()">FAQ</button>
             </div>
