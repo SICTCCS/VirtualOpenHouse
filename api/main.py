@@ -10,7 +10,7 @@ import os, io, dotenv
 
 from typing import List, Dict
 
-dotenv.load_dotenv()
+dotenv.load_dotenv() # load .env file
 
 app: Flask = Flask(__name__)
 app.logger.setLevel("DEBUG")
@@ -18,9 +18,9 @@ l = app.logger
 
 def create_yaml():
     yaml = YAML()
-    yaml.preserve_quotes = True
+    yaml.preserve_quotes = True # keep comments
     yaml.indent(mapping=2, sequence=4, offset=2)
-    yaml.width = 75
+    yaml.width = 75 # max line length
     return yaml
 
 SCOPES = [
@@ -38,8 +38,9 @@ def get_sheet_data():
     handle_class_data(spread.get_worksheet(1).get_all_records())
     handle_teacher_data(spread.get_worksheet(2).get_all_records())
 
+# get from sheet on schedule even if it may not have been updated
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=get_sheet_data, trigger="interval", seconds=1800)
+scheduler.add_job(func=get_sheet_data, trigger="interval", seconds=1800) # 30 minutes
 scheduler.start()
 
 ################### routes
