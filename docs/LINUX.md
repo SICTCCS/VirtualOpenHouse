@@ -8,5 +8,6 @@ bundle --version
 ```
 
 ```bash
-bundle exec jekyll build
+bundle exec jekyll build # build only
+bundle exec jekyll serve --host 0.0.0.0 # host on all addresses
 ```
