@@ -11,7 +11,7 @@ layout: default
         <h2>About Me</h2><br>
 
         <h3>Name:</h3>
-         <p>{{ teacher.name }}</p>
+        <p>{{ teacher.name }}</p>
         
         <h3>Program: </h3>
         <p>{{ teacher.program }}</p>
@@ -51,9 +51,9 @@ layout: default
     <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="logo" class="teacher-photo"></div>
     </div>
 </div>
- {% unless forloop.last %}
+{% unless forloop.last %}
     <hr>
-  {% endunless %}
+{% endunless %}
 {% endfor %}
 
 {% include course_nav.html %}
