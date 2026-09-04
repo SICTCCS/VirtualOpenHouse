@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>{{ page.title }} | {{ site.school_name }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/styles.css">
+</head>
+{%- comment -%} \/ can use '.page-course' for example in css to target specific page types #TODO {%- endcomment -%}
+<body class="page-{{ page.layout }}">
+    {% include header.html %}
+    {%- comment -%} top-left corner thing {%- endcomment -%}
+    <div class="border-left"></div>
+
+    <main>
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </main>
+
+    {%- comment -%} bottom-right corner thing {%- endcomment -%}
+    <div class="border-right"></div>
+    {% include footer.html %}
+
+</body>
+</html>

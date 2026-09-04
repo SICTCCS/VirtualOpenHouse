@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.html": "liquid"
+    },
+    // "terminal.integrated.cwd": "${workspaceFolder}/exp/Jekyll/"
+}

@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-# VirtualOpenHouse
-=======
-# VirtualOpenHouse
->>>>>>> main

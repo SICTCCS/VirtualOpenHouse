@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<h1>Meet the Teacher</h1>
+{%- comment -%} loop through the yaml list of teachers (yes this is like Python syntax, the 'teacher' var is now usable) {%- endcomment -%}
+{% for teacher in page.teachers %}
+<div class="teacher-info">
+    <div class="teacher-flexbox">
+        <lo style="margin-left: 5%;">
+        <h2>About Me</h2><br>
+
+        <h3>Name:</h3>
+        <p>{{ teacher.name }}</p>
+        
+        <h3>Program: </h3>
+        <p>{{ teacher.program }}</p>
+        
+        <h3>College Degree: </h3>
+        <p>{{ teacher.degree }}</p>
+
+        <h3>Career Start Year: </h3>
+        <p>{{ teacher.career_start }}</p>
+
+        <h3>Certifications: </h3>
+        <p>{{ teacher.certifications }}</p>
+
+
+        {%- comment -%} # TODO - find a way to cap how long it can go {%- endcomment -%}
+        <h2>Contact Information</h2>
+        <h3>{{ teacher.email }}</h3>
+        <h3>{{ teacher.phone }}</h3>
+        <h3>Room: {{ teacher.room }}</h3>
+        <figure>
+            <figcaption class="love-and-fact" style="border-width: 3px 3px 3px 3px;">
+                <h3>Why I Love Teaching CTE: </h3>
+                <p style="text-indent: 2em;">{{ teacher.love_teaching }}</p>
+                </br>
+            </figcaption>
+            <figcaption  class="love-and-fact" style="border-width: 0px 3px 3px 3px;">
+                <h3 >Fun Fact: </h3>
+                <p style="text-indent: 2em;">{{ teacher.fun_fact }}</p>
+
+                </br>
+            </figcaption>
+        </figure>
+        </lo>
+    </div>
+    <div class="teacher-flexbox">
+    {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
+    <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="logo" class="teacher-photo"></div>
+    </div>
+</div>
+{% unless forloop.last %}
+    <hr>
+{% endunless %}
+{% endfor %}
+
+{% include course_nav.html %}
