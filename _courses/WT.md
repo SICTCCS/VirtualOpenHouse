@@ -1,13 +1,12 @@
 ---
-title: Welding Technology
 slug: WT
+title: Welding Technology
 description: ..
-
-kuula_id: 7DTBz
-
+short_description: ..
 course:
   image_num: 5
-
+kuula_id: 7DTBz
+yt_id: R0VZSypcV20
 teachers:
   - name: Brian Dempsey
     program: ''
@@ -19,6 +18,4 @@ teachers:
     room: WT2
     love_teaching: ..
     fun_fact: ..
-short_description: ..
-yt_id: 'R0VZSypcV20'
 ---

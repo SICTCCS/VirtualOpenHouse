@@ -4,7 +4,7 @@ slug: HSES
 description: ""
 short_description: ..
 
-kuula_id: 7kBbd
+kuula_id: ''
 
 course:
   image_num: 6

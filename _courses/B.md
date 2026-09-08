@@ -1,14 +1,5 @@
 ---
 slug: B
-title: Business
-description: ..
-short_description: ..
-
-kuula_id: ''
-
-course:
-  image_num: 0
-
 teachers:
   - name: Annett Combs
     program: ''
@@ -20,5 +11,11 @@ teachers:
     room: ..
     love_teaching: ..
     fun_fact: ..
+title: Business
+description: ..
+short_description: ..
+course:
+  image_num: 0
+kuula_id: ''
 yt_id: ''
 ---

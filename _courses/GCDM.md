@@ -1,20 +1,7 @@
 ---
-title: Graphic Communications/Digital Media
 slug: GCDM
-description: "Graphic Communications/Digital Media will help students to understand
-  and create the most common types of computer graphics used in visual communications.
-  Skills are developed through work with professional vector-based and page layout
-  software used in the industry. Additionally, students will be introduced to
-  a full range of image input technology and manipulation including digital imaging
-  and computer scanners. Topics also include image capture, processing, various
-  output methods, and light."
-short_description: ..
-
-kuula_id: 7kBbd
-
-course:
-  image_num: 6
-
+kuula_id: ''
+yt_id: 3hjrUQJiToU
 teachers:
   - name: Jeanine Minor
     program: ''
@@ -41,5 +28,16 @@ teachers:
     fun_fact: I am obsessed with cooking shows. I have actually been to 
       Savannah, GA and attended the Paula Deen cooking school. Paula Deen 
       and her brother led the class.
-yt_id: '3hjrUQJiToU'
+title: Graphic Communications/Digital Media
+description: Graphic Communications/Digital Media will help students to 
+  understand and create the most common types of computer graphics used in 
+  visual communications. Skills are developed through work with 
+  professional vector-based and page layout software used in the industry. 
+  Additionally, students will be introduced to a full range of image input 
+  technology and manipulation including digital imaging and computer 
+  scanners. Topics also include image capture, processing, various output 
+  methods, and light.
+short_description: ..
+course:
+  image_num: 6
 ---
