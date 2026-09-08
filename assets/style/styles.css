@@ -189,8 +189,15 @@ button:hover, a.button:hover {
 }
 
 .button-div a.button {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
 	width: 160px;
 	height: 36.96px;
+	text-wrap: nowrap;
+	container-type: inline-size;
+	font-size: clamp(.5cqi, 4vw, 1cqi);
 }
 /* #endregion */
 /* ============================================================================= */
@@ -334,21 +341,24 @@ figure {
 	padding: 1.5rem;
 }
 
+.card-title {
+	/* text-shrink: shrink consistent; */
+	display: flex;
+	align-items: center;      /* Centers the h2 vertically */
+	justify-content: center;
+	text-wrap: nowrap;
+	container-type: inline-size; 
+	max-width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	font-size: 1.75cqw;
+}
 .content {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	min-height: 150px;
 	max-width: 100%;
-}
-
-.card-image {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-	flex-shrink: 0;
-	border-radius: 4px;
-	min-width: 0; /* allow flex container to control sizing */
 }
 
 .card-content {
@@ -366,22 +376,26 @@ figure {
 	flex-wrap: wrap;
 	height: 40%;
 	max-height: 200px;
+	text-overflow: ellipsis;
 }
 
 .image-section {
 	display: flex;
-	flex-direction: column;
+	align-items: center;
 	flex: 0 0 200px; /* fix image column width to match image */
 	max-width: 45%;
 	min-width: 160px;
-	max-height: 100%;
+	height: 100%;
 }
 
-.image-gallery {
-	display: flex;
-	flex-direction: row;
-	max-height: 60%;
-	min-height: 50%;
+.card-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	flex-shrink: 0;
+	border-radius: 4px;
+	min-width: 0; /* allow flex container to control sizing */
+	max-height: 150px;
 }
 
 /* Layout toggle: two-column (default) and one-column (presentation) */
