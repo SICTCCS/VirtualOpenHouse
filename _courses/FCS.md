@@ -1,5 +1,6 @@
 ---
 slug: FCS
+plaque_count: 0
 title: Family & Consumer Science
 description: ..
 short_description: ..

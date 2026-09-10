@@ -39,12 +39,35 @@ layout: default
         </div>
         <div class="upper-buttons">
             <div class="button-group">
-            <button id="DoorButton" onclick="showDoor()">Door Plaque</button> <!--This will be the eventual google drive IFrame.-->
+            {% assign plaque_count = page.plaque_count | default: 1 %}
+            {% if plaque_count > 0 %}
+            <button id="DoorButton" onclick="showDoor()" aria-haspopup="dialog" aria-controls="DoorModal">Door Plaque</button>
+            {% else %}
+            <button id="DoorButton" type="button">Door Plaque</button>
+            {% endif %}
             <button id="FAQButton" onclick="showFAQ()">FAQ</button>
             </div>
         </div>
     </div>
 </div>
-<script src="/assets/scripts/course.js"></script>
+{% if plaque_count > 0 %}
+<dialog id="DoorModal" class="door-modal" aria-labelledby="door-title">
+    <div class="door-modal-header">
+        <h2 id="door-title">{{ page.title }} — Door Plaque</h2>
+        <button type="button" id="closeDoor" onclick="closeOutDoor()" aria-label="Close door plaque">Close</button>
+    </div>
+    <div class="door-plaques">
+    {% for i in (1..plaque_count) %}
+    {% capture plaque_url %}/exp/Door%20Plaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
+    <figure>
+        {% if plaque_count > 1 %}<figcaption>Year {{ i }}</figcaption>{% endif %}
+        <a href="{{ plaque_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+        <iframe src="{{ plaque_url | relative_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} door plaque{% if plaque_count > 1 %}, year {{ i }}{% endif %}"></iframe>
+    </figure>
+    {% endfor %}
+    </div>
+</dialog>
+{% endif %}
+<script src="{{ '/assets/scripts/course.js' | relative_url }}?v=door-plaques-2"></script>
 
 {% include course_nav.html %}

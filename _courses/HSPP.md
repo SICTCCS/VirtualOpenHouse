@@ -1,6 +1,7 @@
 ---
 title: "Health Sciences: Pre-Professional"
 slug: HSPP
+plaque_count: 2
 description: "Health Science: Pre-Professional is a two-year program providing
   a foundation in anatomy, physiology, medical terminology, and healthcare careers.
   Students learn patient care, professionalism, and communication skills while

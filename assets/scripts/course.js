@@ -21,6 +21,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("my-slides");
   let dots = document.getElementsByClassName("dot");
+  if (!slides.length) return;
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -34,12 +35,28 @@ function showSlides(n) {
 }
 
 function showDoor() {
-  door.style.display = 'block';
-  console.log("Showing Door...");
+  if (door) {
+    door.showModal();
+  }
 }
- function closeOutDoor() {
-   door.style.display = 'none';
-   console.log("Closing Door...");
+
+function closeOutDoor() {
+  if (door) {
+    door.close();
+  }
+}
+
+// Close when the area outside the popup is clicked.
+if (door) {
+  door.onclick = function(event) {
+    if (event.target !== door) return;
+
+    let bounds = door.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right ||
+        event.clientY < bounds.top || event.clientY > bounds.bottom) {
+      closeOutDoor();
+    }
+  };
 }
 
 

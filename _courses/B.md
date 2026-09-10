@@ -1,5 +1,6 @@
 ---
 slug: B
+plaque_count: 0
 title: Business
 description: ..
 short_description: ..

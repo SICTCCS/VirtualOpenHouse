@@ -604,6 +604,87 @@ iframe{
 	margin: 0 auto;
 }
 
+/* Door plaque popup */
+.door-modal {
+	width: 94vw;
+	max-width: 900px;
+	height: 90dvh;
+	max-height: 90dvh;
+	padding: 16px;
+	border: 2px solid #707F43;
+	border-radius: 12px;
+	background: #FFFDE9;
+	color: #707F43;
+}
+.door-modal[open] {
+	display: flex;
+	flex-direction: column;
+}
+
+.door-modal::backdrop {
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.door-modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	flex-shrink: 0;
+	padding: 12px 0;
+}
+.door-modal-header h2 {
+	margin: 0;
+	font-size: 1.2rem;
+	color: #707F43;
+}
+
+.door-modal-header button {
+	color: #FFFDE9;
+}
+
+.door-plaques {
+	display: flex;
+	gap: 12px;
+	flex: 1;
+	min-height: 0;
+}
+
+.door-modal figure {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.door-modal figure a {
+	margin-bottom: 8px;
+}
+
+.door-modal iframe {
+	display: block;
+	width: 100%;
+	flex: 1;
+	min-height: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.door-modal figcaption {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+#DoorButton:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
 /* TODO - IMPLEMENT TOGGLE */
 .toggle-button {
 	position: absolute;
