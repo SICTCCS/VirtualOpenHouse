@@ -406,7 +406,6 @@ figure {
 	width: 100%;
 	max-width: 100%;
 	min-height: 0;
-	aspect-ratio: 4 / 3;
 	overflow: hidden;
 	border-radius: 4px;
 }
@@ -742,7 +741,7 @@ iframe{
 /* ============================================================================= */
 /* #region RESPONSIVE MEDIA QUERIES */
 /* ============================================================================= */
-@media (width <= 768px) {
+@media (width <= 1000px) {
 	.two-column .class-card {
 		height: auto;
 		min-height: 0;
@@ -757,9 +756,10 @@ iframe{
 	.image-section {
 		width: 100%;
 		max-width: 100%;
+	}
+	.card-image {
 		aspect-ratio: 16 / 10;
 	}
-
 	.card-content {
 		margin-left: 0;
 	}
@@ -781,6 +781,28 @@ iframe{
 	.buttons {
 		flex-direction: row;
 		align-items: center;   
+	}
+}
+@media (width <= 768px) {
+	.two-column .class-cards {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.two-column .class-card {
+		flex: 1 1 100%;
+    	max-width: 100%; 
+		height: auto;
+		min-height: 440px;
+		max-height: none;
+	}
+
+	.card-text {
+		margin-bottom: 0;
+		height: auto;
+		max-height: none;
+		font-size: clamp(1.2rem, 2vw, 3rem);
+		line-height: 1.45;
 	}
 }
 /* #endregion */
