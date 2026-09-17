@@ -720,7 +720,8 @@ iframe{
 	margin-bottom: 8px;
 }
 
-#DoorButton:disabled {
+#DoorButton:disabled,
+#FAQButton:disabled {
 	opacity: 0.6;
 	cursor: not-allowed;
 }

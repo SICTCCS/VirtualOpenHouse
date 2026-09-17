@@ -45,7 +45,7 @@ layout: default
             {% else %}
             <button id="DoorButton" type="button">Door Plaque</button>
             {% endif %}
-            <button id="FAQButton" onclick="showFAQ()">FAQ</button>
+            <button id="FAQButton" onclick="showFAQ()" aria-haspopup="dialog" aria-controls="FAQModal">FAQ</button>
             </div>
         </div>
     </div>
@@ -68,6 +68,22 @@ layout: default
     </div>
 </dialog>
 {% endif %}
-<script src="{{ '/assets/scripts/course.js' | relative_url }}?v=door-plaques-2"></script>
+<dialog id="FAQModal" class="door-modal" aria-labelledby="faq-title">
+    <div class="door-modal-header">
+        <h2 id="faq-title">{{ page.title }} — FAQ</h2>
+        <button type="button" id="closeFAQ" onclick="closeOutFAQ()" aria-label="Close FAQ">Close</button>
+    </div>
+    <div class="door-plaques">
+    {% capture faq_url %}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
+    {% assign faq_file = site.static_files | where: "path", faq_url | first %}
+    {% if faq_file %}
+    <figure>
+        <a href="{{ faq_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+        <iframe src="{{ faq_url | relative_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} FAQ"></iframe>
+    </figure>
+    {% endif %}
+    </div>
+</dialog>
+<script src="{{ '/assets/scripts/course.js' | relative_url }}?v=faqs-1"></script>
 
 {% include course_nav.html %}
