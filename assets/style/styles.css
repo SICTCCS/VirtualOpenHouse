@@ -344,27 +344,18 @@ figure {
 }
 
 .card-title {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	text-align: center;
-	white-space: normal;
-	word-break: break-word;
-	overflow-wrap: anywhere;
-	container-type: inline-size;
+	align-content: center;
 	width: 100%;
 	height: auto;
-	min-height: 2.8em;
 	margin-top: 5px;
-	font-size: clamp(1.02rem, 1.7vw, 1.9rem);
 	line-height: 1.12;
-	max-width: 14ch;
-	margin-left: auto;
-	margin-right: auto;
+	 min-height: calc((1.5rem * 2) + (10px * 2)); /* Two lines + top/bottom padding */
 }
+
 .content {
 	display: grid;
-	grid-template-columns: minmax(180px, 38%) minmax(0, 1fr);
+	grid-template-columns: minmax(180px, 40%) minmax(0, 1fr);
 	align-items: center;
 	gap: 1rem;
 	min-height: 0;
@@ -741,7 +732,7 @@ iframe{
 /* ============================================================================= */
 /* #region RESPONSIVE MEDIA QUERIES */
 /* ============================================================================= */
-@media (width <= 1000px) {
+@media (width <= 1280px) {
 	.two-column .class-card {
 		height: auto;
 		min-height: 0;
@@ -751,6 +742,22 @@ iframe{
 	.content {
 		display: grid;
 		grid-template-columns: 1fr;
+		align-items: start;
+		gap: 1rem;
+		min-height: 0;
+		max-width: 100%;
+		flex: 1;
+		padding: 0 1.5rem 1rem;
+	}
+
+	.card-title {
+		text-align: center;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 1.25rem 1.5rem 0.75rem;
+		line-height: 1.12;
+		min-height: calc((1.5rem * 2) + (10px * 2));
 	}
 
 	.image-section {
@@ -769,11 +776,6 @@ iframe{
 		text-align: center;
 	}
 
-	.content-wrapper-2 {
-		flex-direction: row;
-		text-align: center;
-	}
-
 	.text-section {
 		max-width: 100%;
 	}
@@ -783,6 +785,7 @@ iframe{
 		align-items: center;   
 	}
 }
+
 @media (width <= 768px) {
 	.two-column .class-cards {
 		flex-direction: column;
