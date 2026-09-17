@@ -61,10 +61,26 @@ if (door) {
 
 
 function showFAQ() {
-  faq.style.display = 'block';
-  console.log("Showing FAQ...");
+  if (faq) {
+    faq.showModal();
+  }
 }
- function closeOutFAQ() {
-   faq.style.display = 'none';
-   console.log("Closing FAQ...");
+
+function closeOutFAQ() {
+  if (faq) {
+    faq.close();
+  }
+}
+
+// Close when the area outside the popup is clicked.
+if (faq) {
+  faq.onclick = function(event) {
+    if (event.target !== faq) return;
+
+    let bounds = faq.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right ||
+        event.clientY < bounds.top || event.clientY > bounds.bottom) {
+      closeOutFAQ();
+    }
+  };
 }

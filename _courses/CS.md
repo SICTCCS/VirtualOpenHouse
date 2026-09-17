@@ -21,13 +21,13 @@ course:
 
 teachers:
   - name: Nic Bander
-    program: ''
+    program: 'Computer Science'
     degree: Civil Engineering at Rose-Hulman Institute of Technology
     career_start: 2017
     certifications: ..
     email: nic.bander@evsck12.com
     phone: 812-435-8827
-    room: ..
+    room: CN1
     love_teaching: Along with having an awesome work environment, I have 
       the opportunity to teach my students in ways that they'll see after 
       high school. We don't sit behind a desk and read a textbook, we learn
