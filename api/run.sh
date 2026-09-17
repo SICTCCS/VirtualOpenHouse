@@ -18,4 +18,4 @@ ngrok http --log stdout --config ./ngrok.yml --authtoken "${NGROK_TOKEN}" --url 
 echo ""
 echo "Stopping..."
 
-sudo kill $pid
+kill $pid
