@@ -39,7 +39,7 @@ teachers: # TODO - update info
       University in Architectural Design Technology and Career & Technical 
       Education
     career_start: 1994
-    teaching_start_year:...
+    teaching_start: ..
     certifications: Certified SOLIDWORKS Associate, Certified SOLIDWORKS 
       Professional
     email: andy.beadles@evsck12.com
