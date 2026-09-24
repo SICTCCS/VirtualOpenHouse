@@ -45,7 +45,7 @@ layout: default
     </div>
     <div class="teacher-flexbox">
     {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
-    <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="logo" class="teacher-photo"></div>
+    <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="We don't have an image of {{ teacher.name }} yet!" class="teacher-photo"></div>
     <figure>
             <figcaption class="love-and-fact" style="border-width: 3px 3px 3px 3px;">
                 <h3>Why I Love Teaching CTE: </h3>
