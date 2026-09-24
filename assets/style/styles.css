@@ -272,7 +272,10 @@ button:hover, a.button:hover {
 	object-position: center;     /* Perfectly anchors faces during layout calculations */
 	border-radius: 47px;
 	text-align: center;
-	color: azure;
+	font-style: italic;
+	font-size: 40px;
+	text-wrap: wrap;
+	color: #444;
 }
 
 .under-image {
