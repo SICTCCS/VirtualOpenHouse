@@ -213,10 +213,29 @@ button:hover, a.button:hover {
 	margin-right: 2%;
 	box-sizing: border-box;
 	display: flex;
+	flex-direction: row;  /* Places the two flexboxes side-by-side */
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 3%;
-	align-items: flex-start;
+	align-items: stretch;
+}
+
+.teacher-flexbox h3 {
+  /* Shrink the invisible line height box to match the text tightly */
+  line-height: 1.0; 
+  
+  /* Pull the next element upward to get rid of remaining blank space */
+  margin-bottom: -5px; 
+}
+
+/* Trim top space from the paragraph immediately following the h3 */
+.teacher-flexbox h3 + p {
+  margin-top: 0;
+}
+
+.teacher-info h2 {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .teacher-flexbox {
@@ -224,7 +243,18 @@ button:hover, a.button:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: stretch;        /* Forces layout elements to stretch to matching widths */
+	align-items: stretch;        /* Force layout elements to stretch to matching widths */
+}
+
+.teacher-info .teacher-flexbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.teacher-info .teacher-flexbox:last-child {
+  justify-content: center; /* Centers the picture and text blocks vertically */
+  align-items: center;     /* Centers them horizontally if desired */
 }
 
 .teach-pic {
@@ -259,7 +289,6 @@ figure {
 	padding: 10px;
 	display: block;
 	margin: 0 auto;
-	flex:1;
 }
 /* #endregion */
 /* ============================================================================= */
@@ -295,11 +324,11 @@ figure {
 .buttons {
 	background-color: #132E5E;
 	gap: 20px;
-	padding: 30px;
+	padding: 30px 256px;
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 .buttons a.button {
@@ -780,10 +809,30 @@ iframe{
 	.text-section {
 		max-width: 100%;
 	}
+}
 
+@media (width <= 880px) {
 	.buttons {
+    background-color: #132E5E;
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	
+	
+button, a.button {
+    margin-right: clamp(10px, 5vw, 50px);
+	margin-left: clamp(10px, 5vw, 50px);
+}
+
+	}
+	.button-group {
+		display: flex;
 		flex-direction: row;
-		align-items: center;   
+		gap: clamp(10px, 4vw, 30);
+		
 	}
 }
 

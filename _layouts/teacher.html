@@ -8,7 +8,7 @@ layout: default
 <div class="teacher-info">
     <div class="teacher-flexbox">
         <lo style="margin-left: 5%;">
-        <h2>About Me</h2><br>
+        <h2>About Me</h2>
 
         <h3>Name:</h3>
         <p>{{ teacher.name }}</p>
@@ -22,11 +22,14 @@ layout: default
         <h3>Career Start Year: </h3>
         <p>{{ teacher.career_start }}</p>
 
+        <h3>Teaching Start Year: </h3>
+        <p>{{ teacher.teaching_start }}</p>
+
         {% assign current_year = "now" | date: "%Y" | plus: 0 %}
         {% assign years_experience = current_year | minus: teacher.teaching_start %}
         
         <h3>Years of Teaching: </h3>
-        <p>{{ years_experience }} years</p>
+        <p>{{ years_experience }} Years</p>
 
         <h3>Certifications: </h3>
         <p>{{ teacher.certifications }}</p>
@@ -37,7 +40,13 @@ layout: default
         <h3>{{ teacher.email }}</h3>
         <h3>{{ teacher.phone }}</h3>
         <h3>Room: {{ teacher.room }}</h3>
-        <figure>
+        
+        </lo>
+    </div>
+    <div class="teacher-flexbox">
+    {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
+    <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="logo" class="teacher-photo"></div>
+    <figure>
             <figcaption class="love-and-fact" style="border-width: 3px 3px 3px 3px;">
                 <h3>Why I Love Teaching CTE: </h3>
                 <p style="text-indent: 2em;">{{ teacher.love_teaching }}</p>
@@ -49,13 +58,7 @@ layout: default
 
                 </br>
             </figcaption>
-        </figure>
-        </lo>
-    </div>
-    <div class="teacher-flexbox">
-    {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
-    <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="logo" class="teacher-photo"></div>
-    </div>
+        </figure></div>
 </div>
 {% unless forloop.last %}
     <hr>
