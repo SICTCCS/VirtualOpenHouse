@@ -61,10 +61,6 @@ layout: default
         </figure>
         </lo>
     </div>
-    <div class="teacher-flexbox">
-    {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
-    <div class="teach-pic"><img src="/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="We don't have an image of {{ teacher.name }} yet!" class="teacher-photo"></div>
-    </div>
 </div>
 {% unless forloop.last %}
     <hr>
