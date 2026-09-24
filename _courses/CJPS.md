@@ -23,6 +23,7 @@ teachers:
     program: ''
     degree: Associates of Science, Vincennes University in Criminal Justice
     career_start: 1990
+    teaching_start: ..
     certifications: Indiana Law Enforcement Certified Instructor, Indiana 
       Law Academy Certified Emergency Vehicle Operations Instructor, 
       Certified Police Motorcycle Instructor

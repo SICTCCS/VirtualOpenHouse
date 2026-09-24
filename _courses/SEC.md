@@ -26,6 +26,7 @@ teachers:
     degree: Associates Degree in Welding, Associates Degree in Tool, and 
       Die and Associates Degree in Automotive
     career_start: ..
+    teaching_start: ..
     certifications: ..
     email: hans.lagenour@evsck12.com
     phone: 812-435-8438

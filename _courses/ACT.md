@@ -21,6 +21,7 @@ teachers:
     program: Automotive Collision Repair
     degree: Vincennes University; Oakland City University
     career_start: 1978
+    teaching_start: ..
     certifications: ASE Master Collision Repair Technician Certification
     email: john.snider@evsck12.com
     phone: 812-435-8822

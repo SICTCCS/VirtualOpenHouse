@@ -22,6 +22,12 @@ layout: default
         <h3>Career Start Year: </h3>
         <p>{{ teacher.career_start }}</p>
 
+        {% assign current_year = "now" | date: "%Y" | plus: 0 %}
+        {% assign years_experience = current_year | minus: teacher.teaching_start %}
+        
+        <h3>Years of Teaching: </h3>
+        <p>{{ years_experience }} years</p>
+
         <h3>Certifications: </h3>
         <p>{{ teacher.certifications }}</p>
 

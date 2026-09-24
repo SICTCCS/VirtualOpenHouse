@@ -22,6 +22,7 @@ teachers:
     program: Veterinary Science
     degree: BS Animal Science Purdue University
     career_start: 1996
+    teaching_start: ..
     certifications: Indiana Law Enforcement Certified Instructor, Indiana 
       Law Academy Certified Emergency Vehicle Operations Instructor, 
       Certified Police Motorcycle Instructor

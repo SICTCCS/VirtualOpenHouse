@@ -19,6 +19,7 @@ teachers:
     program: Precision Machine Metalworking Technology
     degree: ..
     career_start: ..
+    teaching_start: ..
     certifications: ..
     email: jacob.somers@evsck12.com
     phone: ..

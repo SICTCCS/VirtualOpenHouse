@@ -20,6 +20,7 @@ teachers:
     degree: Bachelors of Science In Construction Management from Purdue 
       University
     career_start: 1994
+    teaching_start: ..
     certifications: Vanderburgh County Building Commission Licensed 
       Contractor, OSHA 10 Certified
     email: kent.martin@evsck12.com
@@ -32,6 +33,7 @@ teachers:
     program: ''
     degree: '...'
     career_start: 2004
+    teaching_start: ..
     certifications: '...'
     email: david.mcclary@evsck12.com
     phone: 812-435-8819

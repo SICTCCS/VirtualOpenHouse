@@ -22,6 +22,7 @@ teachers:
   - name: Seth Aull
     degree: "Apprenticeship Technology: Electrical Specialty Ivy Tech"
     career_start: 2008
+    teaching_start: ..
     certifications: Awarded Journeyman Wireman classification in 2010 from 
       the National Joint Apprenticeship and Training Committee, Journeyman 
       Electrical - License Vanderburgh County, OSHA 511 Certification, NFPA

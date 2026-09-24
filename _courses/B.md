@@ -15,6 +15,7 @@ teachers:
     program: ''
     degree: ..
     career_start: ..
+    teaching_start: ..
     certifications: ..
     email: annette.combs@evsck12.com
     phone: ..

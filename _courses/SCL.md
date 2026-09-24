@@ -14,6 +14,7 @@ teachers:
     program: ''
     degree: ..
     career_start: ..
+    teaching_start: ..
     certifications: ..
     email: jesse.simmons@evsck12.com
     phone: ..

@@ -30,6 +30,7 @@ teachers:
     program: ''
     degree: ..
     career_start: 1994
+    teaching_start: ..
     certifications: ''
     email: tonya.fleenor@evsck12.com
     phone: 930-214-4018
@@ -40,6 +41,7 @@ teachers:
     program: ''
     degree: Master of Science in Nursing, University of Cincinnati
     career_start: 1986
+    teaching_start: ..
     certifications: Clinical Nurse Specialist
     email: angela.pruitt@evsck12.com
     phone: 812-435-8809

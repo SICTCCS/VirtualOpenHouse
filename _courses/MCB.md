@@ -22,6 +22,7 @@ teachers:
     program: ''
     degree: B.A. in Telecommunications from Indiana University, Bloomington
     career_start: 2001
+    teaching_start: ..
     certifications: Adobe Creative Educator Level 2, Adobe Premiere Pro 
       Certified Associate, Hubspot Social Media Marketing / Content 
       Marketing / Digital Marketing / Digital Advertising, Society of 

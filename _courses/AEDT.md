@@ -39,6 +39,7 @@ teachers: # TODO - update info
       University in Architectural Design Technology and Career & Technical 
       Education
     career_start: 1994
+    teaching_start_year:...
     certifications: Certified SOLIDWORKS Associate, Certified SOLIDWORKS 
       Professional
     email: andy.beadles@evsck12.com
@@ -51,6 +52,7 @@ teachers: # TODO - update info
     degree: Engineering Graphics, Now Design Engineering Technology, and 
       Design Murray State University
     career_start: 2014
+    teaching_start: ..
     certifications: Certified SOLIDWORKS Associate, Certified SOLIDWORKS 
       Professional
     email: emily.reidford@evsck12.com

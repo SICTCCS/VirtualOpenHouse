@@ -24,6 +24,7 @@ teachers:
     program: ''
     degree: ..
     career_start: 2024
+    teaching_start: ..
     certifications: AWS American Welding Society - 13 Welding 
       Certifications
     email: john.kaufman@evsck12.com
@@ -39,6 +40,7 @@ teachers:
     program: ''
     degree: Universal Technical Institute
     career_start: 2009
+    teaching_start: ..
     certifications: ASE Master Technician
     email: david.overfield@evsck12.com
     phone: 812-435-8393

@@ -26,6 +26,7 @@ teachers:
     program: ''
     degree: ..
     career_start: ..
+    teaching_start: ..
     certifications: ..
     email: daniel.nightingale@evsck12.com
     phone: ..

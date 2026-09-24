@@ -13,6 +13,7 @@ teachers:
     program: ''
     degree: ..
     career_start: ..
+    teaching_start: ..
     certifications: ..
     email: brian.dempsey@evsck12.com
     phone: ..

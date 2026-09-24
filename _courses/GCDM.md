@@ -23,6 +23,7 @@ teachers:
       University Masters of Education in Education with an emphasis in 
       Curriculum.
     career_start: 2013
+    teaching_start: ..
     certifications: Adobe Certified in InDesign, Illustrator and Photoshop.
       Adobe Certified Design Specialist, Level 1, Certification in 
       Flexography

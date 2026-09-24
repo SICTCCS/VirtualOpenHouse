@@ -23,6 +23,7 @@ teachers:
     program: ''
     degree: Culinary Arts
     career_start: 1994
+    teaching_start: ..
     certifications: Certified ServSafe Instructor and Proctor
     email: samuel.wagoner@evsck12.com
     phone: 812-435-8806

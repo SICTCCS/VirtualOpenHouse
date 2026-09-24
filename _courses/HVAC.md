@@ -23,6 +23,7 @@ teachers:
     degree: Associate in Applied Science of Sheet Metal Technology from Ivy
       Tech
     career_start: 2001
+    teaching_start: ..
     certifications: ''
     email: seth.aull@evsck12.com
     phone: 812-435-8820
