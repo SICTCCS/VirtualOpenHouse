@@ -8,9 +8,10 @@ vendor/
 Gemfile.lock
 # py
 __pycache__/
-Include/
-Lib/
-Scripts/
+api/Include/
+api/Lib/
+api/Scripts/
+api/bin
 pyvenv.cfg
 .env
 credentials.json
