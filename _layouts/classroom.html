@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- comment -%} # TODO - possibly change this URL {%- endcomment -%}
+<iframe src="https://kuula.co/share/collection/{{ page.kuula_id }}?logo=-1&info=0&fs=1&vr=1&sd=1&thumbs=0"
+    width="1536"
+    height="720"
+    style="border:none;">
+</iframe>
+     
+<iframe src="https://www.youtube.com/embed/{{ page.yt_id }}"
+    width="1536"
+    height="720"
+    style="border:none;">
+</iframe>
+
+{% include course_nav.html %}

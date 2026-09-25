@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<div class="content-wrapper">
+    <div class="content-wrapper-2">
+
+    {%- comment -%} Slideshow container {%- endcomment -%}
+    <div class="slideshow-container">
+
+        {%- comment -%} Full-width images with number and caption text {%- endcomment -%}
+        {%- comment -%} gets images 0.jpg, 1.jpg, etc - the amount is determined by the 'course -> image_num' value in config. this could be changed to a list to configure captions {%- endcomment -%}
+        {% for i in (1..page.course.image_num) %}
+            <div class="my-slides fade">
+                <div class="numbertext">{{ forloop.index }} / {{ page.course.image_num }}</div>
+                <img src="/assets/image/courses/{{ page.slug }}/{{ forloop.index0 }}.jpg" style="width:100%" class="image">
+                <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%}
+            </div>
+        {% endfor %}
+
+        {%- comment -%} Next and previous buttons {%- endcomment -%}
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        {%- comment -%} again, based on value defined {%- endcomment -%}
+        {% for i in (1..page.course.image_num) %}
+            <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+        {% endfor %}
+    </div>
+    </div>  
+
+    <div class="content-wrapper-2">
+        <div class="text-section">
+            <p>{{ page.description }}</p>
+        </div>
+        <div class="upper-buttons">
+            <div class="button-group">
+            {% assign plaque_count = page.plaque_count | default: 1 %}
+            {% if plaque_count > 0 %}
+            <button id="DoorButton" onclick="showDoor()" aria-haspopup="dialog" aria-controls="DoorModal">Door Plaque</button>
+            {% else %}
+            <button id="DoorButton" type="button">Door Plaque</button>
+            {% endif %}
+            <button id="FAQButton" onclick="showFAQ()" aria-haspopup="dialog" aria-controls="FAQModal">FAQ</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% if plaque_count > 0 %}
+<dialog id="DoorModal" class="door-modal" aria-labelledby="door-title">
+    <div class="door-modal-header">
+        <h2 id="door-title">{{ page.title }} — Door Plaque</h2>
+        <button type="button" id="closeDoor" onclick="closeOutDoor()" aria-label="Close door plaque">Close</button>
+    </div>
+    <div class="door-plaques">
+    {% for i in (1..plaque_count) %}
+    {% capture plaque_url %}/exp/Door%20Plaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
+    <figure>
+        {% if plaque_count > 1 %}<figcaption>Year {{ i }}</figcaption>{% endif %}
+        <a href="{{ plaque_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+        <iframe src="{{ plaque_url | relative_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} door plaque{% if plaque_count > 1 %}, year {{ i }}{% endif %}"></iframe>
+    </figure>
+    {% endfor %}
+    </div>
+</dialog>
+{% endif %}
+<dialog id="FAQModal" class="door-modal" aria-labelledby="faq-title">
+    <div class="door-modal-header">
+        <h2 id="faq-title">{{ page.title }} — FAQ</h2>
+        <button type="button" id="closeFAQ" onclick="closeOutFAQ()" aria-label="Close FAQ">Close</button>
+    </div>
+    <div class="door-plaques">
+    {% capture faq_url %}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
+    {% assign faq_file = site.static_files | where: "path", faq_url | first %}
+    {% if faq_file %}
+    <figure>
+        <a href="{{ faq_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+        <iframe src="{{ faq_url | relative_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} FAQ"></iframe>
+    </figure>
+    {% endif %}
+    </div>
+</dialog>
+<script src="{{ '/assets/scripts/course.js' | relative_url }}?v=faqs-1"></script>
+
+{% include course_nav.html %}
