@@ -447,8 +447,11 @@ figure {
 
 /* Layout toggle: two-column (default) and one-column (presentation) */
 .two-column .class-cards {
+	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: flex-start;
+	gap: 2rem; 
 }
 
 .two-column .class-card {
@@ -457,6 +460,11 @@ figure {
 	height: auto;
 	min-height: 440px;
 	max-height: none;
+}
+.two-column .class-card.center-last {
+	flex: 0 1 calc(50% - 1rem);
+	margin-inline: auto; /* Overrides justify-content: flex-start on this row line */
+	margin-bottom: 10px;
 }
 
 .one-column .class-cards {
@@ -823,14 +831,13 @@ iframe{
     display: flex;
     justify-content: center;
     flex-direction: column;
-	
-	
-button, a.button {
-    margin-right: clamp(10px, 5vw, 50px);
-	margin-left: clamp(10px, 5vw, 50px);
-}
-
 	}
+	
+	button, a.button {
+		margin-right: clamp(10px, 5vw, 50px);
+		margin-left: clamp(10px, 5vw, 50px);
+	}
+
 	.button-group {
 		display: flex;
 		flex-direction: row;

@@ -5,10 +5,14 @@ title: Courses
 <div class="two-column">
     <div class="wrapper">
         <div class="class-cards two-column">
+            {%- comment -%} Determine if the total number of courses is odd {%- endcomment -%}
+            {% assign total_courses = site.courses | size %}
+            {% assign is_odd = total_courses | modulo: 2 %}
+
             {%- comment -%} loop through the collection called 'courses' (configured in _config.yml) which looks at the '_courses' dir {%- endcomment -%}
             {% for course in site.courses %}
                 {%- comment -%} This here is the structure per class card. Image slideshow, paragraph tag, and three buttons {%- endcomment -%}
-                <div class="class-card">
+                <div class="class-card {% if forloop.last and is_odd != 0 %}center-last{% endif %}">
                     <h2 class="card-title">{{ course.title }}</h2>
                     <div class="content"> {%- comment -%} The multitude of Divs is because I only know how to use flexboxes and they are here to properly align stuff. All class cards follow this same structure. {%- endcomment -%}
                         <div class="image-section">
@@ -30,4 +34,4 @@ title: Courses
             {% endfor %}
         </div>
     </div>
-</body>
+</div>
