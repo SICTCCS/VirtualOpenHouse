@@ -486,6 +486,11 @@ figure {
 	position: relative;
 	margin: auto;
 }
+.slideshow-container .image {
+    object-fit: cover;
+    min-width: 0;
+	aspect-ratio: 16 / 10;
+}
 
 .my-slides {
 	display: none;
@@ -555,6 +560,18 @@ figure {
 	margin: auto;
 	margin-top: 5%;
 }
+/* #endregion */
+/* ============================================================================= */
+/* #region CLASSROOM VIEW */
+.iframe-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* .iframe-div iframe{
+	aspect-ratio: 6/5;
+} */
 /* #endregion */
 /* ============================================================================= */
 /* #region FOOTER */
