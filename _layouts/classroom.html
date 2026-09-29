@@ -1,19 +1,34 @@
 ---
 layout: default
 ---
+    <script src="\assets\scripts\tabBTNs.js"></script>
 {%- comment -%} # TODO - possibly change this URL {%- endcomment -%}
-<div class = "iframe-div">
-    <iframe src="https://kuula.co/share/collection/{{ page.kuula_id }}?logo=-1&info=0&fs=1&vr=1&sd=1&thumbs=0"
-        width="1536"
-        height="720"
-        style="border:none;">
-    </iframe>
-        
-    <iframe src="https://www.youtube.com/embed/{{ page.yt_id }}"
-        width="1536"
-        height="720"
-        style="border:none;">
-    </iframe>
+<div class="tabs-container">
+  <!-- Tab Buttons -->
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="openTab(event, 'kuula')">Virtual Tour</button>
+    <button class="tab-btn" onclick="openTab(event, 'youtube')">Video</button>
+  </div>
+  <!-- Tab Content -->
+  <div id="kuula" class="tab-content active">
+    <div class = "iframe-div">
+        <iframe src="https://kuula.co/share/collection/{{ page.kuula_id }}?logo=-1&info=0&fs=1&vr=1&sd=1&thumbs=0"
+            width="1536"
+            height="720"
+            style="border:none;">
+        </iframe>
+    </div>
+  </div>
+  <div id="youtube" class="tab-content">
+    <div class = "iframe-div">
+        <iframe src="https://www.youtube.com/embed/{{ page.yt_id }}"
+            width="1536"
+            height="720"
+            style="border:none;">
+        </iframe>
+    </div>
+  </div>
 </div>
+
 
 {% include course_nav.html %}

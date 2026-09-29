@@ -563,15 +563,56 @@ figure {
 /* #endregion */
 /* ============================================================================= */
 /* #region CLASSROOM VIEW */
+.tab-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .iframe-div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 720px;
 }
-/* .iframe-div iframe{
-	aspect-ratio: 6/5;
-} */
+
+.iframe-div iframe {
+	margin-top: 0;
+}
+
+/* Hide all content sections by default */
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Show content when it is active */
+.tab-content.active {
+  display: block;
+}
+
+/* Style for tab buttons */
+.tab-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #8b896e;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+/* Highlight active button */
+.tab-btn.active {
+  background-color: #707f43;
+  font-weight: bold;
+}
+
+.tabs-container, .iframe-div, .tab-content {
+  background-color: transparent !important;
+  border: none;
+}
 /* #endregion */
 /* ============================================================================= */
 /* #region FOOTER */
