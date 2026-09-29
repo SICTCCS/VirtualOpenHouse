@@ -7,7 +7,7 @@ layout: default
 {% for teacher in page.teachers %}
 <div class="teacher-info">
     <div class="teacher-flexbox">
-        <lo style="margin-left: 5%;">
+        <div class="about-me" style="margin-left: 5%;">
         <h2>About Me</h2>
 
         <h3>Name:</h3>
@@ -21,6 +21,12 @@ layout: default
 
         <h3>Career Start Year: </h3>
         <p>{{ teacher.career_start }}</p>
+
+        {% assign current_year = "now" | date: "%Y" | plus: 0 %}
+        {% assign years_in_career = current_year | minus: teacher.career_start %}
+        
+        <h3>Years In Career: </h3>
+        <p>{{ years_in_career }} Years</p>
 
         <h3>Teaching Start Year: </h3>
         <p>{{ teacher.teaching_start }}</p>
@@ -41,7 +47,7 @@ layout: default
         <h3>{{ teacher.phone }}</h3>
         <h3>Room: {{ teacher.room }}</h3>
         
-        </lo>
+        </div>
     </div>
     <div class="teacher-flexbox">
     {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
