@@ -621,8 +621,11 @@ figure {
 /* Hide all content sections by default */
 .tab-content {
   display: none;
-  padding: 20px;
-  border: 1px solid #ccc;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  background-color: #8b896e;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #000;
 }
 
 /* Show content when it is active */
@@ -635,21 +638,19 @@ figure {
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
-  background-color: #8b896e;
+  background-color: #707f43;
   border: 1px solid #ccc;
   border-bottom: none;
+  border-radius: 20px 20px 0 0;
 }
 
-/* Highlight active button */
+/* disable active button */
 .tab-btn.active {
-  background-color: #707f43;
-  font-weight: bold;
+  background-color: #8b896e;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
-.tabs-container, .iframe-div, .tab-content {
-  background-color: transparent !important;
-  border: none;
-}
 /* #endregion */
 /* ============================================================================= */
 /* #region FOOTER */
@@ -755,9 +756,8 @@ li {
 }
 
 iframe{
-	border-radius: 25px;
-	box-shadow: 0 0 30px #000;
 	margin: 50px auto 0;
+	width: 100%;
 }
 /* #endregion */
 /* ============================================================================= */
