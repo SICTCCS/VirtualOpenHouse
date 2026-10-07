@@ -6,3 +6,8 @@ baseurl: "" # Leave empty if your site is at username.github.io
 collections:
   courses:
     output: true
+exclude:
+  - api/
+  - .vscode/
+  - docs/
+  - .venv/
