@@ -46,7 +46,12 @@ layout: default
             <button id="DoorButton" onclick="showDoor()" aria-haspopup="dialog" aria-controls="DoorModal">Door Plaque</button>
             {% endif %}
 
+            
+            {% capture faq_url %}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
+            {% assign faq_file = site.static_files | where: "path", faq_url | first %}
+            {% if faq_file %}
             <button id="FAQButton" onclick="showFAQ()" aria-haspopup="dialog" aria-controls="FAQModal">FAQ</button>
+            {% endif %}
             </div>
         </div>
     </div>
@@ -59,12 +64,16 @@ layout: default
     </div>
     <div class="door-plaques">
     {% for i in (1..plaque_count) %}
-    {% capture plaque_url %}{{ site.baseurl }}/exp/Door%20Plaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
+    {% capture plaque_url %}/exp/DoorPlaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
+    {% assign plaque_file = site.static_files | where: "path", plaque_url | first %}
+
+    {% if plaque_file %}
     <figure>
         {% if plaque_count > 1 %}<figcaption>Year {{ i }}</figcaption>{% endif %}
-        <a href="{{ plaque_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-        <iframe src="{{ plaque_url | relative_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} door plaque{% if plaque_count > 1 %}, year {{ i }}{% endif %}"></iframe>
+        <a href="{{ site.baseurl }}{{ plaque_url }}" target="_blank" rel="noopener">Open PDF</a>
+        <iframe src="{{ site.baseurl }}{{ plaque_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} door plaque{% if plaque_count > 1 %}, year {{ i }}{% endif %}"></iframe>
     </figure>
+    {% endif %}
     {% endfor %}
     </div>
 </dialog>
@@ -75,12 +84,10 @@ layout: default
         <button type="button" id="closeFAQ" onclick="closeOutFAQ()" aria-label="Close FAQ">Close</button>
     </div>
     <div class="door-plaques">
-    {% capture faq_url %}{{ site.baseurl }}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
-    {% assign faq_file = site.static_files | where: "path", faq_url | first %}
     {% if faq_file %}
     <figure>
-        <a href="{{ faq_url }}" target="_blank" rel="noopener">Open PDF</a>
-        <iframe src="{{ faq_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} FAQ"></iframe>
+        <a href="{{ site.baseurl }}{{ faq_url }}" target="_blank" rel="noopener">Open PDF</a>
+        <iframe src="{{ site.baseurl }}{{ faq_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} FAQ"></iframe>
     </figure>
     {% endif %}
     </div>
