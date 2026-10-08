@@ -2,7 +2,7 @@
 title: School Course Catalog
 school_name: SICTC
 description: SICTC Virtual Open House Website
-baseurl: "" # Leave empty if your site is at username.github.io
+baseurl: "/VirtualOpenHouse" # Leave empty if your site is at username.github.io
 collections:
   courses:
     output: false

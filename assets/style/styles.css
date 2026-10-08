@@ -670,7 +670,7 @@ footer{
 
 .logo2 {
 	position: relative;
-	background-image: url("/assets/image/SICTCLogo2.png");
+	background-image: url("../image/SICTCLogo2.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: left center;
@@ -705,15 +705,15 @@ li {
 
 /****** Footer Icons ******/
 .map {
-	background-image: url("/assets/image/icon/map.png");
+	background-image: url("../image/icon/map.png");
 }
 
 .phone {
-	background-image: url("/assets/image/icon/phone.png");
+	background-image: url("../image/icon/phone.png");
 }
 
 .fax {
-	background-image: url("/assets/image/icon/fax.png");
+	background-image: url("../image/icon/fax.png");
 }
 
 .map, .phone, .fax {
@@ -728,7 +728,7 @@ li {
 /* #region DECORATIVE ELEMENTS & BACKGROUNDS */
 /* ============================================================================= */
 .border-left {
-	background-image: url("/assets/image/backCorner.png");
+	background-image: url("../image/backCorner.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -741,7 +741,7 @@ li {
 }
 
 .border-right {
-	background-image: url("/assets/image/backCorner.png");
+	background-image: url("../image/backCorner.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;

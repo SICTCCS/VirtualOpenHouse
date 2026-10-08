@@ -12,7 +12,7 @@ layout: default
             {% for i in (1..page.course.image_num) %}
                 <div class="my-slides fade">
                     <div class="numbertext">{{ forloop.index }} / {{ page.course.image_num }}</div>
-                    <img src="/assets/image/courses/{{ page.slug }}/{{ forloop.index0 }}.jpg" style="width:100%" class="image">
+                    <img src="{{ site.baseurl }}/assets/image/courses/{{ page.slug }}/{{ forloop.index0 }}.jpg" style="width:100%" class="image">
                     <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%}
                 </div>
             {% endfor %}
@@ -44,9 +44,8 @@ layout: default
             {% assign plaque_count = page.plaque_count | default: 1 %}
             {% if plaque_count > 0 %}
             <button id="DoorButton" onclick="showDoor()" aria-haspopup="dialog" aria-controls="DoorModal">Door Plaque</button>
-            {% else %}
-            <button id="DoorButton" type="button">Door Plaque</button>
             {% endif %}
+
             <button id="FAQButton" onclick="showFAQ()" aria-haspopup="dialog" aria-controls="FAQModal">FAQ</button>
             </div>
         </div>
@@ -60,7 +59,7 @@ layout: default
     </div>
     <div class="door-plaques">
     {% for i in (1..plaque_count) %}
-    {% capture plaque_url %}/exp/Door%20Plaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
+    {% capture plaque_url %}{{ site.baseurl }}/exp/Door%20Plaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
     <figure>
         {% if plaque_count > 1 %}<figcaption>Year {{ i }}</figcaption>{% endif %}
         <a href="{{ plaque_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
@@ -76,16 +75,16 @@ layout: default
         <button type="button" id="closeFAQ" onclick="closeOutFAQ()" aria-label="Close FAQ">Close</button>
     </div>
     <div class="door-plaques">
-    {% capture faq_url %}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
+    {% capture faq_url %}{{ site.baseurl }}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
     {% assign faq_file = site.static_files | where: "path", faq_url | first %}
     {% if faq_file %}
     <figure>
-        <a href="{{ faq_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-        <iframe src="{{ faq_url | relative_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} FAQ"></iframe>
+        <a href="{{ faq_url }}" target="_blank" rel="noopener">Open PDF</a>
+        <iframe src="{{ faq_url }}#view=Fit&toolbar=0" title="{{ page.title | escape }} FAQ"></iframe>
     </figure>
     {% endif %}
     </div>
 </dialog>
-<script src="{{ '/assets/scripts/course.js' | relative_url }}?v=faqs-1"></script>
+<script src="{{ site.baseurl }}/assets/scripts/course.js?v=faqs-1"></script>
 
 {% include course_nav.html %}
