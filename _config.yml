@@ -5,7 +5,7 @@ description: SICTC Virtual Open House Website
 baseurl: "" # Leave empty if your site is at username.github.io
 collections:
   courses:
-    output: true
+    output: false
 exclude:
   - api/
   - .vscode/
