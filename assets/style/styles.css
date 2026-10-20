@@ -197,7 +197,7 @@ button:hover, a.button:hover {
 	word-break: normal;
 	overflow-wrap: normal;
 	container-type: inline-size;
-	font-size: clamp(0.68rem, 1.2vw, 1rem);
+	/* font-size: clamp(0.68rem, 1.2vw, 1rem); */
 	line-height: 1.1;
 }
 /* #endregion */
@@ -249,32 +249,7 @@ font-size: 35px;
 .about-me p {
 font-size: 30px;
 }
-/* h2{
-	color: #15180d;
-	font-size: 50px;
-	margin-bottom: 0;
-}
 
-h3{
-	color: #132E5E;
-	font-size: 45px;
-	margin: 0;
-	padding-top: 10px;
-}
-
-h4{
-	color: #132E5E;
-	font-size: 16px;
-	margin: 0;
-	font-weight: normal;
-}
-
-p{
-	color: #132E5E;
-	font-size: 30px;
-	margin: 0;
-	font-weight: normal;
-} */
 .teacher-flexbox {
 	flex: 1;
 	display: flex;
@@ -927,11 +902,6 @@ iframe{
     justify-content: center;
     flex-direction: column;
 	}
-	
-	/* button, a.button {
-		margin-right: clamp(10px, 5vw, 50px);
-		margin-left: clamp(10px, 5vw, 50px);
-	} */
 
 	.button-group {
 		display: flex;
