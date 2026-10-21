@@ -1,26 +1,15 @@
 ---
 slug: FCS
-plaque_count: 0
+kuula_id: ''
+yt_id: ''
+teachers:
+  - kuula_id: ''
+    yt_id: ''
 title: Family & Consumer Science
 description: ..
 short_description: ..
-
-kuula_id: ''
-
 course:
   image_num: 0
-
-teachers:
-  - name: Dalton Bennett
-    program: ''
-    degree: ..
-    career_start: ..
-    teaching_start: ..
-    certifications: ..
-    email: dalton.bennett@evsck12.com
-    phone: ..
-    room: ..
-    love_teaching: ..
-    fun_fact: ..
-yt_id: ''
+image: ''
+caption: ''
 ---
