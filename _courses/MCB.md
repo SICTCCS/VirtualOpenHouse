@@ -1,6 +1,28 @@
 ---
-title: Media Communications and Broadcasting
 slug: MCB
+teachers:
+  - name: Jo Beth Bootz
+    program: ''
+    degree: BA, Telecommunications / Minor, Communication and Culture from 
+      Indiana University, Bloomington
+    career_start: 2005
+    teaching_start: 2020
+    certifications: Adobe Creative Educator Level 2, Adobe Premiere Pro 
+      Certified Associate, Hubspot Social Media Marketing / Content 
+      Marketing / Digital Marketing / Digital Advertising, Society of 
+      Broadcast Engineers Radio Operator Certification
+    email: jobeth.bootz@evsck12.com
+    phone: 812-435-8831
+    room: RT1
+    love_teaching: What I love most about teaching is watching students 
+      take their creativity to the next level. There’s nothing better than 
+      seeing a student take an idea, make it their own, and turn it into 
+      something they’re genuinely proud of.
+    fun_fact: I’m a huge music fan, and I’m pretty good at music trivia! My
+      students have challenged me to music knowledge quizzes, but so far, 
+      no one has managed to beat me. I’m still waiting for someone to 
+      finally take the crown!
+title: Media Communications and Broadcasting
 description: This program is for a student interested in a career and 
   further schooling in business, broadcasting (radio, TV, cable), 
   journalism (news and sports), public relations, advertising/marketing, 
@@ -11,34 +33,17 @@ description: This program is for a student interested in a career and
   communication, marketing, media, production and technical functions and 
   tasks performed by employees and involves on-air broadcast training on 
   the EVSC radio station, 90.7 WPSR.
-
-kuula_id: 7DT9h
-
+short_description: Media Communications and Broadcasting gives students 
+  hands-on experience creating real media for real audiences. Through 90.7 
+  WPSR, our EVSC radio station, students gain practical skills in radio, 
+  television, video, audio production, journalism, marketing, social media,
+  and digital storytelling. Students learn in a professional, creative 
+  environment where their ideas become actual content—from the studio to 
+  the airwaves and beyond. Whether they want to pursue a career in media or
+  simply become stronger communicators and storytellers, students leave the
+  program with real-world experience and a portfolio they can be proud of.
 course:
   image_num: 3
-
-teachers:
-  - name: Jo Beth Bootz
-    program: ''
-    degree: B.A. in Telecommunications from Indiana University, Bloomington
-    career_start: 2001
-    teaching_start: ..
-    certifications: Adobe Creative Educator Level 2, Adobe Premiere Pro 
-      Certified Associate, Hubspot Social Media Marketing / Content 
-      Marketing / Digital Marketing / Digital Advertising, Society of 
-      Broadcast Engineers Radio Operator Certification
-    email: jobeth.bootz@evsck12.com
-    phone: 812-435-8831
-    room: RT1
-    love_teaching: When I was 17 years old, I signed up for a Career & 
-      Technical Education course entitled Radio Broadcasting. This course 
-      was the catalyst for college scholarships, admittance into a 
-      Telecommunications program, numerous internships, and a competitive 
-      fellowship with the International Radio and Television Society. Since
-      that time, my passion and life's work has been media and I love 
-      sharing this curriculum with my students each day in our classroom 
-      and lab.
-    fun_fact: I've performed on a high-flying trapeeze!
-short_description: ..
+kuula_id: 7DT9h
 yt_id: JfVrhwPGpRA
 ---

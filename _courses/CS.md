@@ -1,31 +1,35 @@
 ---
-title: Computer Science/Software Development
 slug: CS
-description: "The Computer Science course covers a wide variety of topics ranging
-  from computer logic, data structure, software development, and so much more.\
-  \  There are many different programming languages these students will be exposed
-  to like Blockly, Python, Java, SQL, HTML5 with JS, and many others.  Along
-  with programming Python scripts, websites, Android applications, and many other
-  types of programs; we will explore industry demanding topics like data analytics,
-  game design, cyber security, cloud infrastructures, etc.  Throughout the course
-  students will have the opportunity to utilize industry tools like Android Studio,
-  GitHub, Visual Studio Code, Raspberry Pis, Linux, and many more.  This course
-  is designed to assist any student in their pursuit of a computer technology
-  related industry."
-short_description: ..
-
-kuula_id: 7Dg23
-
+title: Computer Science/Software Development
+description: The Computer Science course covers a wide variety of topics 
+  ranging from computer logic, data structure, software development, and so
+  much more.  There are many different programming languages these students
+  will be exposed to like Blockly, Python, Java, SQL, HTML5 with JS, and 
+  many others.  Along with programming Python scripts, websites, Android 
+  applications, and many other types of programs; we will explore industry 
+  demanding topics like data analytics, game design, cyber security, cloud 
+  infrastructures, etc.  Throughout the course students will have the 
+  opportunity to utilize industry tools like Android Studio, GitHub, Visual
+  Studio Code, Raspberry Pis, Linux, and many more.  This course is 
+  designed to assist any student in their pursuit of a computer technology 
+  related industry.
+short_description: Computer Science and Software Development introduces 
+  students to programming logic, data structures, and modern software 
+  development. Students build web and mobile applications while exploring 
+  languages and tools like Python, Java, JavaScript, SQL, GitHub, and cloud
+  technologies. The coursework prepares students for college degrees and 
+  high-demand careers in technology and software engineering.
 course:
   image_num: 5
-
+kuula_id: 7Dg23
+yt_id: 1hIl-DyF3V8
 teachers:
   - name: Nic Bander
-    program: 'Computer Science'
+    program: ''
     degree: Civil Engineering at Rose-Hulman Institute of Technology
-    career_start: 2017
-    teaching_start: ..
-    certifications: ..
+    career_start: 2014
+    teaching_start: 2018
+    certifications: AWS Certified Cloud Practitioner
     email: nic.bander@evsck12.com
     phone: 812-435-8827
     room: CN1
@@ -39,5 +43,4 @@ teachers:
       senior year to learn the saxophone. I can play the acoustic guitar, 
       ukulele, bass guitar, drum set, djembe, cajon, spoons, and am 
       currently attempting to learn the banjo. Emphasis on attempting.
-yt_id: 1hIl-DyF3V8
 ---
