@@ -13,7 +13,7 @@ layout: default
                 <div class="my-slides fade">
                     <div class="numbertext">{{ forloop.index }} / {{ page.course.image_num }}</div>
                     <img src="{{ site.baseurl }}/assets/image/courses/{{ page.slug }}/{{ forloop.index0 }}.jpg" style="width:100%" class="image">
-                    <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%}
+                    <!-- <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%} -->
                 </div>
             {% endfor %}
 
@@ -41,7 +41,7 @@ layout: default
         </div>
         <div class="upper-buttons">
             <div class="button-group">
-            {% assign plaque_count = page.plaque_count | default: 1 %}
+            {% assign plaque_count = page.plaque_count %}
             {% if plaque_count > 0 %}
             <button id="DoorButton" onclick="showDoor()" aria-haspopup="dialog" aria-controls="DoorModal">Door Plaque</button>
             {% endif %}

@@ -1,5 +1,6 @@
 ---
 slug: SEC
+plaque_count: 1
 teachers:
   - name: Hans Lagenour
     program: ''

@@ -1,5 +1,6 @@
 ---
 slug: CA
+plaque_count: 1
 title: Culinary Arts
 description: 'Culinary Arts I and II prepare students for occupations and higher
   education programs of study related to the entire spectrum of careers in the

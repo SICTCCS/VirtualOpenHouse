@@ -1,5 +1,6 @@
 ---
 slug: BCT
+plaque_count: 1
 teachers:
   - name: Kent Martin
     program: ''

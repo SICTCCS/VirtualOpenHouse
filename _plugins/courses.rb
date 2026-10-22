@@ -5,6 +5,7 @@ module CoursePlugin
     def generate(site)
       # Loop through _courses collection
       site.collections['courses'].docs.each do |course|
+        validate_plaques(site, course)
         # Create 3 virtual pages: course, classroom, teacher
         ['course', 'classroom', 'teacher'].each do |type|
           site.pages << CoursePage.new(site, course, type)

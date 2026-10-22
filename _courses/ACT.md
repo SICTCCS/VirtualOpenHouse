@@ -1,5 +1,6 @@
 ---
 slug: ACT
+plaque_count: 1
 teachers:
   - name: John Snider
     program: Automotive Collision Repair

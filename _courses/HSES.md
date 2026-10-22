@@ -1,5 +1,6 @@
 ---
 slug: HSES
+plaque_count: 1
 teachers:
   - name: Elijah Green
     program: ''

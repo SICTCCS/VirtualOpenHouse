@@ -1,5 +1,6 @@
 ---
 slug: DST
+plaque_count: 1
 teachers:
   - name: Dan Nightingale
     program: ''

@@ -1,5 +1,6 @@
 ---
 slug: PMT
+plaque_count: 1
 title: Precision Machine Technology
 description: Precision Machine Metalworking Technology includes a wide 
   range of classroom and laboratory experiences that develop skills and 

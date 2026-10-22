@@ -1,5 +1,6 @@
 ---
 slug: CJPS
+plaque_count: 1
 image: ''
 caption: ''
 title: Criminal Justice and Public Safety

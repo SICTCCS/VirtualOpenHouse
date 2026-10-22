@@ -1,5 +1,6 @@
 ---
 slug: SCL
+plaque_count: 1
 title: Supply Chain & Logistics
 description: "LINK is a unique program in partnership with Amcor open to all
   EVSC juniors and seniors interested in exploring careers in manufacturing and

@@ -1,5 +1,6 @@
 ---
 slug: VS
+plaque_count: 1
 title: Veterinary Science
 description: The program includes a broad range of topics such as anatomy 
   and physiology, genetics, reproduction and biotechnology, nutrition, and 

@@ -1,5 +1,6 @@
 ---
 slug: CS
+plaque_count: 1
 title: Computer Science/Software Development
 description: The Computer Science course covers a wide variety of topics 
   ranging from computer logic, data structure, software development, and so
