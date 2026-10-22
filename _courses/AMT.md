@@ -1,13 +1,11 @@
 ---
 slug: AMT
-image: ''
-caption: ''
 teachers:
   - name: Eric Havener
     program: ''
     degree: Bachelors of Science In Industrial
     career_start: 1998
-    teaching_start: ..
+    teaching_start: ''
     certifications: Fanuc Robotics Certified, SACA Certified in Robotics 
       and Electricity
     email: eric.havener@evsck12.com

@@ -1,7 +1,5 @@
 ---
 slug: ET
-image: ''
-caption: ''
 teachers:
   - name: Tim Taylor
     program: ''

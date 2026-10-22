@@ -38,6 +38,4 @@ course:
   image_num: 2
 kuula_id: 7kBbd
 yt_id: KwgaqlZxfYk
-image: ''
-caption: ''
 ---

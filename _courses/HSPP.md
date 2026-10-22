@@ -1,7 +1,5 @@
 ---
 slug: HSPP
-image: ''
-caption: ''
 teachers:
   - name: Elijah Green
     program: ''

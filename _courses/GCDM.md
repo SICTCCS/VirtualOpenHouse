@@ -1,7 +1,5 @@
 ---
 slug: GCDM
-image: ''
-caption: ''
 teachers:
   - name: Jeanine Minor
     program: ''

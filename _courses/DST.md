@@ -1,7 +1,5 @@
 ---
 slug: DST
-image: ''
-caption: ''
 teachers:
   - name: Dan Nightingale
     program: ''

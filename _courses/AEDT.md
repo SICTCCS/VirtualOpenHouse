@@ -1,7 +1,5 @@
 ---
 slug: AEDT
-image: ''
-caption: ''
 teachers:
   - name: Andy Beadles
     program: Engineering/Architecture Design Technology, Digital 
@@ -31,7 +29,7 @@ teachers:
     degree: Engineering Graphics, Now Design Engineering Technology, and 
       Design Murray State University
     career_start: 2014
-    teaching_start: ..
+    teaching_start: ''
     certifications: Certified SOLIDWORKS Associate, Certified SOLIDWORKS 
       Professional
     email: emily.reidford@evsck12.com
