@@ -1,35 +1,16 @@
 ---
-title: Automotive Service Technologies
 slug: AST
-description: "The Automotive Service program is a two year program designed to
-  prepare students either to enter the automotive repair industry workforce in
-  an entry level position or to prepare them for post-secondary training in the
-  automotive industry. The program is ASE/NATEF certified in 7 areas, including:
-  brakes, steering and suspension, engine repair, engine performance, heating
-  and air conditioning, electrical/electronic systems and manual drivetrains
-  and axles. Training is divided between classroom and laboratory experiences
-  that incorporate theory of operation, service and repair of the various automotive
-  systems. Also students will learn and utilize service and repair software and
-  become familiar with automotive suppliers and acquiring repair parts, as well
-  as repair order preparation and billing"
-short_description: ..
-
-kuula_id: 7DTrR
-
-course:
-  image_num: 6
-
 teachers:
   - name: John Kaufman
     program: ''
     degree: ..
     career_start: 2024
-    teaching_start: ..
+    teaching_start: ''
     certifications: AWS American Welding Society - 13 Welding 
       Certifications
     email: john.kaufman@evsck12.com
     phone: 812-435-8823
-    room: AS3
+    room: AS2
     love_teaching: I love teaching here at CTE because of the kids. I like 
       having the opportunity to watch the kids learn and grow and with my 
       knowledge of welding. Getting to teach them and see them learn is a 
@@ -40,7 +21,7 @@ teachers:
     program: ''
     degree: Universal Technical Institute
     career_start: 2009
-    teaching_start: ..
+    teaching_start: ''
     certifications: ASE Master Technician
     email: david.overfield@evsck12.com
     phone: 812-435-8393
@@ -48,5 +29,27 @@ teachers:
     love_teaching: I love teaching CTE because it helps students find a 
       career that they are passionate about pursuing.
     fun_fact: I train MMA fighters at Nice Guy Submission Fighting
+title: Automotive Service Technologies
+description: 'The Automotive Service program is a two year program designed to
+  prepare students either to enter the automotive repair industry workforce in
+  an entry level position or to prepare them for post-secondary training in the
+  automotive industry. The program is ASE/NATEF certified in 7 areas, including:
+  brakes, steering and suspension, engine repair, engine performance, heating
+  and air conditioning, electrical/electronic systems and manual drivetrains
+  and axles. Training is divided between classroom and laboratory experiences
+  that incorporate theory of operation, service and repair of the various automotive
+  systems. Also students will learn and utilize service and repair software and
+  become familiar with automotive suppliers and acquiring repair parts, as well
+  as repair order preparation and billing'
+short_description: Automotive Service Technologies is a two-year 
+  ASE/NATEF-certified program preparing students for entry-level automotive
+  careers or post-secondary education. Students gain hands-on experience 
+  diagnosing, servicing, and repairing major vehicle systems, including 
+  brakes, engines, electrical systems, and drivetrains. Training combines 
+  classroom theory with practical shop work using industry-standard 
+  diagnostic tools and software.
+course:
+  image_num: 6
+kuula_id: 7DTrR
 yt_id: FcZL49hzFc4
 ---

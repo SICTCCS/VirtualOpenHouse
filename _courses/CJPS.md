@@ -1,29 +1,34 @@
 ---
-title: Criminal Justice and Public Safety
 slug: CJPS
-description: "Criminal Justice I introduces students to law enforcement and criminal
-  justice. Classroom instruction explores the history of the U.S. criminal justice
-  system and courtroom structure. CJ1 also provides the students with hands-on
-  experience in police operations such as vehicle stops. The students are shown
-  the importance of cultural awareness in the criminal justice field. Criminal
-  Justice II introduces the students to the theories of criminology. The students
-  then enter the criminal investigation portion of the course. The students will
-  have hands-on experience in mock crime scene scenarios. The students will process
-  a crime scene starting with photography, and ending with the collection of
-  DNA, narcotics collection, and trace evidence such as glass, hairs, and fibers."
-short_description: ..
-
-kuula_id: 7DT9D
-
+image: ''
+caption: ''
+title: Criminal Justice and Public Safety
+description: Criminal Justice I introduces students to law enforcement and 
+  criminal justice. Classroom instruction explores the history of the U.S. 
+  criminal justice system and courtroom structure. CJ1 also provides the 
+  students with hands-on experience in police operations such as vehicle 
+  stops. The students are shown the importance of cultural awareness in the
+  criminal justice field. Criminal Justice II introduces the students to 
+  the theories of criminology. The students then enter the criminal 
+  investigation portion of the course. The students will have hands-on 
+  experience in mock crime scene scenarios. The students will process a 
+  crime scene starting with photography, and ending with the collection of 
+  DNA, narcotics collection, and trace evidence such as glass, hairs, and 
+  fibers.
+short_description: Criminal Justice and Public Safety introduces students 
+  to law enforcement, court systems, criminology, and investigative 
+  procedures. Students gain practical experience through hands-on police 
+  operations, mock crime scenes, evidence collection, and forensic 
+  analysis. The program builds foundational knowledge and critical thinking
+  for careers or college study in criminal justice and public safety.
 course:
   image_num: 5
-
 teachers:
   - name: Jeff Hands
     program: ''
     degree: Associates of Science, Vincennes University in Criminal Justice
     career_start: 1990
-    teaching_start: ..
+    teaching_start: ''
     certifications: Indiana Law Enforcement Certified Instructor, Indiana 
       Law Academy Certified Emergency Vehicle Operations Instructor, 
       Certified Police Motorcycle Instructor
@@ -35,5 +40,6 @@ teachers:
       from the Evansville area or watching the class interact with the 
       guest instructors.
     fun_fact: My wife and I love to camp.
-yt_id: 'Xtbt3XPDL80'
+kuula_id: 7DT9D
+yt_id: Xtbt3XPDL80
 ---
