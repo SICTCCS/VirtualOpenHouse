@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./bin/activate # this is the path only for linux Python venvs; for Windows, use ./Scripts/activate (.bat or .ps1)
+source ./.venv/bin/activate # this is the path only for linux Python venvs; for Windows, use ./Scripts/activate (.bat or .ps1)
 
 python ./main.py &
 pid=$!

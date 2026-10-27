@@ -29,8 +29,8 @@ If `.env` was created on Windows and copied to a Pi, run `dos2unix .env` to fix 
 ## Initial Setup commands
 
 ```bash
-python -m venv . # set up python virtual environment
-source bin/activate # switch to that venv
+python -m venv .venv # set up python virtual environment
+source .venv/bin/activate # switch to that venv
 python -m pip install -r requirements.txt # install deps into venv
 
 # NGrok install
