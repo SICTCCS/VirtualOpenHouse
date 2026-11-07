@@ -671,7 +671,10 @@ footer{
 }
 .footer-left {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 2em;
 	width: 100%;
 	height: 100%;
 }
@@ -696,12 +699,12 @@ ul{
 	display: flex;
 	flex-direction: column;
 	gap: 12px;				 /* Controls the precise vertical gap evenly between rows */
-	margin-right: clamp(10px, 15px ,30px);
+	margin-right: clamp(5px, 15px, 20px);
 }
 
 li {
 	width: 100%;
-	font-size: clamp(.8rem, 2vw, 2rem);
+	font-size: clamp(.8rem, 2vw, 1.5rem);
 	color: #132E5E;
 	list-style-type: none;
 	display: flex;           /* Turns each row into a flex container */
@@ -727,8 +730,8 @@ li {
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: inline-block;
-	height: 3vw;
-	width: 3vw;
+	height: clamp(.8rem, 3vw, 1.7rem);
+	width: clamp(.8rem, 3vw, 1.7rem);
 }
 /* #endregion */
 /* ============================================================================= */
