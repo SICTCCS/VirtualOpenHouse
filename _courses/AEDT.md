@@ -67,4 +67,5 @@ course:
   image_num: 6
 kuula_id: 7Dg2M
 yt_id: ZCTI1iqZxjE
+plaque_count: 1
 ---

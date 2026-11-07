@@ -50,6 +50,7 @@ short_description: Automotive Service Technologies is a two-year
   diagnostic tools and software.
 course:
   image_num: 6
+plaque_count: 1
 kuula_id: 7DTrR
 yt_id: FcZL49hzFc4
 ---

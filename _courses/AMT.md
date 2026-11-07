@@ -34,6 +34,7 @@ short_description: Advanced Manufacturing Technology introduces students to
   technical skills for high-demand careers in manufacturing and automation.
 course:
   image_num: 6
+plaque_count: 1
 kuula_id: 7Dg37
 yt_id: KHtkgdsXhJc
 ---

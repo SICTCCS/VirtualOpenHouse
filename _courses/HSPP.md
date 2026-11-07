@@ -105,4 +105,5 @@ course:
   image_num: 8
 kuula_id: 7DT9g
 yt_id: ''
+plaque_count: 2
 ---

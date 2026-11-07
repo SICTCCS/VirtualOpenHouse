@@ -46,8 +46,7 @@ layout: default
             <button id="DoorButton" onclick="showDoor()" aria-haspopup="dialog" aria-controls="DoorModal">Door Plaque</button>
             {% endif %}
 
-            
-            {% capture faq_url %}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
+            {% capture faq_url %}/assets/pdf/faqs/{{ page.slug }}.pdf{% endcapture %}
             {% assign faq_file = site.static_files | where: "path", faq_url | first %}
             {% if faq_file %}
             <button id="FAQButton" onclick="showFAQ()" aria-haspopup="dialog" aria-controls="FAQModal">FAQ</button>
@@ -64,7 +63,7 @@ layout: default
     </div>
     <div class="door-plaques">
     {% for i in (1..plaque_count) %}
-    {% capture plaque_url %}/exp/DoorPlaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
+    {% capture plaque_url %}/assets/pdf/door_plaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
     {% assign plaque_file = site.static_files | where: "path", plaque_url | first %}
 
     {% if plaque_file %}
