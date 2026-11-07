@@ -7,7 +7,7 @@ teachers:
     degree: Bachelors of Science In Construction Management from Purdue 
       University
     career_start: 1994
-    teaching_start: ''
+    teaching_start: ..
     certifications: Vanderburgh County Building Commission Licensed 
       Contractor, OSHA 10 Certified
     email: kent.martin@evsck12.com

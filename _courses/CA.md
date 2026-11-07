@@ -18,7 +18,7 @@ short_description: The Culinary Arts program prepares students for a wide
   and tourism. Our program teaches students who come in with little to no 
   experience in the kitchen, to students who already work in the industry.
 course:
-  image_num: 7
+  image_num: 6
 kuula_id: 7d0hf
 yt_id: QSOIlA8aEuM
 teachers:

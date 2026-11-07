@@ -21,7 +21,7 @@ short_description: Computer Science and Software Development introduces
   technologies. The coursework prepares students for college degrees and 
   high-demand careers in technology and software engineering.
 course:
-  image_num: 5
+  image_num: 9
 kuula_id: 7Dg23
 yt_id: 1hIl-DyF3V8
 teachers:
