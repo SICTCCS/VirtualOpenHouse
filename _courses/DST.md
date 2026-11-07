@@ -4,10 +4,10 @@ plaque_count: 1
 teachers:
   - name: Dan Nightingale
     program: ''
-    degree: ..
-    career_start: ..
-    teaching_start: ..
-    certifications: ..
+    degree: ''
+    career_start: ''
+    teaching_start: ''
+    certifications: ''
     email: daniel.nightingale@evsck12.com
     phone: 812-435-8824
     room: DS2
