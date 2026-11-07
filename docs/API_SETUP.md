@@ -1,4 +1,4 @@
-# Server Setup
+# API Server Setup
 
 ## Getting Info
 

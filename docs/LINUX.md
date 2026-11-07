@@ -1,4 +1,4 @@
-# Debian Linux setup
+# Debian Linux setup to run Jekyll
 
 ```bash
 sudo apt install ruby-full build-essential
