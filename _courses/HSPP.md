@@ -53,8 +53,8 @@ teachers:
     email: tonya.fleenor@evsck12.com
     phone: 930-214-4018
     room: HS9
-    love_teaching: ..
-    fun_fact: ..
+    love_teaching: ''
+    fun_fact: ''
   - name: Dalton Bennett
     program: ''
     degree: Bachelor of Science in Health Sciences and Master's in 

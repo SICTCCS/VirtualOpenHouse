@@ -6,14 +6,14 @@ teachers:
     program: ''
     degree: Associates Degree in Welding, Associates Degree in Tool, and 
       Die and Associates Degree in Automotive
-    career_start: ..
-    teaching_start: ..
-    certifications: ..
+    career_start: ''
+    teaching_start: ''
+    certifications: ''
     email: hans.lagenour@evsck12.com
     phone: 930-214-3307
     room: FLW
-    love_teaching: ..
-    fun_fact: ..
+    love_teaching: ''
+    fun_fact: ''
 title: Cybersecurity
 description: Students will acquire the fundamentals of information and data
   security and understand the vulnerability most organizations have in 
