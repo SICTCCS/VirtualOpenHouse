@@ -238,9 +238,6 @@ button:hover, a.button:hover {
 .teacher-flexbox h3 {
   /* Shrink the invisible line height box to match the text tightly */
   line-height: 1.0; 
-  
-  /* Pull the next element upward to get rid of remaining blank space */
-  margin-bottom: -5px; 
 }
 
 /* Trim top space from the paragraph immediately following the h3 */
@@ -249,20 +246,9 @@ button:hover, a.button:hover {
   /* font-size: 45px; */
 }
 /*  */
-.teacher-info h2 {
-	margin-block-start: 0em;
-    margin-block-end: 0em;
-	/* font-size: 50px; */
-}
-
-.about-me h2 {
-	font-size: 50px;
-}
-.about-me h3 {
-font-size: 35px;
-}
-.about-me p {
-font-size: 30px;
+.contact-info h3 {
+	padding-top: 0px;
+	font-size: 20px;
 }
 
 .about-me, .contact-info, .teacher-love-fact{
@@ -327,7 +313,6 @@ font-size: 30px;
 }
 
 figure {
-	border: 2px solid #ccc;
 	padding: 10px;
 	display: block;
 	margin: 0 auto;
