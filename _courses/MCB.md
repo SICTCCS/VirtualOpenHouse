@@ -1,5 +1,6 @@
 ---
 slug: MCB
+plaque_count: 1
 teachers:
   - name: Jo Beth Bootz
     program: ''

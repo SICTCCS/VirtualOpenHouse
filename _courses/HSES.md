@@ -1,5 +1,6 @@
 ---
 slug: HSES
+plaque_count: 1
 teachers:
   - name: Elijah Green
     program: ''
@@ -19,8 +20,8 @@ teachers:
     program: ''
     degree: Bachelors in Health Services & Minor in Wellness
     career_start: 1994
-    teaching_start: ..
-    certifications: ..
+    teaching_start: ''
+    certifications: ''
     email: julie.stucki@evsck12.com
     phone: 812-435-8807
     room: PS1

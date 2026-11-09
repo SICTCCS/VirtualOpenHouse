@@ -1,5 +1,6 @@
 ---
 slug: GCDM
+plaque_count: 1
 teachers:
   - name: Jeanine Minor
     program: ''

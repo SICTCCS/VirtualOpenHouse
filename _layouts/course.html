@@ -13,7 +13,7 @@ layout: default
                 <div class="my-slides fade">
                     <div class="numbertext">{{ forloop.index }} / {{ page.course.image_num }}</div>
                     <img src="{{ site.baseurl }}/assets/image/courses/{{ page.slug }}/{{ forloop.index0 }}.jpg" style="width:100%" class="image">
-                    <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%}
+                    <!-- <div class="text">Caption Text</div> {%- comment -%} # TODO captions {%- endcomment -%} -->
                 </div>
             {% endfor %}
 
@@ -41,13 +41,12 @@ layout: default
         </div>
         <div class="upper-buttons">
             <div class="button-group">
-            {% assign plaque_count = page.plaque_count | default: 1 %}
+            {% assign plaque_count = page.plaque_count %}
             {% if plaque_count > 0 %}
             <button id="DoorButton" onclick="showDoor()" aria-haspopup="dialog" aria-controls="DoorModal">Door Plaque</button>
             {% endif %}
 
-            
-            {% capture faq_url %}/exp/FAQs/{{ page.slug }}.pdf{% endcapture %}
+            {% capture faq_url %}/assets/pdf/faqs/{{ page.slug }}.pdf{% endcapture %}
             {% assign faq_file = site.static_files | where: "path", faq_url | first %}
             {% if faq_file %}
             <button id="FAQButton" onclick="showFAQ()" aria-haspopup="dialog" aria-controls="FAQModal">FAQ</button>
@@ -64,7 +63,7 @@ layout: default
     </div>
     <div class="door-plaques">
     {% for i in (1..plaque_count) %}
-    {% capture plaque_url %}/exp/DoorPlaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
+    {% capture plaque_url %}/assets/pdf/door_plaques/{{ page.slug }}{% if plaque_count > 1 %}-{{ i }}{% endif %}.pdf{% endcapture %}
     {% assign plaque_file = site.static_files | where: "path", plaque_url | first %}
 
     {% if plaque_file %}

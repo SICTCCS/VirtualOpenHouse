@@ -1,7 +1,6 @@
 ---
 slug: CJPS
-image: ''
-caption: ''
+plaque_count: 1
 title: Criminal Justice and Public Safety
 description: Criminal Justice I introduces students to law enforcement and 
   criminal justice. Classroom instruction explores the history of the U.S. 

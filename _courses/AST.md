@@ -3,7 +3,7 @@ slug: AST
 teachers:
   - name: John Kaufman
     program: ''
-    degree: ..
+    degree: ''
     career_start: 2024
     teaching_start: ''
     certifications: AWS American Welding Society - 13 Welding 
@@ -16,7 +16,7 @@ teachers:
       knowledge of welding. Getting to teach them and see them learn is a 
       great feeling. Also, watching the kids build with their own hands is 
       a great experience too.
-    fun_fact: ..
+    fun_fact: ''
   - name: David Overfield
     program: ''
     degree: Universal Technical Institute
@@ -50,6 +50,7 @@ short_description: Automotive Service Technologies is a two-year
   diagnostic tools and software.
 course:
   image_num: 6
+plaque_count: 1
 kuula_id: 7DTrR
 yt_id: FcZL49hzFc4
 ---

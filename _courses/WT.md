@@ -1,5 +1,6 @@
 ---
 slug: WT
+plaque_count: 1
 title: Welding Technology
 description: "Welding Technology is a 2-year program learning proficiency in
   four different welding procedures. During the first year we teach SMAW and

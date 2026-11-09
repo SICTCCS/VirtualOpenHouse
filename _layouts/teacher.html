@@ -8,62 +8,76 @@ layout: default
 <div class="teacher-info">
     <div class="teacher-flexbox">
         <div class="about-me" style="margin-left: 5%;">
-        <h2>About Me</h2>
+            <h2>About Me</h2>
+            <h3>Name:</h3>
+            <p>{{ teacher.name }}</p>
+            
+            {% if teacher.program and teacher.program != '' %}
+                <h3>Program: </h3>
+                <p>{{ teacher.program }}</p>
+            {% endif %}
+            
+            {% if teacher.degree and teacher.degree != '' %}
+                <h3>College Degree: </h3>
+                <p>{{ teacher.degree }}</p>
+            {% endif %}
 
-        <h3>Name:</h3>
-        <p>{{ teacher.name }}</p>
-        
-        <h3>Program: </h3>
-        <p>{{ teacher.program }}</p>
-        
-        <h3>College Degree: </h3>
-        <p>{{ teacher.degree }}</p>
+            {% assign current_year = "now" | date: "%Y" | plus: 0 %}
 
-        <h3>Career Start Year: </h3>
-        <p>{{ teacher.career_start }}</p>
+            {% if teacher.career_start and teacher.career_start != '' %}
+                {% comment %} <h3>Career Start Year: </h3>
+                <p>{{ teacher.career_start }}</p> {% endcomment %}
 
-        {% assign current_year = "now" | date: "%Y" | plus: 0 %}
-        {% assign years_in_career = current_year | minus: teacher.career_start %}
-        
-        <h3>Years In Career: </h3>
-        <p>{{ years_in_career }} Years</p>
+                {% assign years_in_career = current_year | minus: teacher.career_start %}
+                
+                <h3>Years In Career: </h3>
+                <p>{{ years_in_career }} Years</p>
+            {% endif %}
 
-        <h3>Teaching Start Year: </h3>
-        <p>{{ teacher.teaching_start }}</p>
+            {% if teacher.teaching_start and teacher.teaching_start != '' %}
+                {% comment %} <h3>Teaching Start Year: </h3>
+                <p>{{ teacher.teaching_start }}</p> {% endcomment %}
 
-        {% assign current_year = "now" | date: "%Y" | plus: 0 %}
-        {% assign years_experience = current_year | minus: teacher.teaching_start %}
-        
-        <h3>Years of Teaching: </h3>
-        <p>{{ years_experience }} Years</p>
+                {% assign years_experience = current_year | minus: teacher.teaching_start %}
+                
+                <h3>Years of Teaching: </h3>
+                <p>{{ years_experience }} Years</p>
+            {% endif %}
 
-        <h3>Certifications: </h3>
-        <p>{{ teacher.certifications }}</p>
+            {% if teacher.certifications and teacher.certifications != '' %}
+                <h3>Certifications: </h3>
+                <p>{{ teacher.certifications }}</p>
+            {% endif %}
 
 
-        {%- comment -%} # TODO - find a way to cap how long it can go {%- endcomment -%}
-        <h2>Contact Information</h2>
-        <h3>{{ teacher.email }}</h3>
-        <h3>{{ teacher.phone }}</h3>
-        <h3>Room: {{ teacher.room }}</h3>
-        
+            {%- comment -%} # TODO - find a way to cap how long it can go {%- endcomment -%}
+
         </div>
+        <div class="contact-info">
+                <h2>Contact Information</h2>
+                <h3>{{ teacher.email }}</h3>
+                <h3>{{ teacher.phone }}</h3>
+                <h3>Room: {{ teacher.room }}</h3>
+            </div>
     </div>
     <div class="teacher-flexbox">
     {%- comment -%} gets teacher images from 'teachers' folder in the course folder -> 'number.jpg' (starts at 0) {%- endcomment -%}
     <div class="teach-pic"><img src="{{ site.baseurl }}/assets/image/courses/{{ page.slug }}/teachers/{{ forloop.index0 }}.jpg" alt="We don't have an image of {{ teacher.name }} yet!" class="teacher-photo"></div>
-    <figure>
-            <figcaption class="love-and-fact" style="border-width: 3px 3px 3px 3px;">
-                <h3>Why I Love Teaching CTE: </h3>
-                <p style="text-indent: 2em;">{{ teacher.love_teaching }}</p>
-                </br>
-            </figcaption>
-            <figcaption  class="love-and-fact" style="border-width: 0px 3px 3px 3px;">
-                <h3 >Fun Fact: </h3>
-                <p style="text-indent: 2em;">{{ teacher.fun_fact }}</p>
-
-                </br>
-            </figcaption>
+    <figure class="teacher-love-fact">
+            {% if teacher.love_teaching and teacher.love_teaching != '' %}
+                <figcaption class="love-and-fact" style="border-width: 3px 3px 3px 3px;">
+                    <h3>Why I Love Teaching CTE: </h3>
+                    <p style="text-indent: 2em;">{{ teacher.love_teaching }}</p>
+                    </br>
+                </figcaption>
+            {% endif %}
+            {% if teacher.fun_fact and teacher.fun_fact != '' %}
+                <figcaption  class="love-and-fact" style="border-width: 0px 3px 3px 3px;">
+                    <h3 >Fun Fact: </h3>
+                    <p style="text-indent: 2em;">{{ teacher.fun_fact }}</p>
+                    </br>
+                </figcaption>
+            {% endif %}
         </figure>
         </lo>
     </div>

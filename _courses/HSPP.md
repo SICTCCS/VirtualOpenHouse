@@ -32,7 +32,7 @@ teachers:
     program: ''
     degree: Master of Science in Nursing, University of Cincinnati
     career_start: 1986
-    teaching_start: ..
+    teaching_start: ''
     certifications: Clinical Nurse Specialist
     email: angela.pruitt@evsck12.com
     phone: 812-435-8809
@@ -48,13 +48,13 @@ teachers:
     program: ''
     degree: ..
     career_start: 1994
-    teaching_start: ..
+    teaching_start: ''
     certifications: ''
     email: tonya.fleenor@evsck12.com
     phone: 930-214-4018
     room: HS9
-    love_teaching: ..
-    fun_fact: ..
+    love_teaching: ''
+    fun_fact: ''
   - name: Dalton Bennett
     program: ''
     degree: Bachelor of Science in Health Sciences and Master's in 
@@ -105,4 +105,5 @@ course:
   image_num: 8
 kuula_id: 7DT9g
 yt_id: ''
+plaque_count: 2
 ---

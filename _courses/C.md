@@ -22,6 +22,7 @@ short_description: Cosmetology is the art and science of beautifying the
   eliminating college debt.
 course:
   image_num: 0
+plaque_count: 1
 kuula_id: ''
 yt_id: ''
 teachers:

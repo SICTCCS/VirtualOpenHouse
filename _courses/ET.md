@@ -1,5 +1,6 @@
 ---
 slug: ET
+plaque_count: 1
 teachers:
   - name: Tim Taylor
     program: ''

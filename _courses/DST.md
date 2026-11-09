@@ -1,17 +1,18 @@
 ---
 slug: DST
+plaque_count: 1
 teachers:
   - name: Dan Nightingale
     program: ''
-    degree: ..
-    career_start: ..
-    teaching_start: ..
-    certifications: ..
+    degree: ''
+    career_start: ''
+    teaching_start: ''
+    certifications: ''
     email: daniel.nightingale@evsck12.com
     phone: 812-435-8824
     room: DS2
-    love_teaching: ..
-    fun_fact: ..
+    love_teaching: ''
+    fun_fact: ''
 title: Diesel Service Technology
 description: Diesel Service Technology is a two year course designed for 
   high school juniors and seniors. The training program is Master 

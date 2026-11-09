@@ -1,5 +1,6 @@
 ---
 slug: HVAC
+plaque_count: 1
 teachers:
   - name: Seth Aull
     program: HVAC Technology
