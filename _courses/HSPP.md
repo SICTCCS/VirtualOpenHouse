@@ -96,11 +96,11 @@ description: 'Health Science: Pre-Professional is a two-year program providing
   exploring labs in forensics, imaging, dental, cardiac, and more. Certifications
   include CPR/AED, CCMA, HIPAA, and OSHA 10, with clinical observations in two
   healthcare areas to prepare students for college and careers.'
-short_description: A two year program designed for student who believe 
-  health care is their chosen career. The program includes a first year the
-  is considered the core for all health science.  The second year builds on
-  the first by using what students have learned to enhance the development 
-  of skills and are common to most health care areas.
+short_description: 'A two year program designed for student who believe health
+  care is their chosen career. The program includes a first year the is considered
+  the core for all health science.  The second year builds on the first by using
+  what students have learned to enhance the development of skills and are common
+  to most health care areas.'
 course:
   image_num: 8
 kuula_id: 7DT9g

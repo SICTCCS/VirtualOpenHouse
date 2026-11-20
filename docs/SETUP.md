@@ -1,6 +1,6 @@
 # Windows Setup to run Jekyll
 
-**For Linux setup, follow the instructions in [LINUX.md](LINUX.md)**
+**For Linux setup, follow the instructions [at the bottom](#debian-linux-setup-to-run-jekyll)**
 
 1. Download and run [RubyInstaller](https://rubyinstaller.org/downloads/) (bold, red link on the left)
 2. Click through all defaults; after 'finish', a command prompt will open asking to install additional things. Press enter for the defaults (we want "MSYS2 and MINGW development toolchain")
@@ -21,3 +21,35 @@ This repo includes a VSCode task
 **The directory this runs in has been configured in `.vscode/tasks.json`, you will have to change this if this is moved to the root of the repo.**
 
 ***I would recommend the Better Todo Tree VSCode extension to see all TODO and FIXME comments***
+
+## Debian Linux setup to run Jekyll
+
+Install required packages:
+
+```bash
+sudo apt update
+sudo apt install ruby-full build-essential
+sudo gem install bundler
+```
+
+Confirm installation:
+
+```bash
+ruby --version
+bundle --version
+```
+
+Install project dependencies:
+
+```bash
+bundle install
+```
+
+Using:
+
+```bash
+bundle exec jekyll build # build only
+bundle exec jekyll serve --host 0.0.0.0 # host on all addresses
+```
+
+or run [run.sh](run.sh) which also runs the API.

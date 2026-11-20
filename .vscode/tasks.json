@@ -4,6 +4,22 @@
 		{
 			"label": "Start Jekyll",
 			"type": "shell",
+			"command": "bundle exec jekyll serve",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"runOptions": {
+				"runOn": "default"
+			}
+		},
+		{
+			"label": "Start Jekyll Live Reload",
+			"type": "shell",
 			"command": "bundle exec jekyll serve --livereload",
 			"options": {
 				"cwd": "${workspaceFolder}"

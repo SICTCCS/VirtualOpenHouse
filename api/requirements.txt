@@ -1,6 +1,8 @@
 flask
 apscheduler
 gspread
+google-api-python-client
 oauth2client
 python-dotenv
 ruamel.yaml
+colorlog

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Runs both the API and Jekyll servers
-## Both LINUX.md and APL_SETUP.md must be followed before running
+## Both SETUP.md and API_SETUP.md must be followed before running
 
 cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 

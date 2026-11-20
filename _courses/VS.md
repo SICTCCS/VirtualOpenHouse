@@ -2,20 +2,18 @@
 slug: VS
 plaque_count: 1
 title: Veterinary Science
-description: The program includes a broad range of topics such as anatomy 
-  and physiology, genetics, reproduction and biotechnology, nutrition, and 
-  animal health. Students will also explore office and hospital management,
-  career opportunities in veterinary and animal sciences, and environmental
-  requirements for animal care. Additionally, the program covers management
-  practices essential for the upkeep and maintenance of animals.  Through a
-  blend of real and simulated veterinary experiences, students engage in a 
-  variety of activities and laboratory work that cover both livestock and 
-  companion animals. Students will acquire practical skills common to 
-  veterinary assistants, preparing them for roles in veterinary offices or 
-  hospitals. With a focus on both theoretical knowledge and practical 
-  application, this program equips students with the expertise needed for a
-  successful application to a veterinary tech or animal 
-  science/pre-veterinary college program.
+description: 'The program includes a broad range of topics such as anatomy and
+  physiology, genetics, reproduction and biotechnology, nutrition, and animal
+  health. Students will also explore office and hospital management, career opportunities
+  in veterinary and animal sciences, and environmental requirements for animal
+  care. Additionally, the program covers management practices essential for the
+  upkeep and maintenance of animals.  Through a blend of real and simulated veterinary
+  experiences, students engage in a variety of activities and laboratory work
+  that cover both livestock and companion animals. Students will acquire practical
+  skills common to veterinary assistants, preparing them for roles in veterinary
+  offices or hospitals. With a focus on both theoretical knowledge and practical
+  application, this program equips students with the expertise needed for a successful
+  application to a veterinary tech or animal science/pre-veterinary college program.'
 short_description: The Veterinary Sciences program offers students a 
   comprehensive introduction to the field of veterinary science, providing 
   hands-on experience and a deep understanding of animal care.
