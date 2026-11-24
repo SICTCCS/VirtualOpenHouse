@@ -1,0 +1,18 @@
+# Copy to /etc/systemd/system/
+# Edit User and the two paths if your user or repo location differs.
+[Unit]
+Description=VirtualOpenHouse Servers
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/Documents/VirtualOpenHouse
+ExecStart=/bin/bash -c '/home/pi/Documents/VirtualOpenHouse/run.sh; while /usr/bin/tmux has-session -t voh 2>/dev/null; do sleep 5; done; exit 1'
+ExecStop=/usr/bin/tmux kill-session -t voh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
