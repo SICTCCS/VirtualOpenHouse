@@ -1,7 +1,8 @@
 {
   "recommendations": [
     "sissel.shopify-liquid",
-    "FanaticPythoner.better-todo-tree"
+    "FanaticPythoner.better-todo-tree",
+    "tomoki1207.pdf"
   ],
   "unwantedRecommendations": []
 }
